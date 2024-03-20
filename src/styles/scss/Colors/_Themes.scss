@@ -1,0 +1,90 @@
+@use '../Globals/settings' as s;
+
+// We are converting back to CSS Custom Properties so that we can use the automtic color switching feature @media (prefers-color-scheme: dark). If you are not using this feature or you are using a JS script for themeing, you can use the SCSS variables directly. 
+
+:root{
+
+	--color-bg-100: #{s.$outerspace-100};
+	--color-bg-200: #{s.$outerspace-200};
+	--color-bg-300: #{s.$outerspace-300};
+	--color-bg-400: #{s.$outerspace-400};
+    --color-bg-500: #{s.$outerspace-500};
+    --color-bg-600: #{s.$outerspace-600};
+    --color-bg-700: #{s.$outerspace-700};
+	--color-bg-800: #{s.$outerspace-800};
+	--color-bg-900: #{s.$outerspace-900};
+
+	--color-alt-100: #{s.$cadet-100};
+	--color-alt-200: #{s.$cadet-200};
+	--color-alt-300: #{s.$cadet-300};
+	--color-alt-400: #{s.$cadet-400};
+	--color-alt-500: #{s.$cadet-500};
+	--color-alt-600: #{s.$cadet-600};
+	--color-alt-700: #{s.$cadet-700};
+	--color-alt-800: #{s.$cadet-800};
+	--color-alt-900: #{s.$cadet-900};
+
+    --color-txt-100: #{s.$outerspace-900};
+	--color-txt-200: #{s.$outerspace-800};
+	--color-txt-300: #{s.$outerspace-700};
+	--color-txt-400: #{s.$outerspace-600};
+	--color-txt-500: #{s.$outerspace-500};
+	--color-txt-600: #{s.$outerspace-400};
+	--color-txt-700: #{s.$outerspace-300};
+	--color-txt-800: #{s.$outerspace-200};
+
+	--color-acc-100: #{s.$cosmic-100};
+	--color-acc-200: #{s.$cosmic-200};
+    --color-acc-300: #{s.$cosmic-300};
+    --color-acc-400: #{s.$cosmic-400};
+    --color-acc-500: #{s.$cosmic-500};
+    --color-acc-600: #{s.$cosmic-600};
+    --color-acc-700: #{s.$cosmic-800};
+
+		@media (prefers-color-scheme: dark) {
+
+		--color-bg-100: #{s.$outerspace-900};
+		--color-bg-200: #{s.$outerspace-800};
+		--color-bg-300: #{s.$outerspace-700};
+		--color-bg-400: #{s.$outerspace-600};
+		--color-bg-500: #{s.$outerspace-500};
+		--color-bg-600: #{s.$outerspace-400};
+		--color-bg-700: #{s.$outerspace-300};
+		--color-bg-800: #{s.$outerspace-200};
+		--color-bg-900: #{s.$outerspace-100};
+	
+		--color-alt-100: #{s.$cadet-900};
+		--color-alt-200: #{s.$cadet-800};
+		--color-alt-300: #{s.$cadet-700};
+		--color-alt-400: #{s.$cadet-600};
+		--color-alt-500: #{s.$cadet-500};
+		--color-alt-600: #{s.$cadet-400};
+		--color-alt-700: #{s.$cadet-300};
+		--color-alt-800: #{s.$cadet-200};
+		--color-alt-900: #{s.$cadet-100};
+	
+		--color-txt-100: #{s.$outerspace-100};
+		--color-txt-200: #{s.$outerspace-200};
+		--color-txt-300: #{s.$outerspace-300};
+		--color-txt-400: #{s.$outerspace-400};
+		--color-txt-500: #{s.$outerspace-500};
+		--color-txt-600: #{s.$outerspace-600};
+		--color-txt-700: #{s.$outerspace-700};
+		--color-txt-800: #{s.$outerspace-800};
+	
+		--color-acc-100: #{s.$bluey-100};
+		--color-acc-200: #{s.$bluey-200};
+		--color-acc-300: #{s.$bluey-300};
+		--color-acc-400: #{s.$bluey-400};
+		--color-acc-500: #{s.$bluey-500};
+		--color-acc-600: #{s.$bluey-600};
+		--color-acc-700: #{s.$bluey-700};
+		--color-acc-800: #{s.$bluey-800};
+		--color-acc-900: #{s.$bluey-900};
+	}
+
+
+
+}
+
+

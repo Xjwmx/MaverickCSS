@@ -1,0 +1,271 @@
+/*
+
+    __  ______ _    ____________  ____________ __    ________________
+   /  |/  /   | |  / / ____/ __ \/  _/ ____/ //_/   / ____/ ___/ ___/
+  / /|_/ / /| | | / / __/ / /_/ // // /   / ,<     / /    \__ \\__ \ 
+ / /  / / ___ | |/ / /___/ _, __/ // /___/ /| |   / /___ ___/ ___/ / 
+/_/  /_/_/  |_|___/_____/_/ |_/___/\____/_/ |_|   \____//____/____/  
+
+
+*/
+/****** SETTINGS ******/
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+/****** Magic Automatic Calculation of Text Sizes no action needed ******/
+/**********Colors***********/
+/* These are the default colors for the system. Please change them, but make sure to reference ./Colors/_Themes.scss to make the appropriate revisions  */
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/*
+2. Remove default margin
+ */
+* {
+  margin: 0;
+}
+
+/*
+Typographic tweaks!
+3. Add accessible line-height
+4. Improve text rendering
+ */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+5. Improve media defaults
+ */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+6. Remove built-in form typography styles
+ */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/*
+7. Avoid text overflows
+ */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+8. Create a root stacking context
+ */
+#root, #__next {
+  isolation: isolate;
+}
+
+:root {
+  --color-bg-100: hsl(210, 10%, 96%);
+  --color-bg-200: hsl(210, 10%, 84%);
+  --color-bg-300: hsl(208, 10%, 72%);
+  --color-bg-400: hsl(210, 10%, 60%);
+  --color-bg-500: hsl(211, 10%, 48%);
+  --color-bg-600: hsl(213, 10%, 36%);
+  --color-bg-700: hsl(210, 10%, 24%);
+  --color-bg-800: hsl(210, 10%, 12%);
+  --color-bg-900: hsl(225, 13%, 6%);
+  --color-alt-100: hsl(180, 14%, 96%);
+  --color-alt-200: hsl(180, 15%, 84%);
+  --color-alt-300: hsl(182, 21%, 73%);
+  --color-alt-400: hsl(180, 15%, 72%);
+  --color-alt-500: hsl(180, 15%, 60%);
+  --color-alt-600: hsl(180, 15%, 48%);
+  --color-alt-700: hsl(182, 16%, 37%);
+  --color-alt-800: hsl(182, 22%, 26%);
+  --color-alt-900: hsl(180, 15%, 12%);
+  --color-txt-100: hsl(225, 13%, 6%);
+  --color-txt-200: hsl(210, 10%, 12%);
+  --color-txt-300: hsl(210, 10%, 24%);
+  --color-txt-400: hsl(213, 10%, 36%);
+  --color-txt-500: hsl(211, 10%, 48%);
+  --color-txt-600: hsl(210, 10%, 60%);
+  --color-txt-700: hsl(208, 10%, 72%);
+  --color-txt-800: hsl(210, 10%, 84%);
+  --color-acc-100: hsl(280, 90%, 96%);
+  --color-acc-200: hsl(280, 90%, 84%);
+  --color-acc-300: hsl(280, 90%, 72%);
+  --color-acc-400: hsl(280, 90%, 60%);
+  --color-acc-500: hsl(280, 90%, 48%);
+  --color-acc-600: hsl(280, 90%, 36%);
+  --color-acc-700: hsl(280, 90%, 12%);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg-100: hsl(225, 13%, 6%);
+    --color-bg-200: hsl(210, 10%, 12%);
+    --color-bg-300: hsl(210, 10%, 24%);
+    --color-bg-400: hsl(213, 10%, 36%);
+    --color-bg-500: hsl(211, 10%, 48%);
+    --color-bg-600: hsl(210, 10%, 60%);
+    --color-bg-700: hsl(208, 10%, 72%);
+    --color-bg-800: hsl(210, 10%, 84%);
+    --color-bg-900: hsl(210, 10%, 96%);
+    --color-alt-100: hsl(180, 15%, 12%);
+    --color-alt-200: hsl(182, 22%, 26%);
+    --color-alt-300: hsl(182, 16%, 37%);
+    --color-alt-400: hsl(180, 15%, 48%);
+    --color-alt-500: hsl(180, 15%, 60%);
+    --color-alt-600: hsl(180, 15%, 72%);
+    --color-alt-700: hsl(182, 21%, 73%);
+    --color-alt-800: hsl(180, 15%, 84%);
+    --color-alt-900: hsl(180, 14%, 96%);
+    --color-txt-100: hsl(210, 10%, 96%);
+    --color-txt-200: hsl(210, 10%, 84%);
+    --color-txt-300: hsl(208, 10%, 72%);
+    --color-txt-400: hsl(210, 10%, 60%);
+    --color-txt-500: hsl(211, 10%, 48%);
+    --color-txt-600: hsl(213, 10%, 36%);
+    --color-txt-700: hsl(210, 10%, 24%);
+    --color-txt-800: hsl(210, 10%, 12%);
+    --color-acc-100: hsl(193, 90%, 96%);
+    --color-acc-200: hsl(193, 90%, 84%);
+    --color-acc-300: hsl(193, 90%, 72%);
+    --color-acc-400: hsl(193, 90%, 60%);
+    --color-acc-500: hsl(193, 90%, 48%);
+    --color-acc-600: hsl(193, 90%, 36%);
+    --color-acc-700: hsl(193, 90%, 24%);
+    --color-acc-800: hsl(193, 90%, 12%);
+    --color-acc-900: hsl(193, 90%, 4%);
+  }
+}
+
+body {
+  background-color: var(--color-bg-100);
+  color: var(--color-txt-100);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-txt-100);
+}
+
+p {
+  color: var(--color-txt-100);
+}
+
+a {
+  color: var(--color-acc-300);
+}
+
+a:hover {
+  color: var(--color-acc-200);
+}
+
+a:active {
+  color: var(--color-acc-400);
+}
+
+a:visited {
+  color: var(--color-acc-500);
+}
+
+body {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Barlow", "Arial", sans-serif;
+  font-weight: 600;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 121.5px;
+}
+@media screen and (max-width: 900px) {
+  h1 {
+    font-size: 48.828125px;
+  }
+}
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 39.81312px;
+  }
+}
+
+h2 {
+  font-size: 81px;
+}
+@media screen and (max-width: 900px) {
+  h2 {
+    font-size: 39.0625px;
+  }
+}
+@media screen and (max-width: 600px) {
+  h2 {
+    font-size: 33.1776px;
+  }
+}
+
+h3 {
+  font-size: 54px;
+}
+@media screen and (max-width: 900px) {
+  h3 {
+    font-size: 31.25px;
+  }
+}
+@media screen and (max-width: 600px) {
+  h3 {
+    font-size: 27.648px;
+  }
+}
+
+h4 {
+  font-size: 36px;
+}
+@media screen and (max-width: 900px) {
+  h4 {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 600px) {
+  h4 {
+    font-size: 23.04px;
+  }
+}
+
+h5 {
+  font-size: 24px;
+}
+@media screen and (max-width: 900px) {
+  h5 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  h5 {
+    font-size: 19.2px;
+  }
+}
+
+p {
+  font-size: 16px;
+}
+@media screen and (max-width: 900px) {
+  p {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 600px) {
+  p {
+    font-size: 16px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

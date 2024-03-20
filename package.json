@@ -3,15 +3,19 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "dev": "astro dev",
+    "dev": "astro dev && npx sass --watch ./src/styles/scss/index.scss ./src/styles/styles.css",
     "start": "astro dev",
     "build": "astro check && astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "sass": "npx sass --watch ./src/styles/scss/index.scss ./src/styles/styles.css"
   },
   "dependencies": {
-    "astro": "^4.5.6",
     "@astrojs/check": "^0.5.9",
+    "astro": "^4.5.6",
     "typescript": "^5.4.2"
+  },
+  "devDependencies": {
+    "sass": "^1.72.0"
   }
 }

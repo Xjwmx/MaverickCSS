@@ -1,16 +1,62 @@
 ---
-
+import "../styles/styles.css";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+<html>
+  <!-- REM: all sizes are based on the root's font size. 1rem = 16px by default. .5rem = 8px, 2rem = 32px, etc. This is ideal for accessibility, as the user can override the defaults if needed, and it will respect browser zooming. Use px values if a size is less than .25rem or 4px (borders, small spacing rules, etc.)
+  TYPOGRAPHY & COLORS: Typography and Color rules are generally simple and apply to all page content. As such, they can be applied to the :root element. This system uses typescale variables at the root level to set the sizes of the H1, H2, etc. If needed, these can be overridden at the <h1>, <h2>, etc. tag levels. --->
+  <body>
+    <!-- Body should receive only typography and color styles. margin: 0; and box-sizing: border-box; can be used here to get children to cooperate by resetting the browser defaults  -->
+    <div class="page-wrapper">
+      <!-- page wrapper should not be heavily styled, though is a good utility for adding styles to the entire page when needed -->
+      <nav></nav>
+      <main class="main-wrapper">
+        <!-- This will be the primary content area. NAV and FOOTER will be outside of this. Also this is good practice for accessibility -->
+        <section class="section_[section-identifier]">
+          <!--// Styles: Avoid applying styles to section_[section-identifier]. Instead, use a global add-on class like section-style-dark to control global styles across all sections. Each section_ class is custom, so we don't want to repeat CSS properties for each section. For example, if we need a "dark section", we can apply color: white and background-color: black classes to section-style-dark as a global add-on to our custom section_ class. This will also help describe the content i.e. class="section_main-hero" or class="section_our-team section-theme-dark" -->
+          <div class="padding-global">
+            <!-- padding-global controls left and right padding only
+          CSS class padding-left and padding-right will be the only style on this class. This class can be used on children elements as well -->
+            <div class="container-[size]">
+              <!-- container-[size] controls the width of the content. We will use margin: 0 auto; to auto center the div, then width: 100%; to take up all available space, finally set a max-width: [width]; to set the size of the container. examples: "container-sm", "container-md", "container-lrg", etc -->
+              <div class="padding-section-[size]">
+                <!-- padding-section-[size] controls the top and bottom padding only
+              CSS class padding-top and padding-bottom will be the only style on this class. -->
+                <h1>Maverick CSS</h1>
+                <p>A Simple,</p>
+                <h2>H2 Heading</h2>
+                <h3>H3 Heading</h3>
+                <h4>H4 Heading</h4>
+                <h5>H5 Heading</h5>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Numquam cumque id excepturi eveniet provident at sit quas
+                  soluta ea atque obcaecati maxime repudiandae exercitationem
+                  quam, blanditiis repellendus enim culpa eum!
+                </p>
+                <em>This is italic text</em>
+                <b>This is bold text</b>
+                <i>This is italic text</i>
+                <strong>This is bold text</strong>
+
+                <ul>
+                  <li>Item 1</li>
+                  <li>Item 2</li>
+                  <li>Item 3</li>
+                </ul>
+                <a href="#">This Is a Link</a>
+                <button>This is a button</button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section_[section-identifier]">
+          <p>Some content</p>
+        </section>
+      </main>
+      <footer></footer>
+    </div>
+  </body>
 </html>
+
+<body> </body>
