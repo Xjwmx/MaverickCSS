@@ -40,7 +40,20 @@ $breakpoint-mob: 600px;
 $breakpoint-tab: 900px;
 $breakpoint-def: 1200px;
 
+//Global Padding
 
+$global-padding: 1rem;
+
+//max-width variables. These will be used to set the max-width of our content at different screen sizes. Remember: these will change if you change the root font-size!
+
+$max-tiny: 10rem; //160px
+$max-xxs: 20rem; //320px
+$max-sm: 40rem; //640px
+$max-std: 50rem; //800px
+$max-lg: 60rem; //960px
+$max-xl: 70rem; //1120px
+$max-xxl: 80rem; //1280px
+$max-xxxl: 90rem; //1440px
 
 //Fundemental Frequencies found in nature, music, and design.
 
@@ -131,16 +144,7 @@ $space-xl: calc($space-lg * $spaceScale);
 $space-xxl: calc($space-xl * $spaceScale);
 
 
-//max-width variables. These will be used to set the max-width of our content at different screen sizes. Remember: these will change if you change the root font-size!
 
-$max-tiny: 10rem; //160px
-$max-xxs: 20rem; //320px
-$max-sm: 40rem; //640px
-$max-std: 50rem; //800px
-$max-lg: 60rem; //960px
-$max-xl: 70rem; //1120px
-$max-xxl: 80rem; //1280px
-$max-xxxl: 90rem; //1440px
 
 
 

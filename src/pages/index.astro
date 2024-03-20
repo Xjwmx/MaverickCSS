@@ -17,13 +17,16 @@ import "../styles/styles.css";
           <div class="padding-global">
             <!-- padding-global controls left and right padding only
           CSS class padding-left and padding-right will be the only style on this class. This class can be used on children elements as well -->
-            <div class="container-[size]">
+            <div class="container-[size] container-std">
               <!-- container-[size] controls the width of the content. We will use margin: 0 auto; to auto center the div, then width: 100%; to take up all available space, finally set a max-width: [width]; to set the size of the container. examples: "container-sm", "container-md", "container-lrg", etc -->
-              <div class="padding-section-[size]">
+              <div class="padding-section-[size] padding-xxl">
                 <!-- padding-section-[size] controls the top and bottom padding only
               CSS class padding-top and padding-bottom will be the only style on this class. -->
                 <h1>Maverick CSS</h1>
-                <p>A Simple,</p>
+                <p>
+                  Maverick is a simple, easy to understand SCSS framework inside
+                  Astro.
+                </p>
                 <h2>H2 Heading</h2>
                 <h3>H3 Heading</h3>
                 <h4>H4 Heading</h4>
@@ -49,9 +52,6 @@ import "../styles/styles.css";
               </div>
             </div>
           </div>
-        </section>
-        <section class="section_[section-identifier]">
-          <p>Some content</p>
         </section>
       </main>
       <footer></footer>

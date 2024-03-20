@@ -268,4 +268,84 @@ p {
   }
 }
 
+.padding-global {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.padding-xsml {
+  padding-top: 0.4444444444rem;
+  padding-bottom: 0.4444444444rem;
+}
+
+.padding-sm {
+  padding-top: 0.6666666667rem;
+  padding-bottom: 0.6666666667rem;
+}
+
+.padding-base {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.padding-lrg {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.padding-xl {
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
+}
+
+.padding-xxl {
+  padding-top: 3.375rem;
+  padding-bottom: 3.375rem;
+}
+
+.padding-xxxl {
+  padding-top: 5.0625rem;
+  padding-bottom: 5.0625rem;
+}
+
+.container-tiny {
+  max-width: 10rem;
+  margin: 0 auto;
+}
+
+.container-xxs {
+  max-width: 20rem;
+  margin: 0 auto;
+}
+
+.container-sm {
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+.container-std {
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+.container-lg {
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+.container-xl {
+  max-width: 70rem;
+  margin: 0 auto;
+}
+
+.container-xxl {
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.container-xxxl {
+  max-width: 90rem;
+  margin: 0 auto;
+}
+
 /*# sourceMappingURL=styles.css.map */

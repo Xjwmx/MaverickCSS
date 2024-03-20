@@ -1,0 +1,49 @@
+@use '../Globals/Settings' as s;
+
+
+
+// Global Padding (left and right)
+.padding-global {
+  padding-left: s.$global-padding;
+  padding-right: s.$global-padding;
+}
+
+
+
+// Padding for the main content area (vertical)
+
+.padding-xsml{
+	  padding-top: s.$global-padding / s.$typeScaleDesktop / s.$typeScaleDesktop;
+  padding-bottom: s.$global-padding / s.$typeScaleDesktop / s.$typeScaleDesktop;
+}
+.padding-sm{
+	  padding-top: s.$global-padding / s.$typeScaleDesktop;
+  padding-bottom: s.$global-padding / s.$typeScaleDesktop;
+
+}
+
+.padding-base {
+	  padding-top: s.$global-padding;
+  padding-bottom: s.$global-padding;
+}
+
+.padding-lrg {
+	  padding-top: s.$global-padding * s.$typeScaleDesktop;
+  padding-bottom: s.$global-padding * s.$typeScaleDesktop;
+}
+
+.padding-xl {
+	  padding-top: s.$global-padding * s.$typeScaleDesktop * s.$typeScaleDesktop;
+  padding-bottom: s.$global-padding * s.$typeScaleDesktop * s.$typeScaleDesktop;
+}
+
+.padding-xxl {
+	  padding-top: s.$global-padding * s.$typeScaleDesktop * s.$typeScaleDesktop * s.$typeScaleDesktop;
+  padding-bottom: s.$global-padding * s.$typeScaleDesktop * s.$typeScaleDesktop * s.$typeScaleDesktop;
+}
+
+.padding-xxxl {
+	  padding-top: s.$global-padding * s.$typeScaleDesktop * s.$typeScaleDesktop * s.$typeScaleDesktop * s.$typeScaleDesktop;
+  padding-bottom: s.$global-padding * s.$typeScaleDesktop * s.$typeScaleDesktop * s.$typeScaleDesktop * s.$typeScaleDesktop;
+}
+

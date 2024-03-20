@@ -1,0 +1,42 @@
+
+@use '../Globals/Settings' as s;
+
+.container-tiny{
+	  max-width: s.$max-tiny;
+  margin: 0 auto;
+}
+
+.container-xxs{
+	  max-width: s.$max-xxs;
+  margin: 0 auto;
+}
+
+.container-sm{
+	  max-width: s.$max-sm;
+  margin: 0 auto;
+}
+
+.container-std{
+	  max-width: s.$max-std;
+  margin: 0 auto;
+}
+
+.container-lg{
+	  max-width: s.$max-lg;
+  margin: 0 auto;
+}
+
+.container-xl{
+	  max-width: s.$max-xl;
+  margin: 0 auto;
+}
+
+.container-xxl{
+	  max-width: s.$max-xxl;
+  margin: 0 auto;
+}
+
+.container-xxxl{
+	  max-width: s.$max-xxxl;
+  margin: 0 auto;
+}
