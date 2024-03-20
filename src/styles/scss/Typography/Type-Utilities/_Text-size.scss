@@ -1,0 +1,81 @@
+@use '../../Globals/Settings' as s;
+
+@mixin tablet {
+	@media screen and (max-width: s.$breakpoint-tab) {
+	  @content;
+	}
+  }
+  
+  @mixin mobile {
+	@media screen and (max-width: s.$breakpoint-mob) {
+	  @content;
+	}
+  }
+
+
+  .text-size-tiny {
+	font-size: s.$p-desk-tiny;
+	@include tablet {
+	  font-size: s.$p-tab-tiny;
+	}
+
+	@include mobile {
+	  font-size: s.$p-mob-tiny;
+	}
+  }
+
+  .text-size-sm {
+	font-size: s.$p-desk-sm;
+	@include tablet {
+	  font-size: s.$p-tab-sm;
+	}
+
+	@include mobile {
+	  font-size: s.$p-mob-sm;
+	}
+  }
+
+
+  .text-size-reg {
+	font-size: s.$p-desk-reg;
+	@include tablet {
+	  font-size: s.$p-tab-reg;
+	}
+
+	@include mobile {
+	  font-size: s.$p-mob-reg;
+	}
+  }
+
+  .text-size-lrg {
+	font-size: s.$p-desk-lrg;
+	@include tablet {
+	  font-size: s.$p-tab-lrg;
+	}
+
+	@include mobile {
+	  font-size: s.$p-mob-lrg;
+	}
+  }
+
+  .text-size-xl {
+	font-size: s.$p-desk-xl;
+	@include tablet {
+	  font-size: s.$p-tab-xl;
+	}
+
+	@include mobile {
+	  font-size: s.$p-mob-xl;
+	}
+  }
+
+  .text-size-xxl {
+	font-size: s.$p-desk-xxl;
+	@include tablet {
+	  font-size: s.$p-tab-xxl;
+	}
+
+	@include mobile {
+	  font-size: s.$p-mob-xxl;
+	}
+  }

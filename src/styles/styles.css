@@ -180,7 +180,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Barlow", "Arial", sans-serif;
   font-weight: 600;
-  line-height: 1.2;
+  line-height: 1;
   text-transform: uppercase;
 }
 
@@ -189,12 +189,12 @@ h1 {
 }
 @media screen and (max-width: 900px) {
   h1 {
-    font-size: 48.828125px;
+    font-size: 90.4413486696px;
   }
 }
 @media screen and (max-width: 600px) {
   h1 {
-    font-size: 39.81312px;
+    font-size: 48.828125px;
   }
 }
 
@@ -203,12 +203,12 @@ h2 {
 }
 @media screen and (max-width: 900px) {
   h2 {
-    font-size: 39.0625px;
+    font-size: 63.9613498371px;
   }
 }
 @media screen and (max-width: 600px) {
   h2 {
-    font-size: 33.1776px;
+    font-size: 39.0625px;
   }
 }
 
@@ -217,12 +217,12 @@ h3 {
 }
 @media screen and (max-width: 900px) {
   h3 {
-    font-size: 31.25px;
+    font-size: 45.234335104px;
   }
 }
 @media screen and (max-width: 600px) {
   h3 {
-    font-size: 27.648px;
+    font-size: 31.25px;
   }
 }
 
@@ -231,12 +231,12 @@ h4 {
 }
 @media screen and (max-width: 900px) {
   h4 {
-    font-size: 25px;
+    font-size: 31.990336px;
   }
 }
 @media screen and (max-width: 600px) {
   h4 {
-    font-size: 23.04px;
+    font-size: 25px;
   }
 }
 
@@ -245,12 +245,12 @@ h5 {
 }
 @media screen and (max-width: 900px) {
   h5 {
-    font-size: 20px;
+    font-size: 22.624px;
   }
 }
 @media screen and (max-width: 600px) {
   h5 {
-    font-size: 19.2px;
+    font-size: 20px;
   }
 }
 
@@ -268,44 +268,161 @@ p {
   }
 }
 
+.text-size-tiny {
+  font-size: 7.1111111111px;
+}
+@media screen and (max-width: 900px) {
+  .text-size-tiny {
+    font-size: 8.0024167299px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .text-size-tiny {
+    font-size: 10.24px;
+  }
+}
+
+.text-size-sm {
+  font-size: 10.6666666667px;
+}
+@media screen and (max-width: 900px) {
+  .text-size-sm {
+    font-size: 11.315417256px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .text-size-sm {
+    font-size: 12.8px;
+  }
+}
+
+.text-size-reg {
+  font-size: 16px;
+}
+@media screen and (max-width: 900px) {
+  .text-size-reg {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .text-size-reg {
+    font-size: 16px;
+  }
+}
+
+.text-size-lrg {
+  font-size: 24px;
+}
+@media screen and (max-width: 900px) {
+  .text-size-lrg {
+    font-size: 22.624px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .text-size-lrg {
+    font-size: 20px;
+  }
+}
+
+.text-size-xl {
+  font-size: 36px;
+}
+@media screen and (max-width: 900px) {
+  .text-size-xl {
+    font-size: 31.990336px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .text-size-xl {
+    font-size: 25px;
+  }
+}
+
+.text-size-xxl {
+  font-size: 54px;
+}
+@media screen and (max-width: 900px) {
+  .text-size-xxl {
+    font-size: 45.234335104px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .text-size-xxl {
+    font-size: 31.25px;
+  }
+}
+
+.text-style-normal {
+  font-style: normal;
+}
+
+.text-style-italic {
+  font-style: italic;
+}
+
+.text-style-oblique {
+  font-style: oblique;
+}
+
+.text-style-link {
+  text-decoration: underline;
+}
+
+.text-style-caps {
+  text-transform: uppercase;
+}
+
+.text-style-lower {
+  text-transform: lowercase;
+}
+
+.text-style-nowrap {
+  white-space: nowrap;
+}
+
+.text-style-quote {
+  quotes: initial;
+}
+
+.text-style-strike {
+  text-decoration: line-through;
+}
+
+.text-style-underline {
+  text-decoration: underline;
+}
+
+.text-normal {
+  font-weight: 400;
+}
+
+.text-semibold {
+  font-weight: 600;
+}
+
+.text-bold {
+  font-weight: 800;
+}
+
+.text-xbold {
+  font-weight: 900;
+}
+
+.text-light {
+  font-weight: 300;
+}
+
+.text-thin {
+  font-weight: 200;
+}
+
+.text-light {
+  font-weight: 100;
+}
+
 .padding-global {
   padding-left: 1rem;
   padding-right: 1rem;
-}
-
-.padding-xsml {
-  padding-top: 0.4444444444rem;
-  padding-bottom: 0.4444444444rem;
-}
-
-.padding-sm {
-  padding-top: 0.6666666667rem;
-  padding-bottom: 0.6666666667rem;
-}
-
-.padding-base {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-.padding-lrg {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-}
-
-.padding-xl {
-  padding-top: 2.25rem;
-  padding-bottom: 2.25rem;
-}
-
-.padding-xxl {
-  padding-top: 3.375rem;
-  padding-bottom: 3.375rem;
-}
-
-.padding-xxxl {
-  padding-top: 5.0625rem;
-  padding-bottom: 5.0625rem;
 }
 
 .container-tiny {
@@ -313,7 +430,7 @@ p {
   margin: 0 auto;
 }
 
-.container-xxs {
+.container-xs {
   max-width: 20rem;
   margin: 0 auto;
 }
@@ -346,6 +463,41 @@ p {
 .container-xxxl {
   max-width: 90rem;
   margin: 0 auto;
+}
+
+.padding-section-xs {
+  padding-top: 0.4444444444rem;
+  padding-bottom: 0.4444444444rem;
+}
+
+.padding-section-sm {
+  padding-top: 0.6666666667rem;
+  padding-bottom: 0.6666666667rem;
+}
+
+.padding-section-base {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.padding-section-lrg {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.padding-section-xl {
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
+}
+
+.padding-section-xxl {
+  padding-top: 3.375rem;
+  padding-bottom: 3.375rem;
+}
+
+.padding-section-xxxl {
+  padding-top: 5.0625rem;
+  padding-bottom: 5.0625rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

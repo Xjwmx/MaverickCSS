@@ -1,5 +1,6 @@
 # Design System
-The goal of this project is to have a sytem where you can spin up a new astro project and start writing HTML and have a mostly styled site, right out of the box. 
+
+The goal of this project is to have a sytem where you can spin up a new astro project and start writing HTML and have a mostly styled site, right out of the box.
 
 This is a custom design system based on the Webflow Client-First approach by {Finsweet}. This approach allows for scalability and full customization without being tied to a system like Bootstrap, and will not have overly complicated output like Tailwind- Its just the basics. This system can be implemented with vanilla CSS, or with a preprossesor like SASS.
 
@@ -125,16 +126,22 @@ Global horizontal padding manages the left and right padding of a page's content
 
 Global max width values that serve as max-width containers for content.
 
-- ‍.container-large
-- .container-medium
-- .container-small
+- ‍.container-tiny
+- .container-xs
+- .container-sm
+- .container-std
+- .container-lg
+- .container-xl
+- .container-xxl
+- .container-xxxl
 
 ### Section Padding
 
-Section padding manages a global vertical spacing system for sections.
+Section padding manages a global vertical spacing system for sections. Inherits scale from $spaceScale.
 
-- .padding-section-small
-- .padding-section-medium
+- .padding-section-xs
+- .padding-section-sm
+- .padding-section-base //global padding value
 - .padding-section-large
 
 ## TYPOGRAPHY
@@ -174,26 +181,26 @@ You can always call the default style with classes, too. With custom properties 
 
 utility classes for text size:
 
-- .text-size-xlarge
-- .‍text-size-large
-- .‍text-size-medium
-- .‍text-size-regular
-- .‍text-size-small
+- .text-size-xl
+- .‍text-size-lg
+- .‍text-size-md
+- .‍text-size-base
+- .‍text-size-sm
 - .‍text-size-tiny
 
 ### Text-style
 
 Utility classes for text styles
 
+- .text-style-normal
 - .‍text-style-italic
 - .‍text-style-link
-- .‍text-style-allcaps
-- .‍text-style-muted
+- .‍text-style-caps
+- .text-style-lower
 - .‍text-style-nowrap
 - .‍text-style-quote
-- .‍text-style-strikethrough
-- .‍text-style-2lines
-- .‍text-style-3lines
+- .‍text-style-strike
+- .‍text-style-underline
 
 ### Text-weight
 
@@ -203,6 +210,7 @@ Utility classes for text weight
 - .text-weight-bold
 - .text-weight-semibold
 - .text-weight-normal
+- .text-weight-thin
 - .text-weight-light
 
 ## SPACING
@@ -334,9 +342,9 @@ Out of the box, the color system responds to user device preference:
 }
 ```
 
-### Pallet
+### Palette
 
-Pallets will lay out every possible color your design may use and set them as variables to reuse. Your pallet may only use 3 or 4 colors, or hundreds. I recomend using a token-weight naming convention to distinguish the colors:
+Palettes will lay out every possible color your design may use and set them as variables to reuse. Your pallet may only use 3 or 4 colors, or hundreds. I recomend using a token-weight naming convention to distinguish the colors:
 
 ```scss
 :root {

@@ -1,0 +1,12 @@
+@use '../Globals/Settings' as s;
+
+
+
+// Global Padding (left and right)
+.padding-global {
+  padding-left: s.$global-padding;
+  padding-right: s.$global-padding;
+}
+
+
+

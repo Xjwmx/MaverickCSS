@@ -1,0 +1,39 @@
+@use '../Globals/Settings' as s;
+
+// Padding for the main content area (vertical)
+
+.padding-section-xs{
+	padding-top:  calc(s.$global-padding / s.$typeScaleDesktop / s.$typeScaleDesktop);
+padding-bottom: calc(s.$global-padding / s.$typeScaleDesktop / s.$typeScaleDesktop);
+}
+.padding-section-sm{
+	padding-top: calc(s.$global-padding / s.$typeScaleDesktop);
+padding-bottom: calc(s.$global-padding / s.$typeScaleDesktop);
+
+}
+
+.padding-section-base {
+	padding-top: s.$global-padding;
+padding-bottom: s.$global-padding;
+}
+
+.padding-section-lrg {
+	padding-top: calc(s.$global-padding * s.$typeScaleDesktop);
+padding-bottom: calc(s.$global-padding * s.$typeScaleDesktop);
+}
+
+.padding-section-xl {
+	padding-top: calc(s.$global-padding * s.$typeScaleDesktop * s.$typeScaleDesktop);
+padding-bottom: calc(s.$global-padding * s.$typeScaleDesktop * s.$typeScaleDesktop);
+}
+
+.padding-section-xxl {
+	padding-top: calc(s.$global-padding * s.$typeScaleDesktop * s.$typeScaleDesktop * s.$typeScaleDesktop);
+padding-bottom: calc(s.$global-padding * s.$typeScaleDesktop * s.$typeScaleDesktop * s.$typeScaleDesktop);
+}
+
+.padding-section-xxxl {
+	padding-top: calc(s.$global-padding * s.$typeScaleDesktop * s.$typeScaleDesktop * s.$typeScaleDesktop * s.$typeScaleDesktop);
+padding-bottom: calc(s.$global-padding * s.$typeScaleDesktop * s.$typeScaleDesktop * s.$typeScaleDesktop * s.$typeScaleDesktop);
+}
+

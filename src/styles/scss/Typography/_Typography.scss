@@ -1,4 +1,4 @@
-@use '../Globals/settings' as s;
+@use '../Globals/Settings' as s;
 
 @mixin tablet {
 	@media screen and (max-width: s.$breakpoint-tab) {

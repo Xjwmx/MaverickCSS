@@ -1,4 +1,4 @@
-@use '../Globals/settings' as s;
+@use '../Globals/Settings' as s;
 
 // We are converting back to CSS Custom Properties so that we can use the automtic color switching feature @media (prefers-color-scheme: dark). If you are not using this feature or you are using a JS script for themeing, you can use the SCSS variables directly. 
 
