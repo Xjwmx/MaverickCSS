@@ -1,0 +1,25 @@
+ @use '../Globals/Settings' as s;
+
+ .margin-xxl{
+	margin: s.$space-xxl;
+ }
+
+ .margin-xl{
+	margin: s.$space-xl;
+ }
+
+ .margin-lrg{
+	margin: s.$space-lg;
+ }
+
+ .margin-md{
+	margin: s.$space-reg;
+ }
+
+ .margin-sm{
+	margin: s.$space-sm;
+ }
+
+ .margin-tiny{
+	margin: s.$space-tiny;
+ }

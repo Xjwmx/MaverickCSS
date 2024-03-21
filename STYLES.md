@@ -215,15 +215,6 @@ Utility classes for text weight
 
 ## SPACING
 
-### Margin direction
-
-- .‍margin-top
-- .margin-bottom
-- .margin-left
-- .margin-right
-- .margin-horizontal
-- .margin-vertical
-
 ### Margin size
 
 - .‍margin-0
@@ -241,6 +232,15 @@ Utility classes for text weight
 - .margin-custom1
 - .margin-custom2
 - .margin-custom3
+
+### Margin direction
+
+- .‍margin-top
+- .margin-bottom
+- .margin-left
+- .margin-right
+- .margin-horizontal
+- .margin-vertical
 
 ### Padding Direction
 

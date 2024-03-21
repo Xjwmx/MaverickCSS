@@ -1,0 +1,45 @@
+<nav>
+  <h2 class="text-size-lrg">Maverick CSS</h2>
+  <ul>
+    <li><a href="#">Docs</a></li>
+    <li><a href="#">Contact</a></li>
+    <li><a href="#">Git</a></li>
+  </ul>
+</nav>
+
+<style>
+  nav {
+    display: flex; /* 1 */
+    justify-content: space-between; /* 2 */
+    padding: 1rem 2rem;
+  }
+
+  nav ul {
+    display: flex; /* 5 */
+    list-style: none; /* 6 */
+  }
+
+  nav li {
+    padding-left: 1rem; /* 7! */
+  }
+
+  nav a {
+    text-decoration: none;
+  }
+
+  /* 
+  Extra small devices (phones, 600px and down) 
+*/
+  @media only screen and (max-width: 600px) {
+    nav {
+      flex-direction: column;
+    }
+    nav ul {
+      flex-direction: column;
+      padding-top: 0.5rem;
+    }
+    nav li {
+      padding: 0.5rem 0;
+    }
+  }
+</style>

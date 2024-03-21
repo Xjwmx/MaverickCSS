@@ -1,0 +1,36 @@
+@use '../Globals/Settings' as s;
+
+.inline-space-xxl {
+
+  padding-bottom: s.$space-xxl;
+  
+}
+
+.inline-space-xl {
+  
+  padding-bottom: s.$space-xl;
+ 
+}
+
+.inline-space-lg {
+  padding-bottom: s.$space-lg;
+}
+
+.inline-space-reg {
+  
+  padding-bottom: s.$space-reg;
+  
+}
+
+.inline-space-sm {
+  
+  padding-bottom: s.$space-sm;
+ 
+}
+
+.inline-space-tiny {
+  
+  padding-bottom: s.$space-tiny;
+  
+}
+

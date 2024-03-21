@@ -42,7 +42,7 @@ $breakpoint-def: 1200px;
 
 //Global Padding
 
-$global-padding: 1rem;
+$global-padding: 2.25rem;
 
 //max-width variables. These will be used to set the max-width of our content at different screen sizes. Remember: these will change if you change the root font-size!
 
@@ -73,14 +73,13 @@ $octave: 2;
 
 //set the primary typescale for font sizing at each screen size:
 
-
 $typeScaleDesktop: $perfectFifth;
 $typeScaleTablet: $tritone;
 $typeScaleMobile: $majorThird;
 
 //set the primary scale for spacing [default is $typeScaleDesktop]
 
-$spaceScale: $typeScaleDesktop;
+$spaceScale: $goldenRatio;
 
 
 
@@ -131,6 +130,7 @@ $h4-mob: calc($h5-mob * $typeScaleMobile);
 $h3-mob: calc($h4-mob * $typeScaleMobile);
 $h2-mob: calc($h3-mob * $typeScaleMobile);
 $h1-mob: calc($h2-mob * $typeScaleMobile);
+
 
 
 //Vertical spacing variables

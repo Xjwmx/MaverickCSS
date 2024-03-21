@@ -16,7 +16,7 @@
   margin: 0 auto;
 }
 
-.container-std{
+.container-md{
 	  max-width: s.$max-std;
   margin: 0 auto;
 }
@@ -38,5 +38,10 @@
 
 .container-xxxl{
 	  max-width: s.$max-xxxl;
+  margin: 0 auto;
+}
+
+.container-100{
+	  max-width: 100%;
   margin: 0 auto;
 }

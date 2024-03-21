@@ -1,39 +1,35 @@
+@use 'sass:math';
 @use '../Globals/Settings' as s;
 
-// Padding for the main content area (vertical)
-
-.padding-section-xs{
-	padding-top:  calc(s.$global-padding / s.$typeScaleDesktop / s.$typeScaleDesktop);
-padding-bottom: calc(s.$global-padding / s.$typeScaleDesktop / s.$typeScaleDesktop);
+@mixin padding-section($scale-factor) {
+  padding-top: calc(s.$global-padding * #{$scale-factor});
+  padding-bottom: calc(s.$global-padding * #{$scale-factor});
 }
-.padding-section-sm{
-	padding-top: calc(s.$global-padding / s.$typeScaleDesktop);
-padding-bottom: calc(s.$global-padding / s.$typeScaleDesktop);
 
+.padding-section-xs {
+  @include padding-section(math.div(1, math.pow(s.$spaceScale, 2)));
+}
+
+.padding-section-sm {
+  @include padding-section(math.div(1, s.$spaceScale));
 }
 
 .padding-section-base {
-	padding-top: s.$global-padding;
-padding-bottom: s.$global-padding;
+  @include padding-section(1);
 }
 
 .padding-section-lrg {
-	padding-top: calc(s.$global-padding * s.$typeScaleDesktop);
-padding-bottom: calc(s.$global-padding * s.$typeScaleDesktop);
+  @include padding-section(s.$spaceScale);
 }
 
 .padding-section-xl {
-	padding-top: calc(s.$global-padding * s.$typeScaleDesktop * s.$typeScaleDesktop);
-padding-bottom: calc(s.$global-padding * s.$typeScaleDesktop * s.$typeScaleDesktop);
+  @include padding-section(math.pow(s.$spaceScale, 2));
 }
 
 .padding-section-xxl {
-	padding-top: calc(s.$global-padding * s.$typeScaleDesktop * s.$typeScaleDesktop * s.$typeScaleDesktop);
-padding-bottom: calc(s.$global-padding * s.$typeScaleDesktop * s.$typeScaleDesktop * s.$typeScaleDesktop);
+  @include padding-section(math.pow(s.$spaceScale, 3));
 }
 
 .padding-section-xxxl {
-	padding-top: calc(s.$global-padding * s.$typeScaleDesktop * s.$typeScaleDesktop * s.$typeScaleDesktop * s.$typeScaleDesktop);
-padding-bottom: calc(s.$global-padding * s.$typeScaleDesktop * s.$typeScaleDesktop * s.$typeScaleDesktop * s.$typeScaleDesktop);
+  @include padding-section(math.pow(s.$spaceScale, 4));
 }
-
