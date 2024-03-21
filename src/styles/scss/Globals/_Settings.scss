@@ -22,7 +22,7 @@
 //Bring our fonts into the system and set the standard weights:
 
 $font-heading: 'Barlow', 'Arial' , sans-serif;
-$font-heading-weight: 600;
+$font-heading-weight: 700;
 $font-heading-transform: uppercase;
 $font-body: 'Montserrat', 'Arial', sans-serif;
 $font-body-weight: 400;
@@ -32,6 +32,8 @@ $root-font-size: 16px;
 
 $line-height-body: 1.5;
 $line-height-heading: 1;
+$heading-margin-top: 1.5rem;
+$heading-margin-btm: .5rem;
 
 
 //Setup our breakpoints. These will be used to set the max-width of our content and to set the type scale at different screen sizes.
@@ -42,7 +44,7 @@ $breakpoint-def: 1200px;
 
 //Global Padding
 
-$global-padding: 2.25rem;
+$global-padding: 5rem;
 
 //max-width variables. These will be used to set the max-width of our content at different screen sizes. Remember: these will change if you change the root font-size!
 
@@ -135,10 +137,10 @@ $h1-mob: calc($h2-mob * $typeScaleMobile);
 
 //Vertical spacing variables
 
-$space-reg: $root-font-size;
-$space-sm: calc($space-reg / $spaceScale);
+$space-md: $root-font-size;
+$space-sm: calc($space-md / $spaceScale);
 $space-tiny: calc($space-sm / $spaceScale);
-$space-lg: calc($space-reg * $spaceScale);
+$space-lg: calc($space-md * $spaceScale);
 $space-xl: calc($space-lg * $spaceScale);
 $space-xxl: calc($space-xl * $spaceScale);
 

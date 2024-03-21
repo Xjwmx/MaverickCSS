@@ -13,7 +13,7 @@
  }
 
  .margin-md{
-	margin: s.$space-reg;
+	margin: s.$space-md;
  }
 
  .margin-sm{
@@ -22,4 +22,8 @@
 
  .margin-tiny{
 	margin: s.$space-tiny;
+ }
+
+ .margin-none{
+	margin: 0;
  }

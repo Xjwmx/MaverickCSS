@@ -14,7 +14,7 @@
   @include padding-section(math.div(1, s.$spaceScale));
 }
 
-.padding-section-base {
+.padding-section-md {
   @include padding-section(1);
 }
 

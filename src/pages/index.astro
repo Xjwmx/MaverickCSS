@@ -1,61 +1,87 @@
 ---
-import "../styles/styles.css";
+import Mainlayout from "../layouts/Main-layout.astro";
 ---
 
-<html>
-  <!-- REM: all sizes are based on the root's font size. 1rem = 16px by default. .5rem = 8px, 2rem = 32px, etc. This is ideal for accessibility, as the user can override the defaults if needed, and it will respect browser zooming. Use px values if a size is less than .25rem or 4px (borders, small spacing rules, etc.)
-  TYPOGRAPHY & COLORS: Typography and Color rules are generally simple and apply to all page content. As such, they can be applied to the :root element. This system uses typescale variables at the root level to set the sizes of the H1, H2, etc. If needed, these can be overridden at the <h1>, <h2>, etc. tag levels. --->
-  <body>
-    <!-- Body should receive only typography and color styles. margin: 0; and box-sizing: border-box; can be used here to get children to cooperate by resetting the browser defaults  -->
-    <div class="page-wrapper">
-      <!-- page wrapper should not be heavily styled, though is a good utility for adding styles to the entire page when needed -->
-      <nav></nav>
-      <main class="main-wrapper">
-        <!-- This will be the primary content area. NAV and FOOTER will be outside of this. Also this is good practice for accessibility -->
-        <section class="section_[section-identifier]">
-          <!--// Styles: Avoid applying styles to section_[section-identifier]. Instead, use a global add-on class like section-style-dark to control global styles across all sections. Each section_ class is custom, so we don't want to repeat CSS properties for each section. For example, if we need a "dark section", we can apply color: white and background-color: black classes to section-style-dark as a global add-on to our custom section_ class. This will also help describe the content i.e. class="section_main-hero" or class="section_our-team section-theme-dark" -->
-          <div class="padding-global">
-            <!-- padding-global controls left and right padding only
-          CSS class padding-left and padding-right will be the only style on this class. This class can be used on children elements as well -->
-            <div class="container-[size] container-std">
-              <!-- container-[size] controls the width of the content. We will use margin: 0 auto; to auto center the div, then width: 100%; to take up all available space, finally set a max-width: [width]; to set the size of the container. examples: "container-sm", "container-md", "container-lrg", etc -->
-              <div class="padding-section-[size] padding-section-xxl">
-                <!-- padding-section-[size] controls the top and bottom padding only
-              CSS class padding-top and padding-bottom will be the only style on this class. -->
-                <h1>Maverick CSS</h1>
-                <div class="spacer-med"></div>
-                <p>
-                  Maverick is a simple, easy to understand SCSS framework inside
-                  Astro.
-                </p>
-                <!-- <h2>H2 Heading</h2>
-                <h3>H3 Heading</h3>
-                <h4>H4 Heading</h4>
-                <h5>H5 Heading</h5>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Numquam cumque id excepturi eveniet provident at sit quas
-                  soluta ea atque obcaecati maxime repudiandae exercitationem
-                  quam, blanditiis repellendus enim culpa eum!
-                </p>
-                <em>This is italic text</em>
-                <b>This is bold text</b>
-                <i>This is italic text</i>
-                <strong>This is bold text</strong>
-
-                <ul>
-                  <li>Item 1</li>
-                  <li>Item 2</li>
-                  <li>Item 3</li>
-                </ul>
-                <a href="#">This Is a Link</a>
-                <button>This is a button</button> -->
-              </div>
+<Mainlayout title="Home">
+  <div class="section-hero">
+    <div class="padding-global">
+      <div class="container-lrg">
+        <div class="padding-section-lrg">
+          <h1 class="h1 center glow-text">Maverick Css</h1>
+          <div class="inline-space-lrg"></div>
+          <p class="center container-md">
+            This is a demo site for Maverick Css. Maverick Css is a modern css
+            framework that is easy to use and customize. Unlike other css
+            frameworks, Maverick Css is lightweight and intuitive, allowing for
+            quick build times for simple projects. Maverick CSS was designed
+            with beginners in mind, but is also powerful enough for advanced
+            users. Maverick CSS is a great choice for anyone looking to build a
+            website quickly and easily.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section-information">
+    <div class="padding-global">
+      <div class="container-xxl">
+        <div class="padding-section-lrg">
+          <h2 class="h2 center">Features</h2>
+          <div class="inline-space-sm"></div>
+          <div class="grid-3">
+            <div class="card margin-lrg">
+              <h4 class="h4 center">Easy to use</h4>
+              <p class="center container-xs">
+                Maverick CSS is designed to be easy to use and intuitive. It is
+                perfect for beginners and advanced users alike.
+              </p>
+            </div>
+            <div class="card margin-lrg">
+              <h4 class="h4 center">Lightweight</h4>
+              <p class="center container-xs">
+                Maverick CSS is lightweight and fast. It is perfect for simple
+                projects and quick build times.
+              </p>
+            </div>
+            <div class="card margin-lrg">
+              <h4 class="h4 center">Custom</h4>
+              <p class="glow-text center container-xs">
+                Maverick CSS is easy to customize. You can easily change the
+                look and feel of your website to match your brand.
+              </p>
             </div>
           </div>
-        </section>
-      </main>
-      <footer></footer>
+        </div>
+      </div>
     </div>
-  </body>
-</html>
+
+    <div class="section-information">
+      <div class="padding-global">
+        <div class="container-md">
+          <div class="padding-section-lrg">
+            <h2 class="h2">Technology</h2>
+            <div class="inline-space-sm"></div>
+            <div class="grid-3">
+              <div class="card"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</Mainlayout>
+
+<style>
+  .grid-3 {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+
+  .card {
+    /* this is the same as grid-template-columns: 1fr 1fr 1fr 1fr; */
+    grid-template-columns: repeat(, 1fr);
+    /* this is the same as grid-template-rows: 300px 300px; */
+    grid-template-rows: repeat(2, 300px);
+  }
+</style>
