@@ -31,6 +31,7 @@ h1, h2, h3, h4, h5, h6{
 	padding-top: s.$heading-margin-top;
 	padding-bottom: s.$heading-margin-btm;
 }
+
 h1 {
 	font-size: s.$h1-desk;
 	@include tablet {

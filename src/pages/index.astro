@@ -6,7 +6,7 @@ import Mainlayout from "../layouts/Main-layout.astro";
   <div class="section-hero">
     <div class="padding-global">
       <div class="container-lrg">
-        <div class="padding-section-lrg">
+        <div class="padding-section-xxl">
           <h1 class="h1 center glow-text">Maverick Css</h1>
           <div class="inline-space-lrg"></div>
           <p class="center container-md">
@@ -18,6 +18,10 @@ import Mainlayout from "../layouts/Main-layout.astro";
             users. Maverick CSS is a great choice for anyone looking to build a
             website quickly and easily.
           </p>
+          <div class="inline-space-lrg"></div>
+          <a id="button" href="#" class="margin-auto center no-txt-decor"
+            >Get Started &#x2192</a
+          >
         </div>
       </div>
     </div>
@@ -26,43 +30,30 @@ import Mainlayout from "../layouts/Main-layout.astro";
     <div class="padding-global">
       <div class="container-xxl">
         <div class="padding-section-lrg">
-          <h2 class="h2 center">Features</h2>
-          <div class="inline-space-sm"></div>
-          <div class="grid-3">
-            <div class="card margin-lrg">
-              <h4 class="h4 center">Easy to use</h4>
-              <p class="center container-xs">
-                Maverick CSS is designed to be easy to use and intuitive. It is
-                perfect for beginners and advanced users alike.
+          <h2 class="h2 center">Why Maverick?</h2>
+          <div class="inline-space-lrg"></div>
+          <div class="grid-flex">
+            <div class="container-sm">
+              <h4 class="h4">It's Easy To Use</h4>
+              <p class="justify padding-right padding-md">
+                Maverick CSS is minimal and easy to use. It generates easy to
+                understand markup and is perfect for beginners. Just adjust some
+                variables and get building!
               </p>
             </div>
-            <div class="card margin-lrg">
-              <h4 class="h4 center">Lightweight</h4>
-              <p class="center container-xs">
+            <div class="container-sm">
+              <h4 class="h4">Lightweight</h4>
+              <p class="justify padding-right padding-md">
                 Maverick CSS is lightweight and fast. It is perfect for simple
                 projects and quick build times.
               </p>
             </div>
-            <div class="card margin-lrg">
-              <h4 class="h4 center">Custom</h4>
-              <p class="glow-text center container-xs">
-                Maverick CSS is easy to customize. You can easily change the
-                look and feel of your website to match your brand.
+            <div class="container-sm">
+              <h4 class="h4">Customizable</h4>
+              <p class="justify padding-right padding-md">
+                Maverick CSS is designed to be customized stright out of the
+                box. Build your own themes or custom classes
               </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="section-information">
-      <div class="padding-global">
-        <div class="container-md">
-          <div class="padding-section-lrg">
-            <h2 class="h2">Technology</h2>
-            <div class="inline-space-sm"></div>
-            <div class="grid-3">
-              <div class="card"></div>
             </div>
           </div>
         </div>
@@ -72,16 +63,12 @@ import Mainlayout from "../layouts/Main-layout.astro";
 </Mainlayout>
 
 <style>
-  .grid-3 {
-    display: grid;
-    align-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  }
-
-  .card {
-    /* this is the same as grid-template-columns: 1fr 1fr 1fr 1fr; */
-    grid-template-columns: repeat(, 1fr);
-    /* this is the same as grid-template-rows: 300px 300px; */
-    grid-template-rows: repeat(2, 300px);
+  #button {
+    padding: 10px 20px;
+    color: var(--color-txt-100);
+    border-radius: 5px;
+    border: 2px solid var(--primary);
+    display: block;
+    margin: auto;
   }
 </style>

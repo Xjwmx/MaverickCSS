@@ -1,9 +1,10 @@
 
-@use './Globals/index' as global;
-@use './Colors/index' as colors;
-@use './Typography/index' as type;
-@use './Layout/index' as layout;
-@use './Spacing/index' as space;
+@use './Globals/index' as glob;
+@use './Colors/index' as col;
+@use './Typography/index' as typ;
+@use './Layout/index' as lay;
+@use './Spacing/index' as spc;
 @use './Utilities/index' as util;
+@use './Components/index' as comp;
 
 

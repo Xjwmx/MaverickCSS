@@ -75,19 +75,19 @@ $octave: 2;
 
 //set the primary typescale for font sizing at each screen size:
 
-$typeScaleDesktop: $perfectFifth;
-$typeScaleTablet: $tritone;
+$typeScaleDesktop: $perfectFourth;
+$typeScaleTablet: $majorThird;
 $typeScaleMobile: $majorThird;
 
 //set the primary scale for spacing [default is $typeScaleDesktop]
 
-$spaceScale: $goldenRatio;
+$spaceScale: $majorThird;
 
 
 
 /****** Magic Automatic Calculation of Text Sizes no action needed ******/
 
-//size variables @ Large Desktop
+//Text-size variables @ Large Desktop
 
 $p-desk-reg: $root-font-size; //.875rem for 14px at 16px base
 $p-desk-sm: calc($p-desk-reg / $typeScaleDesktop);
@@ -102,7 +102,7 @@ $h3-desk: calc($h4-desk * $typeScaleDesktop);
 $h2-desk: calc($h3-desk * $typeScaleDesktop);
 $h1-desk: calc($h2-desk * $typeScaleDesktop);
 
-//size variables for Tablet (768px)
+//Text-size variables for Tablet (768px)
 
 $p-tab-reg: $root-font-size; //.875rem for 14px at 16px base
 $p-tab-sm: calc($p-tab-reg / $typeScaleTablet);
@@ -118,7 +118,7 @@ $h2-tab: calc($h3-tab * $typeScaleTablet);
 $h1-tab: calc($h2-tab * $typeScaleTablet);
 
 
-//Text size variables for Mobile (375px)
+//Text-size variables for Mobile (375px)
 
 $p-mob-reg: $root-font-size; //.875rem for 14px at 16px base
 $p-mob-sm: calc($p-mob-reg / $typeScaleMobile);
@@ -135,7 +135,7 @@ $h1-mob: calc($h2-mob * $typeScaleMobile);
 
 
 
-//Vertical spacing variables
+//Spacing variables
 
 $space-md: $root-font-size;
 $space-sm: calc($space-md / $spaceScale);
@@ -212,3 +212,11 @@ $black: hsl(225, 13%, 6%);
 
 
 //
+
+
+/*********Graphical Elements**********/
+
+//Border Radius
+
+$border: 1px solid var(--color-txt-100);
+$border-radius: 5px;
