@@ -1,11 +1,9 @@
 /*
-
     __  ______ _    ____________  ____________ __    ________________
    /  |/  /   | |  / / ____/ __ \/  _/ ____/ //_/   / ____/ ___/ ___/
   / /|_/ / /| | | / / __/ / /_/ // // /   / ,<     / /    \__ \\__ \ 
  / /  / / ___ | |/ / /___/ _, __/ // /___/ /| |   / /___ ___/ ___/ / 
-/_/  /_/_/  |_|___/_____/_/ |_/___/\____/_/ |_|   \____//____/____/  
-
+/_/  /_/_/  |_|___/_____/_/ |_/___/\____/_/ |_|   \____//____/____/ 
 
 */
 /****** SETTINGS ******/
@@ -99,13 +97,15 @@ ul {
   --color-txt-600: hsl(210, 10%, 60%);
   --color-txt-700: hsl(208, 10%, 72%);
   --color-txt-800: hsl(210, 10%, 84%);
-  --color-acc-100: hsl(280, 90%, 96%);
-  --color-acc-200: hsl(280, 90%, 84%);
-  --color-acc-300: hsl(280, 90%, 72%);
-  --color-acc-400: hsl(280, 90%, 60%);
+  --color-acc-100: hsl(280, 90%, 4%);
+  --color-acc-200: hsl(280, 90%, 12%);
+  --color-acc-300: hsl(280, 90%, 24%);
+  --color-acc-400: hsl(280, 90%, 36%);
   --color-acc-500: hsl(280, 90%, 48%);
-  --color-acc-600: hsl(280, 90%, 36%);
-  --color-acc-700: hsl(280, 90%, 12%);
+  --color-acc-600: hsl(280, 90%, 60%);
+  --color-acc-700: hsl(280, 90%, 72%);
+  --color-acc-800: hsl(280, 90%, 84%);
+  --color-acc-900: hsl(279, 45%, 87%);
 }
 @media (prefers-color-scheme: dark) {
   :root {
@@ -174,10 +174,6 @@ a:active {
 
 a:visited {
   color: var(--color-acc-500);
-}
-
-.glow-text {
-  text-shadow: 0 0 10px var(--color-acc-200), 0 0 40px var(--color-acc-600);
 }
 
 body {
@@ -806,6 +802,7 @@ p {
   padding-right: 0;
 }
 
+<<<<<<< Updated upstream
 .card-01 {
   border: 1px solid var(--color-txt-100);
   box-shadow: 0 0 20px var(--color-acc-500);
@@ -829,6 +826,11 @@ p {
 .button:hover, .button:focus {
   background-color: var(--color-acc-700);
   cursor: pointer;
+=======
+.glow {
+  color: var(--color-acc-200);
+  text-shadow: 0 0 0.125em var(--color-acc-700), 0 0 0.5em var(--color-acc-300);
+>>>>>>> Stashed changes
 }
 
 /*# sourceMappingURL=styles.css.map */

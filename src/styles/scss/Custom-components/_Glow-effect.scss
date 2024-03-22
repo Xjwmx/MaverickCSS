@@ -1,0 +1,7 @@
+
+@use '../Globals/Settings' as s;
+
+.glow {
+	color: var(--color-acc-200);
+	text-shadow: 0 0 0.125em var(--color-acc-700), 0 0 .5em var(--color-acc-300);
+}

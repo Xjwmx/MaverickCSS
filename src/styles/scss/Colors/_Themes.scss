@@ -33,13 +33,15 @@
 	--color-txt-700: #{s.$outerspace-300};
 	--color-txt-800: #{s.$outerspace-200};
 
-	--color-acc-100: #{s.$cosmic-100};
-	--color-acc-200: #{s.$cosmic-200};
-    --color-acc-300: #{s.$cosmic-300};
-    --color-acc-400: #{s.$cosmic-400};
+	--color-acc-100: #{s.$cosmic-900};
+	--color-acc-200: #{s.$cosmic-800};
+    --color-acc-300: #{s.$cosmic-700};
+    --color-acc-400: #{s.$cosmic-600};
     --color-acc-500: #{s.$cosmic-500};
-    --color-acc-600: #{s.$cosmic-600};
-    --color-acc-700: #{s.$cosmic-800};
+    --color-acc-600: #{s.$cosmic-400};
+    --color-acc-700: #{s.$cosmic-300};
+	--color-acc-800: #{s.$cosmic-200};
+	--color-acc-900: #{s.$cosmic-100};
 
 		@media (prefers-color-scheme: dark) {
 
