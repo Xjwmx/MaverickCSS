@@ -802,7 +802,6 @@ p {
   padding-right: 0;
 }
 
-<<<<<<< Updated upstream
 .card-01 {
   border: 1px solid var(--color-txt-100);
   box-shadow: 0 0 20px var(--color-acc-500);
@@ -826,11 +825,11 @@ p {
 .button:hover, .button:focus {
   background-color: var(--color-acc-700);
   cursor: pointer;
-=======
+}
+
 .glow {
   color: var(--color-acc-200);
   text-shadow: 0 0 0.125em var(--color-acc-700), 0 0 0.5em var(--color-acc-300);
->>>>>>> Stashed changes
 }
 
 /*# sourceMappingURL=styles.css.map */
