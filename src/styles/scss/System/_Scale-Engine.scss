@@ -1,0 +1,175 @@
+
+
+@use './Maverick' as *;
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+// Scaling + Spacing:
+
+Html{
+	font-size: $rootSize;
+}
+
+body {
+	font-family: $fontBodyDefault;
+	font-size: $baseSize;
+	line-height: $lineHeightBody;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: $fontHeading;
+	line-height: $lineHeightHeadings;
+}
+
+
+// Type scale
+
+$text-body: $baseSize;
+$text-tiny: calc($text-body / $typeScale);
+$text-large: calc( $text-body * $typeScale);
+$text-h6: calc($text-body * $typeScale);
+$text-h5: calc($text-h6 * $typeScale);
+$text-h4: calc($text-h5 * $typeScale);
+$text-h3: calc($text-h4 * $typeScale);
+$text-h2: calc($text-h3 * $typeScale);
+$text-h1: calc($text-h2 * $typeScale);
+$text-massive: calc($text-h1 * $typeScale);
+
+.text-body{
+	font-size: $text-body;
+}
+
+.text-tiny{
+	font-size: $text-tiny;
+}
+
+.text-large{
+	font-size: $text-large;
+}
+
+.text-h6{
+	font-size: $text-h6;
+}
+
+.text-h5{
+	font-size: $text-h5;
+}
+
+.text-h4{
+	font-size: $text-h4;
+}
+
+.text-h3{
+	font-size: $text-h3;
+}
+
+.text-h2{
+	font-size: $text-h2;
+}
+
+.text-h1{
+	font-size: $text-h1;
+}
+
+.text-massive{
+	font-size: $text-massive;
+}
+
+h6{
+	font-size: $text-h6;
+}
+
+h5{
+	font-size: $text-h5;
+}
+
+h4{
+	font-size: $text-h4;
+}
+
+h3{
+	font-size: $text-h3;
+}
+
+h2{
+	font-size: $text-h2;
+}
+
+h1{
+	font-size: $text-h1;
+}
+
+
+
+// Spacing
+
+$space:(
+	$baseSize * $spaceScale,
+	$baseSize * pow($spaceScale, 2),
+	$baseSize * pow($spaceScale, 3),
+	$baseSize * pow($spaceScale, 4),
+	$baseSize * pow($spaceScale, 5),
+	$baseSize * pow($spaceScale, 6),
+	$baseSize * pow($spaceScale, 7),
+	$baseSize * pow($spaceScale, 8),
+	$baseSize * pow($spaceScale, 9),
+);
+
+
+//Margin
+
+@for $i from 1 through 9 {
+	.margin-#{$i}00 {
+	  margin-top: nth($space, $i);
+	}
+  
+	.margin-#{$i}00-top {
+	  margin-top: nth($space, $i);
+	}
+
+	.margin-#{$i}00-bottom {
+	  margin-bottom: nth($space, $i);
+	}
+
+	.margin-#{$i}00-left {
+	  margin-left: nth($space, $i);
+  }
+
+  	.margin-#{$i}00-right {
+		margin-right: nth($space, $i);
+		}
+}
+
+
+//Padding
+
+@for $i from 1 through 9 {
+	.padding-#{$i}00 {
+	  padding-top: nth($space, $i);
+	}
+  
+	.padding-#{$i}00-top {
+	  padding-top: nth($space, $i);
+	}
+
+	.padding-#{$i}00-bottom {
+	  padding-bottom: nth($space, $i);
+	}
+
+	.padding-#{$i}00-left {
+	  padding-left: nth($space, $i);
+  }
+
+  	.padding-#{$i}00-right {
+		padding-right: nth($space, $i);
+		}
+}
+
+
+//Width
+

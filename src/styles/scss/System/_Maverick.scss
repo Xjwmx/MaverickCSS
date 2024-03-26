@@ -1,0 +1,48 @@
+/* MAVERICK CSS */
+
+// This file will serve the main variables for the Maverick CSS system.
+
+$breakpointMobile: 320px;	// Mobile
+$breakpointTablet: 768px;	// Tablet
+$breakpointDesktop: 1024px;	// Desktop
+$breakpointLarge: 1200px;	// Large
+
+// Typography:
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+$fontHeading: 'Barlow', sans-serif;
+$fontBodyDefault: 'Montserrat', sans-serif;	// Body font
+
+
+$rootSize: 16px;	// Root size
+$baseSize: 1rem;	// Base size
+
+$lineHeightBody: 1.5; // Min: 1.5 for accessibility!
+$lineHeightHeadings:1.0; // Line height
+
+
+
+// Type scale:	
+// minorSecond: 1.067;
+// majorSecond: 1.125;  
+// minorThird: 1.2;
+// majorThird: 1.25;
+// perfectFourth: 1.333;
+// tritone: 1.414;
+// perfectFifth: 1.5;
+// minorSixth: 1.6;
+// goldenRatio: 1.618;
+// majorSixth: 1.667;
+// minorSeventh: 1.75;
+// majorSeventh: 1.875;
+// octave: 2;
+
+$typeScale: 1.25;	// Type scale
+$spaceScale: 1.25;	// Space between elements
+
+
+// Colors:
+
+
+
+
