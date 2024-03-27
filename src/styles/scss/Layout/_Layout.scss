@@ -1,0 +1,36 @@
+@use '../System/Maverick' as *;
+
+
+
+.cluster{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2rem;
+}
+
+.grid-auto {
+	display: grid;
+	gap: 2rem;
+	grid-template-columns: 
+		repeat(auto-fit, minmax( 20rem, 1fr));
+}
+
+.grid-flex{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2rem;
+}
+
+.grid-flex > *{
+	flex: 1 1 20rem;
+}
+
+
+.grid-responsive  {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+	gap: 2rem;
+	@media (max-width: $breakpointMobile) {
+	  grid-template-columns: 1fr;
+	}
+  }

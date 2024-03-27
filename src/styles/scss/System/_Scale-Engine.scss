@@ -120,6 +120,11 @@ $space:(
 	$baseSize * pow($spaceScale, 9),
 );
 
+@for $i from 1 through 9 {
+	:root {
+		--size-#{$i}00: nth($space, $i);
+	}
+}
 
 //Margin
 
@@ -171,5 +176,5 @@ $space:(
 }
 
 
-//Width
+
 

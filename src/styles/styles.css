@@ -120,6 +120,42 @@ h1 {
   font-size: 3.8146972656rem;
 }
 
+:root {
+  --size-100: nth($space, $i);
+}
+
+:root {
+  --size-200: nth($space, $i);
+}
+
+:root {
+  --size-300: nth($space, $i);
+}
+
+:root {
+  --size-400: nth($space, $i);
+}
+
+:root {
+  --size-500: nth($space, $i);
+}
+
+:root {
+  --size-600: nth($space, $i);
+}
+
+:root {
+  --size-700: nth($space, $i);
+}
+
+:root {
+  --size-800: nth($space, $i);
+}
+
+:root {
+  --size-900: nth($space, $i);
+}
+
 .margin-100 {
   margin-top: 1.25rem;
 }
@@ -478,6 +514,39 @@ h1 {
 
 .padding-900-right {
   padding-right: 7.4505805969rem;
+}
+
+.cluster {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.grid-auto {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+}
+
+.grid-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.grid-flex > * {
+  flex: 1 1 20rem;
+}
+
+.grid-responsive {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 2rem;
+}
+@media (max-width: 320px) {
+  .grid-responsive {
+    grid-template-columns: 1fr;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
