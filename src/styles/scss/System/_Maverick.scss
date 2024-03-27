@@ -37,11 +37,28 @@ $lineHeightHeadings:1.0; // Line height
 // majorSeventh: 1.875;
 // octave: 2;
 
-$typeScale: 1.25;	// Type scale
-$spaceScale: 1.25;	// Space between elements
+$typeScale: 1.25;	// SCALE FOR ALL TYPOGRAPHIC ELEMENTS
+$spaceScale: 1.25;	// SCALE FOR ALL SPACING ELEMENTS (PADDING, MARGIN, ETC.)
 
 
-// Colors:
+// Colors: Make a pallette for each theme here. 
+
+$color-theme: (
+	'theme-01': (
+		color-primary: #FF0000,
+		color-secondary: #00FF00,
+		color-background: #0000FF,
+		color-text: #FFFFFF,
+	),
+
+	'theme-02': (
+		color-primary: #FF00FF,
+		color-secondary: #00FFFF,
+		color-background: #FFFF00,
+		color-text: #000000,
+	),
+)
+
 
 
 

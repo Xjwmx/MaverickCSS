@@ -1,0 +1,49 @@
+---
+let selectedTheme = "";
+
+function handleThemeChange(event) {
+  selectedTheme = event.target.value;
+  // Save the selected theme to local storage or any other source
+  localStorage.setItem("theme", selectedTheme);
+}
+
+// Get the user's preferred theme from local storage or any other source
+if (typeof window !== "undefined") {
+  selectedTheme = localStorage.getItem("theme") || "light";
+}
+---
+
+<form>
+  <label>
+    <input
+      type="radio"
+      name="theme"
+      value="light"
+      :checked={selectedTheme === "light"}
+      @change={handleThemeChange}
+    />
+    Light Theme
+  </label>
+
+  <label>
+    <input
+      type="radio"
+      name="theme"
+      value="dark"
+      :checked={selectedTheme === "dark"}
+      @change={handleThemeChange}
+    />
+    Dark Theme
+  </label>
+
+  <label>
+    <input
+      type="radio"
+      name="theme"
+      value="dark"
+      :checked={selectedTheme === "dark"}
+      @change={handleThemeChange}
+    />
+    Theme-03
+  </label>
+</form>

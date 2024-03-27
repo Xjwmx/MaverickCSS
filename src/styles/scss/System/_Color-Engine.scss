@@ -2,4 +2,13 @@
 
 // Color Engine:
 
+@each $theme, $colors in $color-theme {
+	.#{$theme} {
+	  --color-primary: #{map-get($colors, 'color-primary')};
+	  --color-secondary: #{map-get($colors, 'color-secondary')};
+	  --color-background: #{map-get($colors, 'color-background')};
+	  --color-text: #{map-get($colors, 'color-text')};
+	}
+  }
+
 
