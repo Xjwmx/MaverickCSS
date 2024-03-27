@@ -1,0 +1,60 @@
+---
+
+---
+
+<form id="theme-form">
+  <label>
+    <input type="radio" name="theme" value="light" checked />
+  </label>
+
+  <label>
+    <input type="radio" name="theme" value="dark" />
+  </label>
+
+  <label>
+    <input type="radio" name="theme" value="theme-03" />
+  </label>
+</form>
+
+<script is:inline>
+  // This script runs on the client side
+  document.addEventListener("DOMContentLoaded", function () {
+    const themeForm = document.getElementById("theme-form");
+    let selectedTheme = localStorage.getItem("theme") || "light";
+
+    // Set the initial theme
+    document.body.className = selectedTheme;
+
+    // Check the radio button for the current theme
+    themeForm.querySelector(`input[value="${selectedTheme}"]`).checked = true;
+
+    // Handle theme changes
+    themeForm.addEventListener("change", function (event) {
+      selectedTheme = event.target.value;
+      localStorage.setItem("theme", selectedTheme);
+      document.body.className = selectedTheme;
+    });
+  });
+</script>
+
+<style>
+  form {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+  }
+  label {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    margin-left: 1rem;
+  }
+
+  input[type="radio"] {
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+</style>

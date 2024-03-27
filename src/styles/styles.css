@@ -1,17 +1,38 @@
 /* MAVERICK CSS */
 @import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-.theme-01 {
-  --color-primary: #FF0000;
-  --color-secondary: #00FF00;
-  --color-background: #0000FF;
+.dark {
+  --color-primary: #33d5da;
+  --color-secondary: #ff00c8;
+  --color-background: #2b2b2b;
   --color-text: #FFFFFF;
 }
 
-.theme-02 {
-  --color-primary: #FF00FF;
+.light {
+  --color-primary: #9d229d;
+  --color-secondary: #007878;
+  --color-background: #dfdfdf;
+  --color-text: #212121;
+}
+
+.custom {
+  --color-primary: #9f3a9f;
   --color-secondary: #00FFFF;
   --color-background: #FFFF00;
   --color-text: #000000;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+a {
+  color: var(--color-secondary);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-primary);
 }
 
 * {

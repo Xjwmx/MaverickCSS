@@ -44,15 +44,22 @@ $spaceScale: 1.25;	// SCALE FOR ALL SPACING ELEMENTS (PADDING, MARGIN, ETC.)
 // Colors: Make a pallette for each theme here. 
 
 $color-theme: (
-	'theme-01': (
-		color-primary: #FF0000,
-		color-secondary: #00FF00,
-		color-background: #0000FF,
+	'dark': (
+		color-primary: #33d5da,
+		color-secondary: #ff00c8,
+		color-background: #2b2b2b,
 		color-text: #FFFFFF,
 	),
 
-	'theme-02': (
-		color-primary: #FF00FF,
+	'light': (
+		color-primary: #9d229d,
+		color-secondary: #007878,
+		color-background: #dfdfdf,
+		color-text: #212121,
+	),
+
+	'custom': (
+		color-primary: #9f3a9f,
 		color-secondary: #00FFFF,
 		color-background: #FFFF00,
 		color-text: #000000,

@@ -12,3 +12,15 @@
   }
 
 
+body{
+	background-color: var(--color-background);
+	color: var(--color-text);
+}
+
+a{
+	color: var(--color-secondary);
+	text-decoration: none;
+}
+a:hover{
+	color: var(--color-primary);
+}
