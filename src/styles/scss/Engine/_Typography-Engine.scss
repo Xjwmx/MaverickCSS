@@ -1,6 +1,4 @@
-
-
-@use './Maverick' as *;
+@use '../Maverick/Maverick' as *;
 
 
 *{
@@ -106,74 +104,6 @@ h1{
 
 
 
-// Spacing
-
-$space:(
-	$baseSize * $spaceScale,
-	$baseSize * pow($spaceScale, 2),
-	$baseSize * pow($spaceScale, 3),
-	$baseSize * pow($spaceScale, 4),
-	$baseSize * pow($spaceScale, 5),
-	$baseSize * pow($spaceScale, 6),
-	$baseSize * pow($spaceScale, 7),
-	$baseSize * pow($spaceScale, 8),
-	$baseSize * pow($spaceScale, 9),
-);
-
-@for $i from 1 through 9 {
-	:root {
-		--size-#{$i}00: nth($space, $i);
-	}
-}
-
-//Margin
-
-@for $i from 1 through 9 {
-	.margin-#{$i}00 {
-	  margin-top: nth($space, $i);
-	}
-  
-	.margin-#{$i}00-top {
-	  margin-top: nth($space, $i);
-	}
-
-	.margin-#{$i}00-bottom {
-	  margin-bottom: nth($space, $i);
-	}
-
-	.margin-#{$i}00-left {
-	  margin-left: nth($space, $i);
-  }
-
-  	.margin-#{$i}00-right {
-		margin-right: nth($space, $i);
-		}
-}
-
-
-//Padding
-
-@for $i from 1 through 9 {
-	.padding-#{$i}00 {
-	  padding-top: nth($space, $i);
-	}
-  
-	.padding-#{$i}00-top {
-	  padding-top: nth($space, $i);
-	}
-
-	.padding-#{$i}00-bottom {
-	  padding-bottom: nth($space, $i);
-	}
-
-	.padding-#{$i}00-left {
-	  padding-left: nth($space, $i);
-  }
-
-  	.padding-#{$i}00-right {
-		padding-right: nth($space, $i);
-		}
-}
 
 
 
