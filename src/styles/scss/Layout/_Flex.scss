@@ -1,0 +1,108 @@
+// This partial will create classes for common flex layouts
+
+// Flex Containers
+.flex-row {
+	display: flex;
+	flex-direction: row;
+}
+
+.flex-column {
+	display: flex;
+	flex-direction: column;
+}
+
+.flex-row-reverse {
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+.flex-column-reverse {
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+.wrap {
+	flex-wrap: wrap;
+}
+
+.wrap-reverse {
+	flex-wrap: wrap-reverse;
+}
+
+.no-wrap {
+	flex-wrap: nowrap;
+}
+
+
+// Flex Items
+
+.flex-1 {
+	flex: 1;
+}
+
+.flex-2 {
+	flex: 2;
+}
+
+.flex-3 {
+	flex: 3;
+}
+
+.flex-4 {
+	flex: 4;
+}
+
+
+// Justify Content
+
+.justify-start {
+	justify-content: flex-start;
+}
+
+.justify-end {
+	justify-content: flex-end;
+}
+
+.justify-center {
+	justify-content: center;
+}
+
+.justify-space-between {
+	justify-content: space-between;
+}
+
+.justify-space-around {
+	justify-content: space-around;
+}
+
+.justify-space-evenly {
+	justify-content: space-evenly;
+}
+
+
+// Align Items
+
+.align-start {
+	align-items: flex-start;
+}
+
+.align-end {
+	align-items: flex-end;
+}
+
+.align-center {
+	align-items: center;
+}
+
+.align-baseline {
+	align-items: baseline;
+}
+
+.align-stretch {
+	align-items: stretch;
+}
+
+
+
+
+

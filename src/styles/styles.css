@@ -1,24 +1,48 @@
 /* MAVERICK CSS */
 @import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 .dark {
+  --color-primary-lighter: lighten(#33d5da, 10%);
+  --color-primary-darker: darken(#33d5da, 10%);
   --color-primary: #33d5da;
+  --color-secondary-lighter: lighten(#ff00c8, 10%);
+  --color-secondary-darker: darken(#ff00c8, 10%);
   --color-secondary: #ff00c8;
   --color-background: #2b2b2b;
+  --color-background-lighter: lighten(#2b2b2b, 10%);
+  --color-background-darker: darken(#2b2b2b, 10%);
   --color-text: #FFFFFF;
+  --color-text-lighter: lighten(#FFFFFF, 10%);
+  --color-text-darker: darken(#FFFFFF, 10%);
 }
 
 .light {
+  --color-primary-lighter: lighten(#9d229d, 10%);
+  --color-primary-darker: darken(#9d229d, 10%);
   --color-primary: #9d229d;
+  --color-secondary-lighter: lighten(#007878, 10%);
+  --color-secondary-darker: darken(#007878, 10%);
   --color-secondary: #007878;
   --color-background: #dfdfdf;
+  --color-background-lighter: lighten(#dfdfdf, 10%);
+  --color-background-darker: darken(#dfdfdf, 10%);
   --color-text: #212121;
+  --color-text-lighter: lighten(#212121, 10%);
+  --color-text-darker: darken(#212121, 10%);
 }
 
 .custom {
+  --color-primary-lighter: lighten(#9f3a9f, 10%);
+  --color-primary-darker: darken(#9f3a9f, 10%);
   --color-primary: #9f3a9f;
+  --color-secondary-lighter: lighten(#00FFFF, 10%);
+  --color-secondary-darker: darken(#00FFFF, 10%);
   --color-secondary: #00FFFF;
   --color-background: #FFFF00;
+  --color-background-lighter: lighten(#FFFF00, 10%);
+  --color-background-darker: darken(#FFFF00, 10%);
   --color-text: #000000;
+  --color-text-lighter: lighten(#000000, 10%);
+  --color-text-darker: darken(#000000, 10%);
 }
 
 body {
@@ -27,12 +51,20 @@ body {
 }
 
 a {
-  color: var(--color-secondary);
+  color: var(--color-primary);
   text-decoration: none;
 }
 
 a:hover {
-  color: var(--color-primary);
+  color: var(--color-primary-darker);
+}
+
+a:visited {
+  color: var(--color-secondary);
+}
+
+a:active {
+  color: var(--color-primary-lighter);
 }
 
 * {
@@ -516,37 +548,259 @@ h1 {
   padding-right: 7.4505805969rem;
 }
 
-.cluster {
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.display-block {
+  display: block;
+}
+
+.display-inline {
+  display: inline;
+}
+
+.display-none {
+  display: none;
+}
+
+.margin-auto {
+  margin: 0 auto;
+}
+
+.margin-none {
+  margin: 0;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+.position-fixed {
+  position: fixed;
+}
+
+.position-static {
+  position: static;
+}
+
+.position-sticky {
+  position: sticky;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.float-none {
+  float: none;
+}
+
+.clear-left {
+  clear: left;
+}
+
+.clear-right {
+  clear: right;
+}
+
+.clear-both {
+  clear: both;
+}
+
+.clear-none {
+  clear: none;
+}
+
+.clear-fix {
+  overflow: auto;
+}
+
+/* This module builds max-width classes for containers Using rem units */
+.container-xs {
+  max-width: 20rem;
+  margin: 0 auto;
+}
+
+.container-sm {
+  max-width: 30rem;
+  margin: 0 auto;
+}
+
+.container-md {
+  max-width: 48rem;
+  margin: 0 auto;
+}
+
+.container-lg {
+  max-width: 64rem;
+  margin: 0 auto;
+}
+
+.container-xl {
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.container-2xl {
+  max-width: 96rem;
+  margin: 0 auto;
+}
+
+.contianer-max {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.flex-row {
   display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
+  flex-direction: row;
 }
 
-.grid-auto {
-  display: grid;
-  gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-}
-
-.grid-flex {
+.flex-column {
   display: flex;
+  flex-direction: column;
+}
+
+.flex-row-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.flex-column-reverse {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.wrap {
   flex-wrap: wrap;
-  gap: 2rem;
 }
 
-.grid-flex > * {
-  flex: 1 1 20rem;
+.wrap-reverse {
+  flex-wrap: wrap-reverse;
 }
 
-.grid-responsive {
+.no-wrap {
+  flex-wrap: nowrap;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-2 {
+  flex: 2;
+}
+
+.flex-3 {
+  flex: 3;
+}
+
+.flex-4 {
+  flex: 4;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.justify-space-around {
+  justify-content: space-around;
+}
+
+.justify-space-evenly {
+  justify-content: space-evenly;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-baseline {
+  align-items: baseline;
+}
+
+.align-stretch {
+  align-items: stretch;
+}
+
+/* This partial will build column classes for grid layouts */
+.two-columns {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-  gap: 2rem;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
 }
-@media (max-width: 320px) {
-  .grid-responsive {
-    grid-template-columns: 1fr;
-  }
+
+.three-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+.four-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+.five-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+.grid-container {
+  display: grid;
+}
+
+.grid-container-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-container-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-container-4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.grid-container-5 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 /*# sourceMappingURL=styles.css.map */
