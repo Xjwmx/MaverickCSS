@@ -56,7 +56,7 @@ $space: ();
 
 @for $i from 1 through 9 {
 	.padding-#{$i}00 {
-	  padding-top: nth($space, $i);
+	  padding: nth($space, $i);
 	}
   
 	.padding-#{$i}00-top {
@@ -76,6 +76,16 @@ $space: ();
 		}
 }
 
+.padding-global {
+	padding: $baseSize;
+}
+
+@for $i from 1 through 9 {
+	.space-#{$i}00 {
+	  margin-top: nth($space, $i);
+	  display: block;
+	}
+
 
 
 // Generate the contianer width classes
@@ -84,9 +94,10 @@ $space: ();
 	  max-width: $size;
 	  margin: 0 auto;
 	}
-  }
-  
-  .contianer-max {
+}
+  .container-max {
 	max-width: 100%;
 	margin: 0 auto;
   }
+}
+
