@@ -1,0 +1,223 @@
+/* STATIC CLASSES */
+
+
+//LAYOUT
+
+//aspect ratio
+
+$list__aspectRatio: (
+	'square': 1/1,
+	'portrait': 3/4,
+	'landscape': 4/3,
+	'widescreen': 16/9,
+	'vertical': 9/16,
+	'ultrawide': 21/9,
+);
+
+@each $key, $value in $list__aspectRatio {
+	.aspect__#{$key} {
+		aspect-ratio: $value;
+	}
+}
+
+//columns
+
+$list__columnsCount: (1, 2, 3, 4, 5);
+
+@each $column in $list__columnsCount {
+	.col__#{$column} {
+		columns: $column;
+	}
+}
+
+//breaks 
+
+$list__breaks-in-out: (auto, avoid, all, avoid-page, page, left, right, recto, verso);
+
+@each $break in $list__breaks-in-out {
+	.break__inside-#{$break} {
+		break-inside: $break;
+	}
+	.break__outside-#{$break} {
+		break-outside: $break;
+	}
+}
+
+$list__breaks-inside: (auto, avoid, avoid-page, avoid-column);
+
+@each $break in $list__breaks-inside {
+	.break__inside-#{$break} {
+		break-inside: $break;
+	}
+}
+
+$list__break-box-decoration: (slice, clone);
+
+@each $break in $list__break-box-decoration {
+	.break__box-decoration-#{$break} {
+		box-decoration-break: $break;
+	}
+}
+
+
+//box model
+$list__box-sizing: (border-box, content-box);
+
+@each $box in $list__box-sizing {
+	.box__#{$box} {
+		box-sizing: $box;
+	}
+}
+
+//display
+
+$list__display: (block, inline, inline-block, flex, grid, inline-flex, inline-grid, none, table, table-row, table-cell, table-column, table-column-group, table-footer-group, table-header-group, table-row-group, flow-root, contents, list-item, ruby, ruby-base, ruby-text, run-in, subgrid);
+
+@each $display in $list__display {
+	.display__#{$display} {
+		display: $display;
+	}
+}
+
+//floats
+
+$list__floats: (inline-start, inline-end, left, right, none);
+
+@each $float in $list__floats {
+	.float__#{$float} {
+		float: $float;
+	}
+}
+
+//clear
+
+$list__clear: (inline-start, inline-end, left, right, both, none);
+
+@each $clear in $list__clear {
+	.clear__#{$clear} {
+		clear: $clear;
+	}
+}
+
+//isolation
+
+$list__isolation: (auto, isolate);
+
+@each $isolation in $list__isolation {
+	.isolation__#{$isolation} {
+		isolation: $isolation;
+	}
+}
+
+//object fit
+
+$list__object-fit: (fill, contain, cover, none, scale-down);
+
+@each $fit in $list__object-fit {
+	.fit__#{$fit} {
+		object-fit: $fit;
+	}
+}
+
+
+//object position
+
+$list__object-possition: (top, bottom, left, right, center, top left, top right, bottom left, bottom right);
+
+@each $position in $list__object-possition {
+	.position__#{$position} {
+		object-position: $position;
+	}
+}
+
+//overflow
+
+$list__overflow: (visible, hidden, scroll, auto);
+
+@each $overflow in $list__overflow {
+	.overflow__#{$overflow} {
+		overflow: $overflow;
+	}
+	.overflow__x-#{$overflow} {
+		overflow-x: $overflow;
+	}	
+	.overflow__y-#{$overflow} {
+		overflow-y: $overflow;
+	}
+}
+
+//overscroll behavior -- not supported in safari
+
+$list__overscroll: (auto, contain, none);
+
+@each $overscroll in $list__overscroll {
+	.overscroll__#{$overscroll} {
+		overscroll-behavior: $overscroll;
+	}
+	.overscroll__x-#{$overscroll} {
+		overscroll-behavior-x: $overscroll;
+	}
+	.overscroll__y-#{$overscroll} {
+		overscroll-behavior-y: $overscroll;
+	}
+
+}
+
+//position
+
+$list__position: (static, relative, absolute, fixed, sticky);
+
+@each $position in $list__position {
+	.position__#{$position} {
+		position: $position;
+	}
+}
+
+//top right bottom left
+
+$list__top-right-bottom-left: (auto, 0);
+
+@each $value in $list__top-right-bottom-left {
+	.possition__top-#{$value} {
+		top: $value;
+	}
+	.possition__right-#{$value} {
+		right: $value;
+	}
+	.possition__bottom-#{$value} {
+		bottom: $value;
+	}
+	.possition__left-#{$value} {
+		left: $value;
+	}
+}
+
+//visibility
+
+$list__visibility: (visible, hidden, collapse);
+
+@each $visibility in $list__visibility {
+	.visibility__#{$visibility} {
+		visibility: $visibility;
+	}
+}
+
+//z-index
+
+$list__z-index: (auto, 0, 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000);
+
+@each $index in $list__z-index {
+	.index__#{$index} {
+	  z-index: $index;
+	}
+  }
+
+
+//Flex Basis 
+
+$list__flex-basis: (auto, content, 0, 25%, 50%, 75%, 100%);
+
+
+
+
+

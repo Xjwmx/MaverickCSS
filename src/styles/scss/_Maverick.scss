@@ -1,0 +1,51 @@
+
+
+//Maverick Css
+
+
+/*IMPORTS*/
+
+//Default: Playfair Display, Noto Sans -- Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* ROOT */
+
+$root__size: 16px;
+$box__sizing: border-box;
+
+/* DEFAULT TEXT STYLES */
+$scale__typography: 1.333; //set the scale for typography
+
+$text__body-default: 'Noto Sans', sans-serif;
+$text__body-fontSize: 16px; //set the base font size
+$text__body-lineHeight: 1.5; //set the base line height
+$text__body-letterSpacing: normal; //set the base letter spacing
+$text__body-textIndent: 0; //set the base text indent
+
+$text__heading-default: 'Playfair Display', serif; //set the default font for headings
+$text__heading-weight: 700; //set the base font weight for headings
+$text__heading-lineHeight:1.0; //set the base line height for headings
+$text__heading-letterSpacing: normal; //set the base letter spacing
+
+
+//BREAKPOINTS
+$breakpoint__default: (
+	'phone': 320px,
+	'tablet': 768px,
+	'laptop': 1024px,
+	'desktop': 1440px,
+	'wide': 1920px,
+);
+
+//Sizing and Spacing Engine
+
+$scale__sizing: 2; //set the scale for spacing
+
+
+
+//COLORS
+
+$list__colorTheme-light: (
+	
+);
+

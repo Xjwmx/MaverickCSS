@@ -1,0 +1,169 @@
+@use "./Maverick" as *;
+
+
+
+:root{
+  font-size: $root__size;
+  box-sizing: $box__sizing;
+}
+/* Typography Engine */
+$list__defaultHeadings: (
+  "h5": calc($text__body-fontSize * $scale__typography),
+  "h4": calc($text__body-fontSize * pow($scale__typography, 2)),
+  "h3": calc($text__body-fontSize * pow($scale__typography, 3)),
+  "h2": calc($text__body-fontSize * pow($scale__typography, 4)),
+  "h1": calc($text__body-fontSize * pow($scale__typography, 5)),
+);
+
+@mixin setBodyStyles {
+  font-family: $text__body-default;
+  font-size: $text__body-fontSize;
+  line-height: $text__body-lineHeight;
+  letter-spacing: $text__body-letterSpacing;
+  text-indent: $text__body-textIndent;
+}
+
+p,
+a,
+li,
+span,
+div {
+  @include setBodyStyles;
+}
+
+@mixin setHeadingStyles {
+  font-family: $text__heading-default;
+  font-weight: $text__heading-weight;
+  line-height: $text__heading-lineHeight;
+  letter-spacing: $text__heading-letterSpacing;
+}
+
+@each $key, $value in $list__defaultHeadings {
+  #{$key} {
+    font-size: $value;
+    @include setHeadingStyles;
+  }
+}
+
+@each $key, $value in $list__defaultHeadings {
+  .#{($key)} {
+    font-size: $value;
+    @include setHeadingStyles;
+  }
+}
+
+// Sizing and Spacing Engine
+
+$list__sizing: (
+  "xxxsmall": calc(1rem / pow($scale__sizing, 4)),
+  "xxsmall": calc(1rem / pow($scale__sizing, 3)),
+  "xsmall": calc(1rem / pow($scale__sizing, 2)),
+  "small": 1rem,
+  "medium": calc(1rem * $scale__sizing),
+  "large": calc(1rem * pow($scale__sizing, 2)),
+  "xlarge": calc(1rem * pow($scale__sizing, 3)),
+  "xxlarge": calc(1rem * pow($scale__sizing, 4)),
+  "xxxlarge": calc(1rem * pow($scale__sizing, 5)),
+  "xxxxlarge": calc(1rem * pow($scale__sizing, 6)),
+  "xxxxxlarge": calc(1rem * pow($scale__sizing, 7)),
+);
+
+@mixin generateSpaceClasses($property, $direction, $key, $value) {
+  .#{$property}__#{$direction}-#{$key} {
+    @if $direction == "all" {
+      #{$property}: $value;
+    } @else {
+      #{$property}-#{$direction}: $value;
+    }
+  }
+}
+
+$directions: ("top", "right", "bottom", "left", "all");
+
+@each $key, $value in $list__sizing {
+  @each $direction in $directions {
+    @include generateSpaceClasses("padding", $direction, $key, $value);
+    @include generateSpaceClasses("margin", $direction, $key, $value);
+  }
+}
+
+@each $key, $value in $list__sizing {
+  .spacer__inline-#{($key)} {
+	display: inline-block;
+	width: 100%;
+	height: $value;
+  }
+}
+//Heights and Widths Engine
+
+@mixin generateSizeClasses($property, $key, $value) {
+  .size__#{$property}-#{$key} {
+    #{$property}: $value;
+  }
+}
+
+@each $key, $value in $list__sizing {
+  @include generateSizeClasses("width", $key, $value);
+  @include generateSizeClasses("height", $key, $value);
+  @include generateSizeClasses("max-width", $key, $value);
+  @include generateSizeClasses("max-height", $key, $value);
+  @include generateSizeClasses("min-width", $key, $value);
+  @include generateSizeClasses("min-height", $key, $value);
+  @include generateSizeClasses("gap", $key, $value);
+  @include generateSizeClasses("grid-gap", $key, $value);
+  @include generateSizeClasses("column-gap", $key, $value);
+  @include generateSizeClasses("row-gap", $key, $value);
+  @include generateSizeClasses("border-radius", $key, $value);
+}
+
+$list__border-widths: (
+  "none": 0,
+  "xxsmall": calc(1px / pow($scale__sizing, 3)),
+  "xsmall": calc(1px / pow($scale__sizing, 2)),
+  "small": 1px,
+  "medium": calc(1px * $scale__sizing),
+  "large": calc(1px * pow($scale__sizing, 2)),
+  "xlarge": calc(1px * pow($scale__sizing, 3)),
+  "xxlarge": calc(1px * pow($scale__sizing, 4)),
+  "xxxlarge": calc(1px * pow($scale__sizing, 5)),
+  "xxxxlarge": calc(1px * pow($scale__sizing, 6)),
+  "xxxxxlarge": calc(1px * pow($scale__sizing, 7)),
+);
+
+@mixin generateBorderWidthClasses($key, $value) {
+  .border-width-#{$key} {
+    border-width: $value;
+  }
+}
+
+@mixin generateBorderRadiusClasses($key, $value) {
+	.border__radius-#{$key}{
+		border-radius: $value;
+	}
+}
+
+@each $key, $value in $list__border-widths {
+  @include generateBorderWidthClasses($key, $value);
+  @include generateBorderRadiusClasses($key, $value);
+}
+
+$border__styles: (none, solid, dashed, dotted, double, groove, ridge, inset, outset);
+
+@each $border__styles in $border__styles {
+	.border__style-#{$border__styles}{
+		border-style: $border__styles;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
