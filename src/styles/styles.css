@@ -1216,6 +1216,1184 @@ h1 {
 
 /* STATIC CLASSES */
 .aspect__square {
+  aspect-ratio: "1/1";
+}
+
+.aspect__portrait {
+  aspect-ratio: "3/4";
+}
+
+.aspect__landscape {
+  aspect-ratio: "4/3";
+}
+
+.aspect__widescreen {
+  aspect-ratio: "16/9";
+}
+
+.aspect__vertical {
+  aspect-ratio: "9/16";
+}
+
+.aspect__ultrawide {
+  aspect-ratio: "21/9";
+}
+
+.col__1 {
+  columns: 1;
+}
+
+.col__2 {
+  columns: 2;
+}
+
+.col__3 {
+  columns: 3;
+}
+
+.col__4 {
+  columns: 4;
+}
+
+.col__5 {
+  columns: 5;
+}
+
+.break__inside-auto {
+  break-inside: auto;
+}
+
+.break__outside-auto {
+  break-outside: auto;
+}
+
+.break__inside-avoid {
+  break-inside: avoid;
+}
+
+.break__outside-avoid {
+  break-outside: avoid;
+}
+
+.break__inside-all {
+  break-inside: all;
+}
+
+.break__outside-all {
+  break-outside: all;
+}
+
+.break__inside-avoid-page {
+  break-inside: avoid-page;
+}
+
+.break__outside-avoid-page {
+  break-outside: avoid-page;
+}
+
+.break__inside-page {
+  break-inside: page;
+}
+
+.break__outside-page {
+  break-outside: page;
+}
+
+.break__inside-left {
+  break-inside: left;
+}
+
+.break__outside-left {
+  break-outside: left;
+}
+
+.break__inside-right {
+  break-inside: right;
+}
+
+.break__outside-right {
+  break-outside: right;
+}
+
+.break__inside-recto {
+  break-inside: recto;
+}
+
+.break__outside-recto {
+  break-outside: recto;
+}
+
+.break__inside-verso {
+  break-inside: verso;
+}
+
+.break__outside-verso {
+  break-outside: verso;
+}
+
+.break__inside-auto {
+  break-inside: auto;
+}
+
+.break__inside-avoid {
+  break-inside: avoid;
+}
+
+.break__inside-avoid-page {
+  break-inside: avoid-page;
+}
+
+.break__inside-avoid-column {
+  break-inside: avoid-column;
+}
+
+.break__box-decoration-slice {
+  box-decoration-break: slice;
+}
+
+.break__box-decoration-clone {
+  box-decoration-break: clone;
+}
+
+.box__border-box {
+  box-sizing: border-box;
+}
+
+.box__content-box {
+  box-sizing: content-box;
+}
+
+.display__block {
+  display: block;
+}
+
+.display__inline {
+  display: inline;
+}
+
+.display__inline-block {
+  display: inline-block;
+}
+
+.display__flex {
+  display: flex;
+}
+
+.display__grid {
+  display: grid;
+}
+
+.display__inline-flex {
+  display: inline-flex;
+}
+
+.display__inline-grid {
+  display: inline-grid;
+}
+
+.display__none {
+  display: none;
+}
+
+.display__table {
+  display: table;
+}
+
+.display__table-row {
+  display: table-row;
+}
+
+.display__table-cell {
+  display: table-cell;
+}
+
+.display__table-column {
+  display: table-column;
+}
+
+.display__table-column-group {
+  display: table-column-group;
+}
+
+.display__table-footer-group {
+  display: table-footer-group;
+}
+
+.display__table-header-group {
+  display: table-header-group;
+}
+
+.display__table-row-group {
+  display: table-row-group;
+}
+
+.display__flow-root {
+  display: flow-root;
+}
+
+.display__contents {
+  display: contents;
+}
+
+.display__list-item {
+  display: list-item;
+}
+
+.display__ruby {
+  display: ruby;
+}
+
+.display__ruby-base {
+  display: ruby-base;
+}
+
+.display__ruby-text {
+  display: ruby-text;
+}
+
+.display__run-in {
+  display: run-in;
+}
+
+.display__subgrid {
+  display: subgrid;
+}
+
+.float__inline-start {
+  float: inline-start;
+}
+
+.float__inline-end {
+  float: inline-end;
+}
+
+.float__left {
+  float: left;
+}
+
+.float__right {
+  float: right;
+}
+
+.float__none {
+  float: none;
+}
+
+.clear__inline-start {
+  clear: inline-start;
+}
+
+.clear__inline-end {
+  clear: inline-end;
+}
+
+.clear__left {
+  clear: left;
+}
+
+.clear__right {
+  clear: right;
+}
+
+.clear__both {
+  clear: both;
+}
+
+.clear__none {
+  clear: none;
+}
+
+.isolation__auto {
+  isolation: auto;
+}
+
+.isolation__isolate {
+  isolation: isolate;
+}
+
+.fit__fill {
+  object-fit: fill;
+}
+
+.fit__contain {
+  object-fit: contain;
+}
+
+.fit__cover {
+  object-fit: cover;
+}
+
+.fit__none {
+  object-fit: none;
+}
+
+.fit__scale-down {
+  object-fit: scale-down;
+}
+
+.position__top {
+  object-position: top;
+}
+
+.position__bottom {
+  object-position: bottom;
+}
+
+.position__left {
+  object-position: left;
+}
+
+.position__right {
+  object-position: right;
+}
+
+.position__center {
+  object-position: center;
+}
+
+.position__top-left {
+  object-position: top-left;
+}
+
+.position__top-right {
+  object-position: top-right;
+}
+
+.position__bottom-left {
+  object-position: bottom-left;
+}
+
+.position__bottom-right {
+  object-position: bottom-right;
+}
+
+.overflow__visible {
+  overflow: visible;
+}
+
+.overflow__x-visible {
+  overflow-x: visible;
+}
+
+.overflow__y-visible {
+  overflow-y: visible;
+}
+
+.overflow__hidden {
+  overflow: hidden;
+}
+
+.overflow__x-hidden {
+  overflow-x: hidden;
+}
+
+.overflow__y-hidden {
+  overflow-y: hidden;
+}
+
+.overflow__scroll {
+  overflow: scroll;
+}
+
+.overflow__x-scroll {
+  overflow-x: scroll;
+}
+
+.overflow__y-scroll {
+  overflow-y: scroll;
+}
+
+.overflow__auto {
+  overflow: auto;
+}
+
+.overflow__x-auto {
+  overflow-x: auto;
+}
+
+.overflow__y-auto {
+  overflow-y: auto;
+}
+
+.overscroll__auto {
+  overscroll-behavior: auto;
+}
+
+.overscroll__x-auto {
+  overscroll-behavior-x: auto;
+}
+
+.overscroll__y-auto {
+  overscroll-behavior-y: auto;
+}
+
+.overscroll__contain {
+  overscroll-behavior: contain;
+}
+
+.overscroll__x-contain {
+  overscroll-behavior-x: contain;
+}
+
+.overscroll__y-contain {
+  overscroll-behavior-y: contain;
+}
+
+.overscroll__none {
+  overscroll-behavior: none;
+}
+
+.overscroll__x-none {
+  overscroll-behavior-x: none;
+}
+
+.overscroll__y-none {
+  overscroll-behavior-y: none;
+}
+
+.position__static {
+  position: static;
+}
+
+.position__relative {
+  position: relative;
+}
+
+.position__absolute {
+  position: absolute;
+}
+
+.position__fixed {
+  position: fixed;
+}
+
+.position__sticky {
+  position: sticky;
+}
+
+.position__top-auto {
+  top: auto;
+}
+
+.position__right-auto {
+  right: auto;
+}
+
+.position__bottom-auto {
+  bottom: auto;
+}
+
+.position__left-auto {
+  left: auto;
+}
+
+.position__top-0 {
+  top: 0;
+}
+
+.position__right-0 {
+  right: 0;
+}
+
+.position__bottom-0 {
+  bottom: 0;
+}
+
+.position__left-0 {
+  left: 0;
+}
+
+.visibility__visible {
+  visibility: visible;
+}
+
+.visibility__hidden {
+  visibility: hidden;
+}
+
+.visibility__collapse {
+  visibility: collapse;
+}
+
+.index__auto {
+  z-index: auto;
+}
+
+.index__0 {
+  z-index: 0;
+}
+
+.index__100 {
+  z-index: 100;
+}
+
+.index__200 {
+  z-index: 200;
+}
+
+.index__300 {
+  z-index: 300;
+}
+
+.index__400 {
+  z-index: 400;
+}
+
+.index__500 {
+  z-index: 500;
+}
+
+.index__600 {
+  z-index: 600;
+}
+
+.index__700 {
+  z-index: 700;
+}
+
+.index__800 {
+  z-index: 800;
+}
+
+.index__900 {
+  z-index: 900;
+}
+
+.index__1000 {
+  z-index: 1000;
+}
+
+/* FLEXBOX & GRID */
+.flex__direction-row {
+  flex-direction: row;
+}
+
+.flex__direction-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.flex__direction-column {
+  flex-direction: column;
+}
+
+.flex__direction-column-reverse {
+  flex-direction: column-reverse;
+}
+
+.flex__wrap-nowrap {
+  flex-wrap: nowrap;
+}
+
+.flex__wrap-wrap {
+  flex-wrap: wrap;
+}
+
+.flex__wrap-wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+
+.flex__grow-0 {
+  flex-grow: 0;
+}
+
+.flex__grow-1 {
+  flex-grow: 1;
+}
+
+.flex__shrink-0 {
+  flex-shrink: 0;
+}
+
+.flex__shrink-1 {
+  flex-shrink: 1;
+}
+
+.flex__0 {
+  flex: 0;
+}
+
+.flex__1 {
+  flex: 1;
+}
+
+.flex__auto {
+  flex: auto;
+}
+
+.grid__column-auto {
+  grid-template-columns: repeat(auto-fill, minmax(auto, 1fr));
+}
+
+.grid__column-1fr {
+  grid-template-columns: repeat(auto-fill, minmax(1fr, 1fr));
+}
+
+.grid__column-2fr {
+  grid-template-columns: repeat(auto-fill, minmax(2fr, 1fr));
+}
+
+.grid__column-3fr {
+  grid-template-columns: repeat(auto-fill, minmax(3fr, 1fr));
+}
+
+.grid__column-4fr {
+  grid-template-columns: repeat(auto-fill, minmax(4fr, 1fr));
+}
+
+.grid__column-5fr {
+  grid-template-columns: repeat(auto-fill, minmax(5fr, 1fr));
+}
+
+.grid__column-6fr {
+  grid-template-columns: repeat(auto-fill, minmax(6fr, 1fr));
+}
+
+.grid__column-7fr {
+  grid-template-columns: repeat(auto-fill, minmax(7fr, 1fr));
+}
+
+.grid__column-8fr {
+  grid-template-columns: repeat(auto-fill, minmax(8fr, 1fr));
+}
+
+.grid__column-9fr {
+  grid-template-columns: repeat(auto-fill, minmax(9fr, 1fr));
+}
+
+.grid__column-10fr {
+  grid-template-columns: repeat(auto-fill, minmax(10fr, 1fr));
+}
+
+.grid__column-11fr {
+  grid-template-columns: repeat(auto-fill, minmax(11fr, 1fr));
+}
+
+.grid__column-12fr {
+  grid-template-columns: repeat(auto-fill, minmax(12fr, 1fr));
+}
+
+.grid__column-13fr {
+  grid-template-columns: repeat(auto-fill, minmax(13fr, 1fr));
+}
+
+.grid__column-14fr {
+  grid-template-columns: repeat(auto-fill, minmax(14fr, 1fr));
+}
+
+.grid__column-15fr {
+  grid-template-columns: repeat(auto-fill, minmax(15fr, 1fr));
+}
+
+.grid__column-16fr {
+  grid-template-columns: repeat(auto-fill, minmax(16fr, 1fr));
+}
+
+.grid__column-17fr {
+  grid-template-columns: repeat(auto-fill, minmax(17fr, 1fr));
+}
+
+.grid__column-18fr {
+  grid-template-columns: repeat(auto-fill, minmax(18fr, 1fr));
+}
+
+.grid__column-19fr {
+  grid-template-columns: repeat(auto-fill, minmax(19fr, 1fr));
+}
+
+.grid__column-20fr {
+  grid-template-columns: repeat(auto-fill, minmax(20fr, 1fr));
+}
+
+.grid__column-21fr {
+  grid-template-columns: repeat(auto-fill, minmax(21fr, 1fr));
+}
+
+.grid__column-22fr {
+  grid-template-columns: repeat(auto-fill, minmax(22fr, 1fr));
+}
+
+.grid__column-23fr {
+  grid-template-columns: repeat(auto-fill, minmax(23fr, 1fr));
+}
+
+.grid__column-24fr {
+  grid-template-columns: repeat(auto-fill, minmax(24fr, 1fr));
+}
+
+.grid__auto-flow-row {
+  grid-auto-flow: row;
+}
+
+.grid__auto-flow-column {
+  grid-auto-flow: column;
+}
+
+.grid__auto-flow-row dense {
+  grid-auto-flow: row dense;
+}
+
+.grid__auto-flow-column dense {
+  grid-auto-flow: column dense;
+}
+
+.grid__auto-column-auto {
+  grid-auto-columns: repeat(auto-fill, minmax(auto, 1fr));
+}
+
+.grid__auto-column-1fr {
+  grid-auto-columns: repeat(auto-fill, minmax(1fr, 1fr));
+}
+
+.grid__auto-column-2fr {
+  grid-auto-columns: repeat(auto-fill, minmax(2fr, 1fr));
+}
+
+.grid__auto-column-3fr {
+  grid-auto-columns: repeat(auto-fill, minmax(3fr, 1fr));
+}
+
+.grid__auto-column-4fr {
+  grid-auto-columns: repeat(auto-fill, minmax(4fr, 1fr));
+}
+
+.grid__auto-column-5fr {
+  grid-auto-columns: repeat(auto-fill, minmax(5fr, 1fr));
+}
+
+.grid__auto-column-6fr {
+  grid-auto-columns: repeat(auto-fill, minmax(6fr, 1fr));
+}
+
+.grid__auto-column-7fr {
+  grid-auto-columns: repeat(auto-fill, minmax(7fr, 1fr));
+}
+
+.grid__auto-column-8fr {
+  grid-auto-columns: repeat(auto-fill, minmax(8fr, 1fr));
+}
+
+.grid__auto-column-9fr {
+  grid-auto-columns: repeat(auto-fill, minmax(9fr, 1fr));
+}
+
+.grid__auto-column-10fr {
+  grid-auto-columns: repeat(auto-fill, minmax(10fr, 1fr));
+}
+
+.grid__auto-column-11fr {
+  grid-auto-columns: repeat(auto-fill, minmax(11fr, 1fr));
+}
+
+.grid__auto-column-12fr {
+  grid-auto-columns: repeat(auto-fill, minmax(12fr, 1fr));
+}
+
+.grid__auto-column-13fr {
+  grid-auto-columns: repeat(auto-fill, minmax(13fr, 1fr));
+}
+
+.grid__auto-column-14fr {
+  grid-auto-columns: repeat(auto-fill, minmax(14fr, 1fr));
+}
+
+.grid__auto-column-15fr {
+  grid-auto-columns: repeat(auto-fill, minmax(15fr, 1fr));
+}
+
+.grid__auto-column-16fr {
+  grid-auto-columns: repeat(auto-fill, minmax(16fr, 1fr));
+}
+
+.grid__auto-column-17fr {
+  grid-auto-columns: repeat(auto-fill, minmax(17fr, 1fr));
+}
+
+.grid__auto-column-18fr {
+  grid-auto-columns: repeat(auto-fill, minmax(18fr, 1fr));
+}
+
+.grid__auto-column-19fr {
+  grid-auto-columns: repeat(auto-fill, minmax(19fr, 1fr));
+}
+
+.grid__auto-column-20fr {
+  grid-auto-columns: repeat(auto-fill, minmax(20fr, 1fr));
+}
+
+.grid__auto-column-21fr {
+  grid-auto-columns: repeat(auto-fill, minmax(21fr, 1fr));
+}
+
+.grid__auto-column-22fr {
+  grid-auto-columns: repeat(auto-fill, minmax(22fr, 1fr));
+}
+
+.grid__auto-column-23fr {
+  grid-auto-columns: repeat(auto-fill, minmax(23fr, 1fr));
+}
+
+.grid__auto-column-24fr {
+  grid-auto-columns: repeat(auto-fill, minmax(24fr, 1fr));
+}
+
+.grid__auto-row-auto {
+  grid-auto-rows: repeat(auto-fill, minmax(auto, 1fr));
+}
+
+.grid__auto-row-auto {
+  grid-auto-rows: repeat(auto-fill, minmax(auto, 1fr));
+}
+
+.grid__auto-row-1fr {
+  grid-auto-rows: repeat(auto-fill, minmax(1fr, 1fr));
+}
+
+.grid__auto-row-1fr {
+  grid-auto-rows: repeat(auto-fill, minmax(1fr, 1fr));
+}
+
+.grid__auto-row-2fr {
+  grid-auto-rows: repeat(auto-fill, minmax(2fr, 1fr));
+}
+
+.grid__auto-row-2fr {
+  grid-auto-rows: repeat(auto-fill, minmax(2fr, 1fr));
+}
+
+.grid__auto-row-3fr {
+  grid-auto-rows: repeat(auto-fill, minmax(3fr, 1fr));
+}
+
+.grid__auto-row-3fr {
+  grid-auto-rows: repeat(auto-fill, minmax(3fr, 1fr));
+}
+
+.grid__auto-row-4fr {
+  grid-auto-rows: repeat(auto-fill, minmax(4fr, 1fr));
+}
+
+.grid__auto-row-4fr {
+  grid-auto-rows: repeat(auto-fill, minmax(4fr, 1fr));
+}
+
+.grid__auto-row-5fr {
+  grid-auto-rows: repeat(auto-fill, minmax(5fr, 1fr));
+}
+
+.grid__auto-row-5fr {
+  grid-auto-rows: repeat(auto-fill, minmax(5fr, 1fr));
+}
+
+.grid__auto-row-6fr {
+  grid-auto-rows: repeat(auto-fill, minmax(6fr, 1fr));
+}
+
+.grid__auto-row-6fr {
+  grid-auto-rows: repeat(auto-fill, minmax(6fr, 1fr));
+}
+
+.grid__auto-row-7fr {
+  grid-auto-rows: repeat(auto-fill, minmax(7fr, 1fr));
+}
+
+.grid__auto-row-7fr {
+  grid-auto-rows: repeat(auto-fill, minmax(7fr, 1fr));
+}
+
+.grid__auto-row-8fr {
+  grid-auto-rows: repeat(auto-fill, minmax(8fr, 1fr));
+}
+
+.grid__auto-row-8fr {
+  grid-auto-rows: repeat(auto-fill, minmax(8fr, 1fr));
+}
+
+.grid__auto-row-9fr {
+  grid-auto-rows: repeat(auto-fill, minmax(9fr, 1fr));
+}
+
+.grid__auto-row-9fr {
+  grid-auto-rows: repeat(auto-fill, minmax(9fr, 1fr));
+}
+
+.grid__auto-row-10fr {
+  grid-auto-rows: repeat(auto-fill, minmax(10fr, 1fr));
+}
+
+.grid__auto-row-10fr {
+  grid-auto-rows: repeat(auto-fill, minmax(10fr, 1fr));
+}
+
+.grid__auto-row-11fr {
+  grid-auto-rows: repeat(auto-fill, minmax(11fr, 1fr));
+}
+
+.grid__auto-row-11fr {
+  grid-auto-rows: repeat(auto-fill, minmax(11fr, 1fr));
+}
+
+.grid__auto-row-12fr {
+  grid-auto-rows: repeat(auto-fill, minmax(12fr, 1fr));
+}
+
+.grid__auto-row-12fr {
+  grid-auto-rows: repeat(auto-fill, minmax(12fr, 1fr));
+}
+
+.grid__auto-row-13fr {
+  grid-auto-rows: repeat(auto-fill, minmax(13fr, 1fr));
+}
+
+.grid__auto-row-13fr {
+  grid-auto-rows: repeat(auto-fill, minmax(13fr, 1fr));
+}
+
+.grid__auto-row-14fr {
+  grid-auto-rows: repeat(auto-fill, minmax(14fr, 1fr));
+}
+
+.grid__auto-row-14fr {
+  grid-auto-rows: repeat(auto-fill, minmax(14fr, 1fr));
+}
+
+.grid__auto-row-15fr {
+  grid-auto-rows: repeat(auto-fill, minmax(15fr, 1fr));
+}
+
+.grid__auto-row-15fr {
+  grid-auto-rows: repeat(auto-fill, minmax(15fr, 1fr));
+}
+
+.grid__auto-row-16fr {
+  grid-auto-rows: repeat(auto-fill, minmax(16fr, 1fr));
+}
+
+.grid__auto-row-16fr {
+  grid-auto-rows: repeat(auto-fill, minmax(16fr, 1fr));
+}
+
+.grid__auto-row-17fr {
+  grid-auto-rows: repeat(auto-fill, minmax(17fr, 1fr));
+}
+
+.grid__auto-row-17fr {
+  grid-auto-rows: repeat(auto-fill, minmax(17fr, 1fr));
+}
+
+.grid__auto-row-18fr {
+  grid-auto-rows: repeat(auto-fill, minmax(18fr, 1fr));
+}
+
+.grid__auto-row-18fr {
+  grid-auto-rows: repeat(auto-fill, minmax(18fr, 1fr));
+}
+
+.grid__auto-row-19fr {
+  grid-auto-rows: repeat(auto-fill, minmax(19fr, 1fr));
+}
+
+.grid__auto-row-19fr {
+  grid-auto-rows: repeat(auto-fill, minmax(19fr, 1fr));
+}
+
+.grid__auto-row-20fr {
+  grid-auto-rows: repeat(auto-fill, minmax(20fr, 1fr));
+}
+
+.grid__auto-row-20fr {
+  grid-auto-rows: repeat(auto-fill, minmax(20fr, 1fr));
+}
+
+.grid__auto-row-21fr {
+  grid-auto-rows: repeat(auto-fill, minmax(21fr, 1fr));
+}
+
+.grid__auto-row-21fr {
+  grid-auto-rows: repeat(auto-fill, minmax(21fr, 1fr));
+}
+
+.grid__auto-row-22fr {
+  grid-auto-rows: repeat(auto-fill, minmax(22fr, 1fr));
+}
+
+.grid__auto-row-22fr {
+  grid-auto-rows: repeat(auto-fill, minmax(22fr, 1fr));
+}
+
+.grid__auto-row-23fr {
+  grid-auto-rows: repeat(auto-fill, minmax(23fr, 1fr));
+}
+
+.grid__auto-row-23fr {
+  grid-auto-rows: repeat(auto-fill, minmax(23fr, 1fr));
+}
+
+.grid__auto-row-24fr {
+  grid-auto-rows: repeat(auto-fill, minmax(24fr, 1fr));
+}
+
+.grid__auto-row-24fr {
+  grid-auto-rows: repeat(auto-fill, minmax(24fr, 1fr));
+}
+
+.grid__row-auto {
+  grid-template-rows: repeat(auto-fill, minmax(auto, 1fr));
+}
+
+.grid__row-1fr {
+  grid-template-rows: repeat(auto-fill, minmax(1fr, 1fr));
+}
+
+.grid__row-2fr {
+  grid-template-rows: repeat(auto-fill, minmax(2fr, 1fr));
+}
+
+.grid__row-3fr {
+  grid-template-rows: repeat(auto-fill, minmax(3fr, 1fr));
+}
+
+.grid__row-4fr {
+  grid-template-rows: repeat(auto-fill, minmax(4fr, 1fr));
+}
+
+.grid__row-5fr {
+  grid-template-rows: repeat(auto-fill, minmax(5fr, 1fr));
+}
+
+.grid__row-6fr {
+  grid-template-rows: repeat(auto-fill, minmax(6fr, 1fr));
+}
+
+.grid__row-7fr {
+  grid-template-rows: repeat(auto-fill, minmax(7fr, 1fr));
+}
+
+.grid__row-8fr {
+  grid-template-rows: repeat(auto-fill, minmax(8fr, 1fr));
+}
+
+.grid__row-9fr {
+  grid-template-rows: repeat(auto-fill, minmax(9fr, 1fr));
+}
+
+.grid__row-10fr {
+  grid-template-rows: repeat(auto-fill, minmax(10fr, 1fr));
+}
+
+.grid__row-11fr {
+  grid-template-rows: repeat(auto-fill, minmax(11fr, 1fr));
+}
+
+.grid__row-12fr {
+  grid-template-rows: repeat(auto-fill, minmax(12fr, 1fr));
+}
+
+.grid__row-13fr {
+  grid-template-rows: repeat(auto-fill, minmax(13fr, 1fr));
+}
+
+.grid__row-14fr {
+  grid-template-rows: repeat(auto-fill, minmax(14fr, 1fr));
+}
+
+.grid__row-15fr {
+  grid-template-rows: repeat(auto-fill, minmax(15fr, 1fr));
+}
+
+.grid__row-16fr {
+  grid-template-rows: repeat(auto-fill, minmax(16fr, 1fr));
+}
+
+.grid__row-17fr {
+  grid-template-rows: repeat(auto-fill, minmax(17fr, 1fr));
+}
+
+.grid__row-18fr {
+  grid-template-rows: repeat(auto-fill, minmax(18fr, 1fr));
+}
+
+.grid__row-19fr {
+  grid-template-rows: repeat(auto-fill, minmax(19fr, 1fr));
+}
+
+.grid__row-20fr {
+  grid-template-rows: repeat(auto-fill, minmax(20fr, 1fr));
+}
+
+.grid__row-21fr {
+  grid-template-rows: repeat(auto-fill, minmax(21fr, 1fr));
+}
+
+.grid__row-22fr {
+  grid-template-rows: repeat(auto-fill, minmax(22fr, 1fr));
+}
+
+.grid__row-23fr {
+  grid-template-rows: repeat(auto-fill, minmax(23fr, 1fr));
+}
+
+.grid__row-24fr {
+  grid-template-rows: repeat(auto-fill, minmax(24fr, 1fr));
+}
+
+.justify__flex-start {
+  justify-content: flex-start;
+}
+
+.justify__flex-end {
+  justify-content: flex-end;
+}
+
+.justify__center {
+  justify-content: center;
+}
+
+.justify__space-between {
+  justify-content: space-between;
+}
+
+.justify__space-around {
+  justify-content: space-around;
+}
+
+.justify__space-evenly {
+  justify-content: space-evenly;
+}
+
+.justify__start {
+  justify-content: start;
+}
+
+.justify__end {
+  justify-content: end;
+}
+
+.justify__left {
+  justify-content: left;
+}
+
+.justify__right {
+  justify-content: right;
+}
+
+.justify__items-start {
+  justify-items: start;
+}
+
+.justify__items-end {
+  justify-items: end;
+}
+
+.justify__items-center {
+  justify-items: center;
+}
+
+.justify__items-stretch {
+  justify-items: stretch;
+}
+
+/* STATIC CLASSES */
+.aspect__square {
   aspect-ratio: 1;
 }
 
@@ -5147,7 +6325,6 @@ h1 {
 }
 body {
   background-color: var(--color__background);
-  color: var(--color__text);
 }
 
 /*# sourceMappingURL=styles.css.map */

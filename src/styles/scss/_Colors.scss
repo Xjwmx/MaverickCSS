@@ -1,36 +1,24 @@
 @use './Maverick' as *;
 
 
-@mixin colorTheme-light(
-	$color__background: map-get($list__colorTheme-light, 'color__background'),
-	$color__text: map-get($list__colorTheme-light, 'color__text')
-) {
-	--color__background: #{$color__background};
-	--color__text: #{$color__text};
-}
+@mixin colorTheme($theme) {
+    $color__background: map-get($theme, 'color__background');
+    $color__text: map-get($theme, 'color__text');
 
-@mixin colorTheme-dark(
-	$color__background: map-get($list__colorTheme-dark, 'color__background'),
-	$color__text: map-get($list__colorTheme-dark, 'color__text')
-) {
-	--color__background: #{$color__background};
-	--color__text: #{$color__text};
+    --color__background: #{$color__background};
+    --color__text: #{$color__text};
 }
 
 :root {
-	@include colorTheme-light();
+    @include colorTheme($list__colorTheme-light);
 }
 
 @media (prefers-color-scheme: dark) {
-	:root {
-		@include colorTheme-dark();
-	}
-	
+    :root {
+        @include colorTheme($list__colorTheme-dark);
+    }
 }
 
-
-
-body{
-	background-color: var(--color__background);
-	color: var(--color__text);
+body {
+    background-color: var(--color__background);
 }

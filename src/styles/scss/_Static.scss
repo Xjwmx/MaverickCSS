@@ -7,6 +7,356 @@
 // Aspect Ratio
 
 $list__aspectRatio: (
+	'square': '1/1',
+	'portrait': '3/4',
+	'landscape': '4/3',
+	'widescreen': '16/9',
+	'vertical': '9/16',
+	'ultrawide': '21/9',
+);
+
+@each $key, $value in $list__aspectRatio {
+	.aspect__#{$key} {
+		aspect-ratio: $value;
+	}
+}
+
+// Columns
+
+$list__columnsCount: (1, 2, 3, 4, 5);
+
+@each $column in $list__columnsCount {
+	.col__#{$column} {
+		columns: $column;
+	}
+}
+
+// Breaks
+
+$list__breaks-in-out: (auto, avoid, all, avoid-page, page, left, right, recto, verso);
+
+@each $break in $list__breaks-in-out {
+	.break__inside-#{$break} {
+		break-inside: $break;
+	}
+	.break__outside-#{$break} {
+		break-outside: $break;
+	}
+}
+
+$list__breaks-inside: (auto, avoid, avoid-page, avoid-column);
+
+@each $break in $list__breaks-inside {
+	.break__inside-#{$break} {
+		break-inside: $break;
+	}
+}
+
+$list__break-box-decoration: (slice, clone);
+
+@each $break in $list__break-box-decoration {
+	.break__box-decoration-#{$break} {
+		box-decoration-break: $break;
+	}
+}
+
+// Box Model
+
+$list__box-sizing: (border-box, content-box);
+
+@each $box in $list__box-sizing {
+	.box__#{$box} {
+		box-sizing: $box;
+	}
+}
+
+// Display
+
+$list__display: (block, inline, inline-block, flex, grid, inline-flex, inline-grid, none, table, table-row, table-cell, table-column, table-column-group, table-footer-group, table-header-group, table-row-group, flow-root, contents, list-item, ruby, ruby-base, ruby-text, run-in, subgrid);
+
+@each $display in $list__display {
+	.display__#{$display} {
+		display: $display;
+	}
+}
+
+// Floats
+
+$list__floats: (inline-start, inline-end, left, right, none);
+
+@each $float in $list__floats {
+	.float__#{$float} {
+		float: $float;
+	}
+}
+
+// Clear
+
+$list__clear: (inline-start, inline-end, left, right, both, none);
+
+@each $clear in $list__clear {
+	.clear__#{$clear} {
+		clear: $clear;
+	}
+}
+
+// Isolation
+
+$list__isolation: (auto, isolate);
+
+@each $isolation in $list__isolation {
+	.isolation__#{$isolation} {
+		isolation: $isolation;
+	}
+}
+
+// Object Fit
+
+$list__object-fit: (fill, contain, cover, none, scale-down);
+
+@each $fit in $list__object-fit {
+	.fit__#{$fit} {
+		object-fit: $fit;
+	}
+}
+
+// Object Position
+
+$list__object-possition: (top, bottom, left, right, center, top-left, top-right, bottom-left, bottom-right);
+
+@each $position in $list__object-possition {
+	.position__#{$position} {
+		object-position: $position;
+	}
+}
+
+// Overflow
+
+$list__overflow: (visible, hidden, scroll, auto);
+
+@each $overflow in $list__overflow {
+	.overflow__#{$overflow} {
+		overflow: $overflow;
+	}
+	.overflow__x-#{$overflow} {
+		overflow-x: $overflow;
+	}
+	.overflow__y-#{$overflow} {
+		overflow-y: $overflow;
+	}
+}
+
+// Overscroll Behavior -- Not supported in Safari
+
+$list__overscroll: (auto, contain, none);
+
+@each $overscroll in $list__overscroll {
+	.overscroll__#{$overscroll} {
+		overscroll-behavior: $overscroll;
+	}
+	.overscroll__x-#{$overscroll} {
+		overscroll-behavior-x: $overscroll;
+	}
+	.overscroll__y-#{$overscroll} {
+		overscroll-behavior-y: $overscroll;
+	}
+}
+
+// Position
+
+$list__position: (static, relative, absolute, fixed, sticky);
+
+@each $position in $list__position {
+	.position__#{$position} {
+		position: $position;
+	}
+}
+
+// Top Right Bottom Left
+
+$list__top-right-bottom-left: (auto, 0);
+
+@each $value in $list__top-right-bottom-left {
+	.position__top-#{$value} {
+		top: $value;
+	}
+	.position__right-#{$value} {
+		right: $value;
+	}
+	.position__bottom-#{$value} {
+		bottom: $value;
+	}
+	.position__left-#{$value} {
+		left: $value;
+	}
+}
+
+// Visibility
+
+$list__visibility: (visible, hidden, collapse);
+
+@each $visibility in $list__visibility {
+	.visibility__#{$visibility} {
+		visibility: $visibility;
+	}
+}
+
+// Z-Index
+
+$list__z-index: (auto, 0, 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000);
+
+@each $index in $list__z-index {
+	.index__#{$index} {
+		z-index: $index;
+	}
+}
+
+/* FLEXBOX & GRID */
+
+// Flex Basis
+
+// Flex Direction
+
+$list__flex-direction: (row, row-reverse, column, column-reverse);
+
+@each $direction in $list__flex-direction {
+	.flex__direction-#{$direction} {
+		flex-direction: $direction;
+	}
+}
+
+// Flex Wrap
+
+$list__flex-wrap: (nowrap, wrap, wrap-reverse);
+
+@each $wrap in $list__flex-wrap {
+	.flex__wrap-#{$wrap} {
+		flex-wrap: $wrap;
+	}
+}
+
+// Flex Grow
+
+$list__flex-grow: (0, 1);
+
+@each $grow in $list__flex-grow {
+	.flex__grow-#{$grow} {
+		flex-grow: $grow;
+	}
+}
+
+// Flex Shrink
+
+$list__flex-shrink: (0, 1);
+
+@each $shrink in $list__flex-shrink {
+	.flex__shrink-#{$shrink} {
+		flex-shrink: $shrink;
+	}
+}
+
+// Flex
+
+$list__flex: (0, 1, auto);
+
+@each $flex in $list__flex {
+	.flex__#{$flex} {
+		flex: $flex;
+	}
+}
+
+// Grid Columns
+
+$list__grid-columns: (auto, 1fr, 2fr, 3fr, 4fr, 5fr, 6fr, 7fr, 8fr, 9fr, 10fr, 11fr, 12fr, 13fr, 14fr, 15fr, 16fr, 17fr, 18fr, 19fr, 20fr, 21fr, 22fr, 23fr, 24fr);
+
+@each $column in $list__grid-columns {
+	.grid__column-#{$column} {
+		grid-template-columns: repeat(auto-fill, minmax($column, 1fr));
+	}
+}
+
+// Grid Auto Flow
+
+$list__grid-auto-flow: (row, column, row dense, column dense);
+
+@each $flow in $list__grid-auto-flow {
+	.grid__auto-flow-#{$flow} {
+		grid-auto-flow: $flow;
+	}
+}
+
+// Grid Auto Columns
+
+$list__grid-auto-columns: (auto, 1fr, 2fr, 3fr, 4fr, 5fr, 6fr, 7fr, 8fr, 9fr, 10fr, 11fr, 12fr, 13fr, 14fr, 15fr, 16fr, 17fr, 18fr, 19fr, 20fr, 21fr, 22fr, 23fr, 24fr);
+
+@each $column in $list__grid-auto-columns {
+	.grid__auto-column-#{$column} {
+		grid-auto-columns: repeat(auto-fill, minmax($column, 1fr));
+	}
+}
+
+// Grid Auto Rows
+
+$list__grid-auto-rows: (auto, 1fr, 2fr, 3fr, 4fr, 5fr, 6fr, 7fr, 8fr, 9fr, 10fr, 11fr, 12fr, 13fr, 14fr, 15fr, 16fr, 17fr, 18fr, 19fr, 20fr, 21fr, 22fr, 23fr, 24fr);
+
+@each $row in $list__grid-auto-rows {
+	.grid__auto-row-#{$row} {
+		grid-auto-rows: repeat(auto-fill, minmax($row, 1fr));
+	}
+
+	.grid__auto-row-#{$row} {
+		grid-auto-rows: repeat(auto-fill, minmax($row, 1fr));
+	}
+}
+
+// Grid Rows
+
+	
+
+
+
+//grid rows
+
+$list__grid-rows: (auto, 1fr, 2fr, 3fr, 4fr, 5fr, 6fr, 7fr, 8fr, 9fr, 10fr, 11fr, 12fr, 13fr, 14fr, 15fr, 16fr, 17fr, 18fr, 19fr, 20fr, 21fr, 22fr, 23fr, 24fr);
+
+@each $row in $list__grid-rows {
+	.grid__row-#{$row} {
+		grid-template-rows: repeat(auto-fill, minmax($row, 1fr));
+	}
+}
+
+//justify-content
+
+$list__justify-content: (flex-start, flex-end, center, space-between, space-around, space-evenly, start, end, left, right);
+
+@each $justify in $list__justify-content {
+	.justify__#{$justify} {
+		justify-content: $justify;
+	}
+}
+
+//justify items
+
+$list__justify-items: (start, end, center, stretch);
+
+@each $justify in $list__justify-items {
+	.justify__items-#{$justify} {
+		justify-items: $justify;
+	}
+}
+
+//justify self
+
+ 
+
+
+/* STATIC CLASSES */
+
+// LAYOUT
+
+// Aspect Ratio
+
+$list__aspectRatio: (
 	'square': 1/1,
 	'portrait': 3/4,
 	'landscape': 4/3,
