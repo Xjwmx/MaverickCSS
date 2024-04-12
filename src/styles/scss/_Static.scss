@@ -1,9 +1,8 @@
 /* STATIC CLASSES */
 
+// LAYOUT
 
-//LAYOUT
-
-//aspect ratio
+// Aspect Ratio
 
 $list__aspectRatio: (
 	'square': 1/1,
@@ -20,7 +19,7 @@ $list__aspectRatio: (
 	}
 }
 
-//columns
+// Columns
 
 $list__columnsCount: (1, 2, 3, 4, 5);
 
@@ -30,7 +29,7 @@ $list__columnsCount: (1, 2, 3, 4, 5);
 	}
 }
 
-//breaks 
+// Breaks
 
 $list__breaks-in-out: (auto, avoid, all, avoid-page, page, left, right, recto, verso);
 
@@ -59,8 +58,8 @@ $list__break-box-decoration: (slice, clone);
 	}
 }
 
+// Box Model
 
-//box model
 $list__box-sizing: (border-box, content-box);
 
 @each $box in $list__box-sizing {
@@ -69,7 +68,7 @@ $list__box-sizing: (border-box, content-box);
 	}
 }
 
-//display
+// Display
 
 $list__display: (block, inline, inline-block, flex, grid, inline-flex, inline-grid, none, table, table-row, table-cell, table-column, table-column-group, table-footer-group, table-header-group, table-row-group, flow-root, contents, list-item, ruby, ruby-base, ruby-text, run-in, subgrid);
 
@@ -79,7 +78,7 @@ $list__display: (block, inline, inline-block, flex, grid, inline-flex, inline-gr
 	}
 }
 
-//floats
+// Floats
 
 $list__floats: (inline-start, inline-end, left, right, none);
 
@@ -89,7 +88,7 @@ $list__floats: (inline-start, inline-end, left, right, none);
 	}
 }
 
-//clear
+// Clear
 
 $list__clear: (inline-start, inline-end, left, right, both, none);
 
@@ -99,7 +98,7 @@ $list__clear: (inline-start, inline-end, left, right, both, none);
 	}
 }
 
-//isolation
+// Isolation
 
 $list__isolation: (auto, isolate);
 
@@ -109,7 +108,7 @@ $list__isolation: (auto, isolate);
 	}
 }
 
-//object fit
+// Object Fit
 
 $list__object-fit: (fill, contain, cover, none, scale-down);
 
@@ -119,10 +118,9 @@ $list__object-fit: (fill, contain, cover, none, scale-down);
 	}
 }
 
+// Object Position
 
-//object position
-
-$list__object-possition: (top, bottom, left, right, center, top left, top right, bottom left, bottom right);
+$list__object-possition: (top, bottom, left, right, center, top-left, top-right, bottom-left, bottom-right);
 
 @each $position in $list__object-possition {
 	.position__#{$position} {
@@ -130,7 +128,7 @@ $list__object-possition: (top, bottom, left, right, center, top left, top right,
 	}
 }
 
-//overflow
+// Overflow
 
 $list__overflow: (visible, hidden, scroll, auto);
 
@@ -140,13 +138,13 @@ $list__overflow: (visible, hidden, scroll, auto);
 	}
 	.overflow__x-#{$overflow} {
 		overflow-x: $overflow;
-	}	
+	}
 	.overflow__y-#{$overflow} {
 		overflow-y: $overflow;
 	}
 }
 
-//overscroll behavior -- not supported in safari
+// Overscroll Behavior -- Not supported in Safari
 
 $list__overscroll: (auto, contain, none);
 
@@ -160,10 +158,9 @@ $list__overscroll: (auto, contain, none);
 	.overscroll__y-#{$overscroll} {
 		overscroll-behavior-y: $overscroll;
 	}
-
 }
 
-//position
+// Position
 
 $list__position: (static, relative, absolute, fixed, sticky);
 
@@ -173,26 +170,26 @@ $list__position: (static, relative, absolute, fixed, sticky);
 	}
 }
 
-//top right bottom left
+// Top Right Bottom Left
 
 $list__top-right-bottom-left: (auto, 0);
 
 @each $value in $list__top-right-bottom-left {
-	.possition__top-#{$value} {
+	.position__top-#{$value} {
 		top: $value;
 	}
-	.possition__right-#{$value} {
+	.position__right-#{$value} {
 		right: $value;
 	}
-	.possition__bottom-#{$value} {
+	.position__bottom-#{$value} {
 		bottom: $value;
 	}
-	.possition__left-#{$value} {
+	.position__left-#{$value} {
 		left: $value;
 	}
 }
 
-//visibility
+// Visibility
 
 $list__visibility: (visible, hidden, collapse);
 
@@ -202,24 +199,21 @@ $list__visibility: (visible, hidden, collapse);
 	}
 }
 
-//z-index
+// Z-Index
 
 $list__z-index: (auto, 0, 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000);
 
 @each $index in $list__z-index {
 	.index__#{$index} {
-	  z-index: $index;
+		z-index: $index;
 	}
-  }
+}
 
+/* FLEXBOX & GRID */
 
+// Flex Basis
 
-  /* flexbox & Grid */
-
-//Flex Basis 
-
-
-//flex direction
+// Flex Direction
 
 $list__flex-direction: (row, row-reverse, column, column-reverse);
 
@@ -229,7 +223,7 @@ $list__flex-direction: (row, row-reverse, column, column-reverse);
 	}
 }
 
-//flex wrap
+// Flex Wrap
 
 $list__flex-wrap: (nowrap, wrap, wrap-reverse);
 
@@ -239,7 +233,7 @@ $list__flex-wrap: (nowrap, wrap, wrap-reverse);
 	}
 }
 
-//flex grow
+// Flex Grow
 
 $list__flex-grow: (0, 1);
 
@@ -249,7 +243,7 @@ $list__flex-grow: (0, 1);
 	}
 }
 
-//flex shrink
+// Flex Shrink
 
 $list__flex-shrink: (0, 1);
 
@@ -259,7 +253,7 @@ $list__flex-shrink: (0, 1);
 	}
 }
 
-//flex
+// Flex
 
 $list__flex: (0, 1, auto);
 
@@ -269,8 +263,7 @@ $list__flex: (0, 1, auto);
 	}
 }
 
-
-//grid columns
+// Grid Columns
 
 $list__grid-columns: (auto, 1fr, 2fr, 3fr, 4fr, 5fr, 6fr, 7fr, 8fr, 9fr, 10fr, 11fr, 12fr, 13fr, 14fr, 15fr, 16fr, 17fr, 18fr, 19fr, 20fr, 21fr, 22fr, 23fr, 24fr);
 
@@ -280,7 +273,7 @@ $list__grid-columns: (auto, 1fr, 2fr, 3fr, 4fr, 5fr, 6fr, 7fr, 8fr, 9fr, 10fr, 1
 	}
 }
 
-//grid auto flow
+// Grid Auto Flow
 
 $list__grid-auto-flow: (row, column, row dense, column dense);
 
@@ -290,7 +283,7 @@ $list__grid-auto-flow: (row, column, row dense, column dense);
 	}
 }
 
-//grid auto columns
+// Grid Auto Columns
 
 $list__grid-auto-columns: (auto, 1fr, 2fr, 3fr, 4fr, 5fr, 6fr, 7fr, 8fr, 9fr, 10fr, 11fr, 12fr, 13fr, 14fr, 15fr, 16fr, 17fr, 18fr, 19fr, 20fr, 21fr, 22fr, 23fr, 24fr);
 
@@ -300,11 +293,18 @@ $list__grid-auto-columns: (auto, 1fr, 2fr, 3fr, 4fr, 5fr, 6fr, 7fr, 8fr, 9fr, 10
 	}
 }
 
-//grid auto rows
+// Grid Auto Rows
 
 $list__grid-auto-rows: (auto, 1fr, 2fr, 3fr, 4fr, 5fr, 6fr, 7fr, 8fr, 9fr, 10fr, 11fr, 12fr, 13fr, 14fr, 15fr, 16fr, 17fr, 18fr, 19fr, 20fr, 21fr, 22fr, 23fr, 24fr);
 
 @each $row in $list__grid-auto-rows {
+	.grid__auto-row-#{$row} {
+		grid-auto-rows: repeat(auto-fill, minmax($row, 1fr));
+	}
+}
+
+// Grid Rows
+
 	.grid__auto-row-#{$row} {
 		grid-auto-rows: repeat(auto-fill, minmax($row, 1fr));
 	}
@@ -553,4 +553,494 @@ $list__text-overflow: (clip, ellipsis);
 	}
 }
 
-//
+//text wrap 
+
+$list__text-wrap: (wrap, nowrap, pretty, balance, stable);
+
+@each $wrap in $list__text-wrap {
+	.wrap__#{$wrap} {
+		overflow-wrap: $wrap;
+	}
+}	
+
+//vertical align
+
+$list__vertical-align: (baseline, sub, super, text-top, text-bottom, middle, top, bottom);
+
+@each $align in $list__vertical-align {
+	.align__#{$align} {
+		vertical-align: $align;
+	}
+}
+
+//white space
+
+$list__white-space: (normal, nowrap, pre, pre-line, pre-wrap, break-spaces);
+
+@each $space in $list__white-space {
+	.space__#{$space} {
+		white-space: $space;
+	}
+}
+
+// word break
+
+$list__word-break: (normal, break-all, keep-all, break-word);
+
+@each $break in $list__word-break {
+	.break__#{$break} {
+		word-break: $break;
+	}
+}
+
+//hypens
+
+$list__hyphens: (manual, auto, none);
+
+@each $hyphen in $list__hyphens {
+	.hyphen__#{$hyphen} {
+		hyphens: $hyphen;
+	}
+}
+
+
+
+/* BACKGROUND */
+
+//background attachment
+
+$list__background-attachment: (scroll, fixed, local);
+
+@each $attachment in $list__background-attachment {
+	.attachment__#{$attachment} {
+		background-attachment: $attachment;
+	}
+}
+
+//background clip
+
+$list__background-clip: (border-box, padding-box, content-box, text);
+
+@each $clip in $list__background-clip {
+	.clip__#{$clip} {
+		background-clip: $clip;
+	}
+}
+
+//background color
+
+$list__background-color: (transparent, currentColor);
+
+@each $color in $list__background-color {
+	.color__#{$color} {
+		background-color: $color;
+	}
+}
+
+//background origin
+
+$list__background-origin: (border-box, padding-box, content-box);
+
+@each $origin in $list__background-origin {
+	.origin__#{$origin} {
+		background-origin: $origin;
+	}
+}
+
+//background position
+
+$list__background-position: (top, bottom, left, right, center);
+
+@each $position in $list__background-position {
+	.position__#{$position} {
+		background-position: $position;
+	}
+}
+
+//background repeat
+
+$list__background-repeat: (repeat, repeat-x, repeat-y, no-repeat, space, round);
+
+@each $repeat in $list__background-repeat {
+	.repeat__#{$repeat} {
+		background-repeat: $repeat;
+	}
+}
+
+//background size
+
+$list__background-size: (auto, cover, contain);
+
+@each $size in $list__background-size {
+	.size__#{$size} {
+		background-size: $size;
+	}
+}
+
+
+/* BORDER */
+
+//border style
+
+$list__border-style: (none, hidden, dotted, dashed, solid, double, groove, ridge, inset, outset);
+
+@each $style in $list__border-style {
+	.style__#{$style} {
+		border-style: $style;
+	}
+}
+
+//border collapse
+
+$list__border-collapse: (collapse, separate);
+
+@each $collapse in $list__border-collapse {
+	.collapse__#{$collapse} {
+		border-collapse: $collapse;
+	}
+}
+
+//border radius + width
+
+$list__border-props: (0, 1px, 2px, 3px, 4px, 5px, 6px, 7px, 8px, 9px, 10px, 11px, 12px, 13px, 14px, 15px, 16px, 17px, 18px, 19px, 20px, 21px, 22px, 23px, 24px, 25px, 26px, 27px, 28px, 29px, 30px, 31px, 32px, 33px, 34px, 35px, 36px, 37px, 38px, 39px, 40px, 41px, 42px, 43px, 44px, 45px, 46px, 47px, 48px, 49px, 50px);
+
+@each $prop in $list__border-props {
+	.radius__#{$prop} {
+		border-radius: $prop;
+	}
+}
+
+@each $prop in $list__border-props {
+	.width__#{$prop} {
+		border-width: $prop;
+	}
+}
+
+//border color
+
+$list__border-color: (transparent, currentColor);
+
+@each $color in $list__border-color {
+	.color__#{$color} {
+		border-color: $color;
+	}
+}
+
+//divide
+
+$list__divide: (x, y);
+
+@each $divide in $list__divide {
+	.divide__#{$divide} {
+		divide: $divide;
+	}
+}
+
+//divide color
+
+$list__divide-color: (transparent, currentColor);
+
+@each $color in $list__divide-color {
+	.color__#{$color} {
+		divide-color: $color;
+	}
+}
+
+//divide style
+
+$list__divide-style: (solid, dashed, dotted, double, none);
+
+@each $style in $list__divide-style {
+	.style__#{$style} {
+		divide-style: $style;
+	}
+}
+
+//divide width
+
+
+@each $prop in $list__border-props {
+	.width__#{$prop} {
+		divide-width: $prop;
+	}
+}
+
+//filters
+
+$list__filter: (none, blur, brightness, contrast, drop-shadow, grayscale, hue-rotate, invert, opacity, saturate, sepia);
+
+@each $filter in $list__filter {
+	.filter__#{$filter} {
+		filter: $filter;
+	}
+}
+
+//backdrop filter
+
+$list__backdrop-filter: (none, blur, brightness, contrast, drop-shadow, grayscale, hue-rotate, invert, opacity, saturate, sepia);
+
+@each $filter in $list__backdrop-filter {
+	.filter__#{$filter} {
+		backdrop-filter: $filter;
+	}
+}
+
+/* Tables */
+
+//border collapse
+
+$list__border-collapse: (collapse, separate);
+
+@each $collapse in $list__border-collapse {
+	.collapse__#{$collapse} {
+		border-collapse: $collapse;
+	}
+}
+
+//table layout
+
+$list__table-layout: (auto, fixed);
+
+@each $layout in $list__table-layout {
+	.layout__#{$layout} {
+		table-layout: $layout;
+	}
+}
+
+//caption side
+
+$list__caption-side: (top, bottom);
+
+@each $side in $list__caption-side {
+	.side__#{$side} {
+		caption-side: $side;
+	}
+}
+
+//empty cells
+
+$list__empty-cells: (show, hide);
+
+@each $cell in $list__empty-cells {
+	.cell__#{$cell} {
+		empty-cells: $cell;
+	}
+}
+
+/* transforms */
+
+//scale
+
+$list__scale: (0, 1, 2, 3, 4, 5);
+
+@each $scale in $list__scale {
+	.scale__#{$scale} {
+		transform: scale($scale);
+	}
+}
+
+//rotate
+
+$list__rotate: (0, 45deg, 90deg, 135deg, 180deg, 225deg, 270deg, 315deg);
+
+@each $rotate in $list__rotate {
+	.rotate__#{$rotate} {
+		transform: rotate($rotate);
+	}
+}
+
+//translate
+
+$list__translate: (0, 1px, 2px, 3px, 4px, 5px, 6px, 7px, 8px, 9px, 10px, 11px, 12px, 13px, 14px, 15px, 16px, 17px, 18px, 19px, 20px, 21px, 22px, 23px, 24px, 25px, 26px, 27px, 28px, 29px, 30px, 31px, 32px, 33px, 34px, 35px, 36px, 37px, 38px, 39px, 40px, 41px, 42px, 43px, 44px, 45px, 46px, 47px, 48px, 49px, 50px);
+
+
+@each $translate in $list__translate {
+	.translate__#{$translate} {
+		transform: translate($translate);
+	}
+}
+
+//skew
+
+$list__skew: (0, 1deg, 2deg, 3deg, 4deg, 5deg, 6deg, 7deg, 8deg, 9deg, 10deg, 11deg, 12deg, 13deg, 14deg, 15deg, 16deg, 17deg, 18deg, 19deg, 20deg, 21deg, 22deg, 23deg, 24deg, 25deg, 26deg, 27deg, 28deg, 29deg, 30deg, 31deg, 32deg, 33deg, 34deg, 35deg, 36deg, 37deg, 38deg, 39deg, 40deg, 41deg, 42deg, 43deg, 44deg, 45deg, 46deg, 47deg, 48deg, 49deg, 50deg);
+
+@each $skew in $list__skew {
+	.skew__#{$skew} {
+		transform: skew($skew);
+	}
+}
+
+//transform origin
+
+$list__transform-origin: (top, bottom, left, right, center);
+
+@each $origin in $list__transform-origin {
+	.origin__#{$origin} {
+		transform-origin: $origin;
+	}
+}
+
+//perspective
+
+$list__perspective: (none, 1px, 2px, 3px, 4px, 5px, 6px, 7px, 8px, 9px, 10px, 11px, 12px, 13px, 14px, 15px, 16px, 17px, 18px, 19px, 20px, 21px, 22px, 23px, 24px, 25px, 26px, 27px, 28px, 29px, 30px, 31px, 32px, 33px, 34px, 35px, 36px, 37px, 38px, 39px, 40px, 41px, 42px, 43px, 44px, 45px, 46px, 47px, 48px, 49px, 50px);
+
+@each $perspective in $list__perspective {
+	.perspective__#{$perspective} {
+		perspective: $perspective;
+	}
+}
+
+//perspective origin
+
+$list__perspective-origin: (top, bottom, left, right, center);
+
+@each $origin in $list__perspective-origin {
+	.origin__#{$origin} {
+		perspective-origin: $origin;
+	}
+}
+
+//transform style
+
+$list__transform-style: (flat, preserve-3d);
+
+@each $style in $list__transform-style {
+	.style__#{$style} {
+		transform-style: $style;
+	}
+}
+
+//backface visibility
+
+$list__backface-visibility: (visible, hidden);
+
+@each $visibility in $list__backface-visibility {
+	.visibility__#{$visibility} {
+		backface-visibility: $visibility;
+	}
+}
+
+//transition property
+
+$list__transition-property: (all, none);
+
+@each $property in $list__transition-property {
+	.property__#{$property} {
+		transition-property: $property;
+	}
+}
+
+//transition duration
+
+$list__transition-duration: (0, 100ms, 200ms, 300ms, 400ms, 500ms, 600ms, 700ms, 800ms, 900ms, 1s, 2s, 3s, 4s, 5s);
+
+@each $duration in $list__transition-duration {
+	.duration__#{$duration} {
+		transition-duration: $duration;
+	}
+}
+
+//transition timing function
+
+$list__transition-timing: (ease, linear, ease-in, ease-out, ease-in-out, step-start, step-end, steps, cubic-bezier);
+
+@each $timing in $list__transition-timing {
+	.timing__#{$timing} {
+		transition-timing-function: $timing;
+	}
+}
+
+//transition delay
+
+$list__transition-delay: (0, 100ms, 200ms, 300ms, 400ms, 500ms, 600ms, 700ms, 800ms, 900ms, 1s, 2s, 3s, 4s, 5s);
+
+
+@each $delay in $list__transition-delay {
+	.delay__#{$delay} {
+		transition-delay: $delay;
+	}
+}
+
+
+/* Interactivity */
+
+//appearance
+
+$list__appearance: (none, auto);
+
+@each $appearance in $list__appearance {
+	.appearance__#{$appearance} {
+		appearance: $appearance;
+	}
+}
+
+//cursor
+
+$list__cursor: (auto, default, none, context-menu, help, pointer, progress, wait, cell, crosshair, text, vertical-text, alias, copy, move, no-drop, not-allowed, grab, grabbing, all-scroll, col-resize, row-resize, n-resize, e-resize, s-resize, w-resize, ne-resize, nw-resize, se-resize, sw-resize, ew-resize, ns-resize, nesw-resize, nwse-resize, zoom-in, zoom-out);
+
+@each $cursor in $list__cursor {
+	.cursor__#{$cursor} {
+		cursor: $cursor;
+	}
+}
+
+//outline
+
+$list__outline: (none, auto);
+
+@each $outline in $list__outline {
+	.outline__#{$outline} {
+		outline: $outline;
+	}
+}
+
+//pointer events
+
+$list__pointer-events: (auto, none);
+
+@each $events in $list__pointer-events {
+	.events__#{$events} {
+		pointer-events: $events;
+	}
+}
+
+//resize
+
+$list__resize: (none, both, horizontal, vertical);
+
+@each $resize in $list__resize {
+	.resize__#{$resize} {
+		resize: $resize;
+	}
+}
+
+//user select
+
+$list__user-select: (auto, none, text, all, contain, inherit);
+
+@each $select in $list__user-select {
+	.select__#{$select} {
+		user-select: $select;
+	}
+}
+
+//appearance
+
+$list__appearance: (none, auto);
+
+@each $appearance in $list__appearance {
+	.appearance__#{$appearance} {
+		appearance: $appearance;
+	}
+}
+
+//caret color
+
+$list__caret-color: (auto, currentColor);
+
+@each $color in $list__caret-color {
+	.color__#{$color} {
+		caret-color: $color;
+	}
+} 
+
