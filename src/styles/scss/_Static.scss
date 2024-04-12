@@ -213,11 +213,344 @@ $list__z-index: (auto, 0, 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000);
   }
 
 
+
+  /* flexbox & Grid */
+
 //Flex Basis 
 
-$list__flex-basis: (auto, content, 0, 25%, 50%, 75%, 100%);
+
+//flex direction
+
+$list__flex-direction: (row, row-reverse, column, column-reverse);
+
+@each $direction in $list__flex-direction {
+	.flex__direction-#{$direction} {
+		flex-direction: $direction;
+	}
+}
+
+//flex wrap
+
+$list__flex-wrap: (nowrap, wrap, wrap-reverse);
+
+@each $wrap in $list__flex-wrap {
+	.flex__wrap-#{$wrap} {
+		flex-wrap: $wrap;
+	}
+}
+
+//flex grow
+
+$list__flex-grow: (0, 1);
+
+@each $grow in $list__flex-grow {
+	.flex__grow-#{$grow} {
+		flex-grow: $grow;
+	}
+}
+
+//flex shrink
+
+$list__flex-shrink: (0, 1);
+
+@each $shrink in $list__flex-shrink {
+	.flex__shrink-#{$shrink} {
+		flex-shrink: $shrink;
+	}
+}
+
+//flex
+
+$list__flex: (0, 1, auto);
+
+@each $flex in $list__flex {
+	.flex__#{$flex} {
+		flex: $flex;
+	}
+}
 
 
+//grid columns
+
+$list__grid-columns: (auto, 1fr, 2fr, 3fr, 4fr, 5fr, 6fr, 7fr, 8fr, 9fr, 10fr, 11fr, 12fr, 13fr, 14fr, 15fr, 16fr, 17fr, 18fr, 19fr, 20fr, 21fr, 22fr, 23fr, 24fr);
+
+@each $column in $list__grid-columns {
+	.grid__column-#{$column} {
+		grid-template-columns: repeat(auto-fill, minmax($column, 1fr));
+	}
+}
+
+//grid auto flow
+
+$list__grid-auto-flow: (row, column, row dense, column dense);
+
+@each $flow in $list__grid-auto-flow {
+	.grid__auto-flow-#{$flow} {
+		grid-auto-flow: $flow;
+	}
+}
+
+//grid auto columns
+
+$list__grid-auto-columns: (auto, 1fr, 2fr, 3fr, 4fr, 5fr, 6fr, 7fr, 8fr, 9fr, 10fr, 11fr, 12fr, 13fr, 14fr, 15fr, 16fr, 17fr, 18fr, 19fr, 20fr, 21fr, 22fr, 23fr, 24fr);
+
+@each $column in $list__grid-auto-columns {
+	.grid__auto-column-#{$column} {
+		grid-auto-columns: repeat(auto-fill, minmax($column, 1fr));
+	}
+}
+
+//grid auto rows
+
+$list__grid-auto-rows: (auto, 1fr, 2fr, 3fr, 4fr, 5fr, 6fr, 7fr, 8fr, 9fr, 10fr, 11fr, 12fr, 13fr, 14fr, 15fr, 16fr, 17fr, 18fr, 19fr, 20fr, 21fr, 22fr, 23fr, 24fr);
+
+@each $row in $list__grid-auto-rows {
+	.grid__auto-row-#{$row} {
+		grid-auto-rows: repeat(auto-fill, minmax($row, 1fr));
+	}
+}
 
 
+//grid rows
 
+$list__grid-rows: (auto, 1fr, 2fr, 3fr, 4fr, 5fr, 6fr, 7fr, 8fr, 9fr, 10fr, 11fr, 12fr, 13fr, 14fr, 15fr, 16fr, 17fr, 18fr, 19fr, 20fr, 21fr, 22fr, 23fr, 24fr);
+
+@each $row in $list__grid-rows {
+	.grid__row-#{$row} {
+		grid-template-rows: repeat(auto-fill, minmax($row, 1fr));
+	}
+}
+
+//justify-content
+
+$list__justify-content: (flex-start, flex-end, center, space-between, space-around, space-evenly, start, end, left, right);
+
+@each $justify in $list__justify-content {
+	.justify__#{$justify} {
+		justify-content: $justify;
+	}
+}
+
+//justify items
+
+$list__justify-items: (start, end, center, stretch);
+
+@each $justify in $list__justify-items {
+	.justify__items-#{$justify} {
+		justify-items: $justify;
+	}
+}
+
+//justify self
+
+$list__justify-self: (auto, start, end, center, stretch);
+
+@each $justify in $list__justify-self {
+	.justify__self-#{$justify} {
+		justify-self: $justify;
+	}
+}
+
+//align-content
+
+$list__align-content: (flex-start, flex-end, center, space-between, space-around, space-evenly, stretch, start, end);
+
+@each $align in $list__align-content {
+	.align__content-#{$align} {
+		align-content: $align;
+	}
+}
+
+//align items
+
+$list__align-items: (stretch, flex-start, flex-end, center, baseline);
+
+@each $align in $list__align-items {
+	.align__items-#{$align} {
+		align-items: $align;
+	}
+}
+
+//align self
+
+$list__align-self: (auto, stretch, flex-start, flex-end, center, baseline);
+
+@each $align in $list__align-self {
+	.align__self-#{$align} {
+		align-self: $align;
+	}
+}
+
+//place content
+
+$list__place-content: (stretch, center, start, end, flex-start, flex-end, space-between, space-around, space-evenly);
+
+@each $place in $list__place-content {
+	.place__content-#{$place} {
+		place-content: $place;
+	}
+}
+
+//place items
+
+$list__place-items: (stretch, center, start, end, flex-start, flex-end, baseline);
+
+@each $place in $list__place-items {
+	.place__items-#{$place} {
+		place-items: $place;
+	}
+}
+
+//place self
+
+$list__place-self: (auto, stretch, center, start, end, flex-start, flex-end, baseline);
+
+@each $place in $list__place-self {
+	.place__self-#{$place} {
+		place-self: $place;
+	}
+}
+
+//font smoothing 
+
+$list__font-smoothing: (auto, none, antialiased, subpixel-antialiased);
+
+@each $smoothing in $list__font-smoothing {
+	.font__smoothing-#{$smoothing} {
+		-webkit-font-smoothing: $smoothing;
+		-moz-osx-font-smoothing: $smoothing;
+	}
+}
+
+//font style
+
+$list__font-style: (normal, italic, oblique);
+
+@each $style in $list__font-style {
+	.font__style-#{$style} {
+		font-style: $style;
+	}
+}
+
+//font weight
+
+$list__font-weight: (normal, bold, bolder, lighter, 100, 200, 300, 400, 500, 600, 700, 800, 900);
+
+@each $weight in $list__font-weight {
+	.font__weight-#{$weight} {
+		font-weight: $weight;
+	}
+}
+
+//list style
+
+$list__list-style: (none, disc, circle, square, decimal, decimal-leading-zero, lower-roman, upper-roman, lower-greek, lower-latin, upper-latin, armenian, georgian, lower-alpha, upper-alpha, none);
+
+@each $style in $list__list-style {
+	.list__style-#{$style} {
+		list-style: $style;
+	}
+}
+
+
+//list style position
+
+$list__list-style-position: (inside, outside);
+
+@each $position in $list__list-style-position {
+	.list__style-position-#{$position} {
+		list-style-position: $position;
+	}
+}
+
+//list style type
+
+$list__list-style-type: (none, disc, circle, square, decimal, decimal-leading-zero, lower-roman, upper-roman, lower-greek, lower-latin, upper-latin, armenian, georgian, lower-alpha, upper-alpha, none);
+
+@each $type in $list__list-style-type {
+	.list__style-type-#{$type} {
+		list-style-type: $type;
+	}
+}
+
+//text align
+
+$list__text-align: (left, right, center, justify, start, end, match-parent);
+
+@each $align in $list__text-align {
+	.align__#{$align} {
+		text-align: $align;
+	}
+}
+
+//text decoration
+
+$list__text-decoration: (none, underline, overline, line-through, blink);	
+
+@each $decoration in $list__text-decoration {
+	.decoration__#{$decoration} {
+		text-decoration: $decoration;
+	}
+}
+
+//text decoration
+
+$list__text-decoration: (none, underline, overline, line-through, blink);
+
+@each $decoration in $list__text-decoration {
+	.decoration__#{$decoration} {
+		text-decoration: $decoration;
+	}
+}
+
+//text decoration thickness
+
+$list__text-decoration-thickness: (auto, from-font, 0, 1px, 2px, 3px, 4px, 5px);
+
+@each $thickness in $list__text-decoration-thickness {
+	.thickness__#{$thickness} {
+		text-decoration-thickness: $thickness;
+	}
+}
+
+//text decoration style
+
+$list__text-decoration-style: (solid, double, dotted, dashed, wavy);
+
+@each $style in $list__text-decoration-style {
+	.style__#{$style} {
+		text-decoration-style: $style;
+	}
+}
+
+//text Underline offset
+
+$list__text-underline-offset: (auto, from-font, 0, 1px, 2px, 3px, 4px, 5px);
+
+@each $offset in $list__text-underline-offset {
+	.offset__#{$offset} {
+		text-underline-offset: $offset;
+	}
+}
+
+//text transform
+
+$list__text-transform: (none, capitalize, uppercase, lowercase);
+
+@each $transform in $list__text-transform {
+	.transform__#{$transform} {
+		text-transform: $transform;
+	}
+}
+
+//text overflow
+
+$list__text-overflow: (clip, ellipsis);
+
+@each $overflow in $list__text-overflow {
+	.overflow__#{$overflow} {
+		text-overflow: $overflow;
+	}
+}
+
+//

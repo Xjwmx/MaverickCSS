@@ -1763,4 +1763,1125 @@ h1 {
   z-index: 1000;
 }
 
+/* flexbox & Grid */
+.flex__direction-row {
+  flex-direction: row;
+}
+
+.flex__direction-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.flex__direction-column {
+  flex-direction: column;
+}
+
+.flex__direction-column-reverse {
+  flex-direction: column-reverse;
+}
+
+.flex__wrap-nowrap {
+  flex-wrap: nowrap;
+}
+
+.flex__wrap-wrap {
+  flex-wrap: wrap;
+}
+
+.flex__wrap-wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+
+.flex__grow-0 {
+  flex-grow: 0;
+}
+
+.flex__grow-1 {
+  flex-grow: 1;
+}
+
+.flex__shrink-0 {
+  flex-shrink: 0;
+}
+
+.flex__shrink-1 {
+  flex-shrink: 1;
+}
+
+.flex__0 {
+  flex: 0;
+}
+
+.flex__1 {
+  flex: 1;
+}
+
+.flex__auto {
+  flex: auto;
+}
+
+.grid__column-auto {
+  grid-template-columns: repeat(auto-fill, minmax(auto, 1fr));
+}
+
+.grid__column-1fr {
+  grid-template-columns: repeat(auto-fill, minmax(1fr, 1fr));
+}
+
+.grid__column-2fr {
+  grid-template-columns: repeat(auto-fill, minmax(2fr, 1fr));
+}
+
+.grid__column-3fr {
+  grid-template-columns: repeat(auto-fill, minmax(3fr, 1fr));
+}
+
+.grid__column-4fr {
+  grid-template-columns: repeat(auto-fill, minmax(4fr, 1fr));
+}
+
+.grid__column-5fr {
+  grid-template-columns: repeat(auto-fill, minmax(5fr, 1fr));
+}
+
+.grid__column-6fr {
+  grid-template-columns: repeat(auto-fill, minmax(6fr, 1fr));
+}
+
+.grid__column-7fr {
+  grid-template-columns: repeat(auto-fill, minmax(7fr, 1fr));
+}
+
+.grid__column-8fr {
+  grid-template-columns: repeat(auto-fill, minmax(8fr, 1fr));
+}
+
+.grid__column-9fr {
+  grid-template-columns: repeat(auto-fill, minmax(9fr, 1fr));
+}
+
+.grid__column-10fr {
+  grid-template-columns: repeat(auto-fill, minmax(10fr, 1fr));
+}
+
+.grid__column-11fr {
+  grid-template-columns: repeat(auto-fill, minmax(11fr, 1fr));
+}
+
+.grid__column-12fr {
+  grid-template-columns: repeat(auto-fill, minmax(12fr, 1fr));
+}
+
+.grid__column-13fr {
+  grid-template-columns: repeat(auto-fill, minmax(13fr, 1fr));
+}
+
+.grid__column-14fr {
+  grid-template-columns: repeat(auto-fill, minmax(14fr, 1fr));
+}
+
+.grid__column-15fr {
+  grid-template-columns: repeat(auto-fill, minmax(15fr, 1fr));
+}
+
+.grid__column-16fr {
+  grid-template-columns: repeat(auto-fill, minmax(16fr, 1fr));
+}
+
+.grid__column-17fr {
+  grid-template-columns: repeat(auto-fill, minmax(17fr, 1fr));
+}
+
+.grid__column-18fr {
+  grid-template-columns: repeat(auto-fill, minmax(18fr, 1fr));
+}
+
+.grid__column-19fr {
+  grid-template-columns: repeat(auto-fill, minmax(19fr, 1fr));
+}
+
+.grid__column-20fr {
+  grid-template-columns: repeat(auto-fill, minmax(20fr, 1fr));
+}
+
+.grid__column-21fr {
+  grid-template-columns: repeat(auto-fill, minmax(21fr, 1fr));
+}
+
+.grid__column-22fr {
+  grid-template-columns: repeat(auto-fill, minmax(22fr, 1fr));
+}
+
+.grid__column-23fr {
+  grid-template-columns: repeat(auto-fill, minmax(23fr, 1fr));
+}
+
+.grid__column-24fr {
+  grid-template-columns: repeat(auto-fill, minmax(24fr, 1fr));
+}
+
+.grid__auto-flow-row {
+  grid-auto-flow: row;
+}
+
+.grid__auto-flow-column {
+  grid-auto-flow: column;
+}
+
+.grid__auto-flow-row dense {
+  grid-auto-flow: row dense;
+}
+
+.grid__auto-flow-column dense {
+  grid-auto-flow: column dense;
+}
+
+.grid__auto-column-auto {
+  grid-auto-columns: repeat(auto-fill, minmax(auto, 1fr));
+}
+
+.grid__auto-column-1fr {
+  grid-auto-columns: repeat(auto-fill, minmax(1fr, 1fr));
+}
+
+.grid__auto-column-2fr {
+  grid-auto-columns: repeat(auto-fill, minmax(2fr, 1fr));
+}
+
+.grid__auto-column-3fr {
+  grid-auto-columns: repeat(auto-fill, minmax(3fr, 1fr));
+}
+
+.grid__auto-column-4fr {
+  grid-auto-columns: repeat(auto-fill, minmax(4fr, 1fr));
+}
+
+.grid__auto-column-5fr {
+  grid-auto-columns: repeat(auto-fill, minmax(5fr, 1fr));
+}
+
+.grid__auto-column-6fr {
+  grid-auto-columns: repeat(auto-fill, minmax(6fr, 1fr));
+}
+
+.grid__auto-column-7fr {
+  grid-auto-columns: repeat(auto-fill, minmax(7fr, 1fr));
+}
+
+.grid__auto-column-8fr {
+  grid-auto-columns: repeat(auto-fill, minmax(8fr, 1fr));
+}
+
+.grid__auto-column-9fr {
+  grid-auto-columns: repeat(auto-fill, minmax(9fr, 1fr));
+}
+
+.grid__auto-column-10fr {
+  grid-auto-columns: repeat(auto-fill, minmax(10fr, 1fr));
+}
+
+.grid__auto-column-11fr {
+  grid-auto-columns: repeat(auto-fill, minmax(11fr, 1fr));
+}
+
+.grid__auto-column-12fr {
+  grid-auto-columns: repeat(auto-fill, minmax(12fr, 1fr));
+}
+
+.grid__auto-column-13fr {
+  grid-auto-columns: repeat(auto-fill, minmax(13fr, 1fr));
+}
+
+.grid__auto-column-14fr {
+  grid-auto-columns: repeat(auto-fill, minmax(14fr, 1fr));
+}
+
+.grid__auto-column-15fr {
+  grid-auto-columns: repeat(auto-fill, minmax(15fr, 1fr));
+}
+
+.grid__auto-column-16fr {
+  grid-auto-columns: repeat(auto-fill, minmax(16fr, 1fr));
+}
+
+.grid__auto-column-17fr {
+  grid-auto-columns: repeat(auto-fill, minmax(17fr, 1fr));
+}
+
+.grid__auto-column-18fr {
+  grid-auto-columns: repeat(auto-fill, minmax(18fr, 1fr));
+}
+
+.grid__auto-column-19fr {
+  grid-auto-columns: repeat(auto-fill, minmax(19fr, 1fr));
+}
+
+.grid__auto-column-20fr {
+  grid-auto-columns: repeat(auto-fill, minmax(20fr, 1fr));
+}
+
+.grid__auto-column-21fr {
+  grid-auto-columns: repeat(auto-fill, minmax(21fr, 1fr));
+}
+
+.grid__auto-column-22fr {
+  grid-auto-columns: repeat(auto-fill, minmax(22fr, 1fr));
+}
+
+.grid__auto-column-23fr {
+  grid-auto-columns: repeat(auto-fill, minmax(23fr, 1fr));
+}
+
+.grid__auto-column-24fr {
+  grid-auto-columns: repeat(auto-fill, minmax(24fr, 1fr));
+}
+
+.grid__auto-row-auto {
+  grid-auto-rows: repeat(auto-fill, minmax(auto, 1fr));
+}
+
+.grid__auto-row-1fr {
+  grid-auto-rows: repeat(auto-fill, minmax(1fr, 1fr));
+}
+
+.grid__auto-row-2fr {
+  grid-auto-rows: repeat(auto-fill, minmax(2fr, 1fr));
+}
+
+.grid__auto-row-3fr {
+  grid-auto-rows: repeat(auto-fill, minmax(3fr, 1fr));
+}
+
+.grid__auto-row-4fr {
+  grid-auto-rows: repeat(auto-fill, minmax(4fr, 1fr));
+}
+
+.grid__auto-row-5fr {
+  grid-auto-rows: repeat(auto-fill, minmax(5fr, 1fr));
+}
+
+.grid__auto-row-6fr {
+  grid-auto-rows: repeat(auto-fill, minmax(6fr, 1fr));
+}
+
+.grid__auto-row-7fr {
+  grid-auto-rows: repeat(auto-fill, minmax(7fr, 1fr));
+}
+
+.grid__auto-row-8fr {
+  grid-auto-rows: repeat(auto-fill, minmax(8fr, 1fr));
+}
+
+.grid__auto-row-9fr {
+  grid-auto-rows: repeat(auto-fill, minmax(9fr, 1fr));
+}
+
+.grid__auto-row-10fr {
+  grid-auto-rows: repeat(auto-fill, minmax(10fr, 1fr));
+}
+
+.grid__auto-row-11fr {
+  grid-auto-rows: repeat(auto-fill, minmax(11fr, 1fr));
+}
+
+.grid__auto-row-12fr {
+  grid-auto-rows: repeat(auto-fill, minmax(12fr, 1fr));
+}
+
+.grid__auto-row-13fr {
+  grid-auto-rows: repeat(auto-fill, minmax(13fr, 1fr));
+}
+
+.grid__auto-row-14fr {
+  grid-auto-rows: repeat(auto-fill, minmax(14fr, 1fr));
+}
+
+.grid__auto-row-15fr {
+  grid-auto-rows: repeat(auto-fill, minmax(15fr, 1fr));
+}
+
+.grid__auto-row-16fr {
+  grid-auto-rows: repeat(auto-fill, minmax(16fr, 1fr));
+}
+
+.grid__auto-row-17fr {
+  grid-auto-rows: repeat(auto-fill, minmax(17fr, 1fr));
+}
+
+.grid__auto-row-18fr {
+  grid-auto-rows: repeat(auto-fill, minmax(18fr, 1fr));
+}
+
+.grid__auto-row-19fr {
+  grid-auto-rows: repeat(auto-fill, minmax(19fr, 1fr));
+}
+
+.grid__auto-row-20fr {
+  grid-auto-rows: repeat(auto-fill, minmax(20fr, 1fr));
+}
+
+.grid__auto-row-21fr {
+  grid-auto-rows: repeat(auto-fill, minmax(21fr, 1fr));
+}
+
+.grid__auto-row-22fr {
+  grid-auto-rows: repeat(auto-fill, minmax(22fr, 1fr));
+}
+
+.grid__auto-row-23fr {
+  grid-auto-rows: repeat(auto-fill, minmax(23fr, 1fr));
+}
+
+.grid__auto-row-24fr {
+  grid-auto-rows: repeat(auto-fill, minmax(24fr, 1fr));
+}
+
+.grid__row-auto {
+  grid-template-rows: repeat(auto-fill, minmax(auto, 1fr));
+}
+
+.grid__row-1fr {
+  grid-template-rows: repeat(auto-fill, minmax(1fr, 1fr));
+}
+
+.grid__row-2fr {
+  grid-template-rows: repeat(auto-fill, minmax(2fr, 1fr));
+}
+
+.grid__row-3fr {
+  grid-template-rows: repeat(auto-fill, minmax(3fr, 1fr));
+}
+
+.grid__row-4fr {
+  grid-template-rows: repeat(auto-fill, minmax(4fr, 1fr));
+}
+
+.grid__row-5fr {
+  grid-template-rows: repeat(auto-fill, minmax(5fr, 1fr));
+}
+
+.grid__row-6fr {
+  grid-template-rows: repeat(auto-fill, minmax(6fr, 1fr));
+}
+
+.grid__row-7fr {
+  grid-template-rows: repeat(auto-fill, minmax(7fr, 1fr));
+}
+
+.grid__row-8fr {
+  grid-template-rows: repeat(auto-fill, minmax(8fr, 1fr));
+}
+
+.grid__row-9fr {
+  grid-template-rows: repeat(auto-fill, minmax(9fr, 1fr));
+}
+
+.grid__row-10fr {
+  grid-template-rows: repeat(auto-fill, minmax(10fr, 1fr));
+}
+
+.grid__row-11fr {
+  grid-template-rows: repeat(auto-fill, minmax(11fr, 1fr));
+}
+
+.grid__row-12fr {
+  grid-template-rows: repeat(auto-fill, minmax(12fr, 1fr));
+}
+
+.grid__row-13fr {
+  grid-template-rows: repeat(auto-fill, minmax(13fr, 1fr));
+}
+
+.grid__row-14fr {
+  grid-template-rows: repeat(auto-fill, minmax(14fr, 1fr));
+}
+
+.grid__row-15fr {
+  grid-template-rows: repeat(auto-fill, minmax(15fr, 1fr));
+}
+
+.grid__row-16fr {
+  grid-template-rows: repeat(auto-fill, minmax(16fr, 1fr));
+}
+
+.grid__row-17fr {
+  grid-template-rows: repeat(auto-fill, minmax(17fr, 1fr));
+}
+
+.grid__row-18fr {
+  grid-template-rows: repeat(auto-fill, minmax(18fr, 1fr));
+}
+
+.grid__row-19fr {
+  grid-template-rows: repeat(auto-fill, minmax(19fr, 1fr));
+}
+
+.grid__row-20fr {
+  grid-template-rows: repeat(auto-fill, minmax(20fr, 1fr));
+}
+
+.grid__row-21fr {
+  grid-template-rows: repeat(auto-fill, minmax(21fr, 1fr));
+}
+
+.grid__row-22fr {
+  grid-template-rows: repeat(auto-fill, minmax(22fr, 1fr));
+}
+
+.grid__row-23fr {
+  grid-template-rows: repeat(auto-fill, minmax(23fr, 1fr));
+}
+
+.grid__row-24fr {
+  grid-template-rows: repeat(auto-fill, minmax(24fr, 1fr));
+}
+
+.justify__flex-start {
+  justify-content: flex-start;
+}
+
+.justify__flex-end {
+  justify-content: flex-end;
+}
+
+.justify__center {
+  justify-content: center;
+}
+
+.justify__space-between {
+  justify-content: space-between;
+}
+
+.justify__space-around {
+  justify-content: space-around;
+}
+
+.justify__space-evenly {
+  justify-content: space-evenly;
+}
+
+.justify__start {
+  justify-content: start;
+}
+
+.justify__end {
+  justify-content: end;
+}
+
+.justify__left {
+  justify-content: left;
+}
+
+.justify__right {
+  justify-content: right;
+}
+
+.justify__items-start {
+  justify-items: start;
+}
+
+.justify__items-end {
+  justify-items: end;
+}
+
+.justify__items-center {
+  justify-items: center;
+}
+
+.justify__items-stretch {
+  justify-items: stretch;
+}
+
+.justify__self-auto {
+  justify-self: auto;
+}
+
+.justify__self-start {
+  justify-self: start;
+}
+
+.justify__self-end {
+  justify-self: end;
+}
+
+.justify__self-center {
+  justify-self: center;
+}
+
+.justify__self-stretch {
+  justify-self: stretch;
+}
+
+.align__content-flex-start {
+  align-content: flex-start;
+}
+
+.align__content-flex-end {
+  align-content: flex-end;
+}
+
+.align__content-center {
+  align-content: center;
+}
+
+.align__content-space-between {
+  align-content: space-between;
+}
+
+.align__content-space-around {
+  align-content: space-around;
+}
+
+.align__content-space-evenly {
+  align-content: space-evenly;
+}
+
+.align__content-stretch {
+  align-content: stretch;
+}
+
+.align__content-start {
+  align-content: start;
+}
+
+.align__content-end {
+  align-content: end;
+}
+
+.align__items-stretch {
+  align-items: stretch;
+}
+
+.align__items-flex-start {
+  align-items: flex-start;
+}
+
+.align__items-flex-end {
+  align-items: flex-end;
+}
+
+.align__items-center {
+  align-items: center;
+}
+
+.align__items-baseline {
+  align-items: baseline;
+}
+
+.align__self-auto {
+  align-self: auto;
+}
+
+.align__self-stretch {
+  align-self: stretch;
+}
+
+.align__self-flex-start {
+  align-self: flex-start;
+}
+
+.align__self-flex-end {
+  align-self: flex-end;
+}
+
+.align__self-center {
+  align-self: center;
+}
+
+.align__self-baseline {
+  align-self: baseline;
+}
+
+.place__content-stretch {
+  place-content: stretch;
+}
+
+.place__content-center {
+  place-content: center;
+}
+
+.place__content-start {
+  place-content: start;
+}
+
+.place__content-end {
+  place-content: end;
+}
+
+.place__content-flex-start {
+  place-content: flex-start;
+}
+
+.place__content-flex-end {
+  place-content: flex-end;
+}
+
+.place__content-space-between {
+  place-content: space-between;
+}
+
+.place__content-space-around {
+  place-content: space-around;
+}
+
+.place__content-space-evenly {
+  place-content: space-evenly;
+}
+
+.place__items-stretch {
+  place-items: stretch;
+}
+
+.place__items-center {
+  place-items: center;
+}
+
+.place__items-start {
+  place-items: start;
+}
+
+.place__items-end {
+  place-items: end;
+}
+
+.place__items-flex-start {
+  place-items: flex-start;
+}
+
+.place__items-flex-end {
+  place-items: flex-end;
+}
+
+.place__items-baseline {
+  place-items: baseline;
+}
+
+.place__self-auto {
+  place-self: auto;
+}
+
+.place__self-stretch {
+  place-self: stretch;
+}
+
+.place__self-center {
+  place-self: center;
+}
+
+.place__self-start {
+  place-self: start;
+}
+
+.place__self-end {
+  place-self: end;
+}
+
+.place__self-flex-start {
+  place-self: flex-start;
+}
+
+.place__self-flex-end {
+  place-self: flex-end;
+}
+
+.place__self-baseline {
+  place-self: baseline;
+}
+
+.font__smoothing-auto {
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+}
+
+.font__smoothing-none {
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: none;
+}
+
+.font__smoothing-antialiased {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: antialiased;
+}
+
+.font__smoothing-subpixel-antialiased {
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: subpixel-antialiased;
+}
+
+.font__style-normal {
+  font-style: normal;
+}
+
+.font__style-italic {
+  font-style: italic;
+}
+
+.font__style-oblique {
+  font-style: oblique;
+}
+
+.font__weight-normal {
+  font-weight: normal;
+}
+
+.font__weight-bold {
+  font-weight: bold;
+}
+
+.font__weight-bolder {
+  font-weight: bolder;
+}
+
+.font__weight-lighter {
+  font-weight: lighter;
+}
+
+.font__weight-100 {
+  font-weight: 100;
+}
+
+.font__weight-200 {
+  font-weight: 200;
+}
+
+.font__weight-300 {
+  font-weight: 300;
+}
+
+.font__weight-400 {
+  font-weight: 400;
+}
+
+.font__weight-500 {
+  font-weight: 500;
+}
+
+.font__weight-600 {
+  font-weight: 600;
+}
+
+.font__weight-700 {
+  font-weight: 700;
+}
+
+.font__weight-800 {
+  font-weight: 800;
+}
+
+.font__weight-900 {
+  font-weight: 900;
+}
+
+.list__style-none {
+  list-style: none;
+}
+
+.list__style-disc {
+  list-style: disc;
+}
+
+.list__style-circle {
+  list-style: circle;
+}
+
+.list__style-square {
+  list-style: square;
+}
+
+.list__style-decimal {
+  list-style: decimal;
+}
+
+.list__style-decimal-leading-zero {
+  list-style: decimal-leading-zero;
+}
+
+.list__style-lower-roman {
+  list-style: lower-roman;
+}
+
+.list__style-upper-roman {
+  list-style: upper-roman;
+}
+
+.list__style-lower-greek {
+  list-style: lower-greek;
+}
+
+.list__style-lower-latin {
+  list-style: lower-latin;
+}
+
+.list__style-upper-latin {
+  list-style: upper-latin;
+}
+
+.list__style-armenian {
+  list-style: armenian;
+}
+
+.list__style-georgian {
+  list-style: georgian;
+}
+
+.list__style-lower-alpha {
+  list-style: lower-alpha;
+}
+
+.list__style-upper-alpha {
+  list-style: upper-alpha;
+}
+
+.list__style-none {
+  list-style: none;
+}
+
+.list__style-position-inside {
+  list-style-position: inside;
+}
+
+.list__style-position-outside {
+  list-style-position: outside;
+}
+
+.list__style-type-none {
+  list-style-type: none;
+}
+
+.list__style-type-disc {
+  list-style-type: disc;
+}
+
+.list__style-type-circle {
+  list-style-type: circle;
+}
+
+.list__style-type-square {
+  list-style-type: square;
+}
+
+.list__style-type-decimal {
+  list-style-type: decimal;
+}
+
+.list__style-type-decimal-leading-zero {
+  list-style-type: decimal-leading-zero;
+}
+
+.list__style-type-lower-roman {
+  list-style-type: lower-roman;
+}
+
+.list__style-type-upper-roman {
+  list-style-type: upper-roman;
+}
+
+.list__style-type-lower-greek {
+  list-style-type: lower-greek;
+}
+
+.list__style-type-lower-latin {
+  list-style-type: lower-latin;
+}
+
+.list__style-type-upper-latin {
+  list-style-type: upper-latin;
+}
+
+.list__style-type-armenian {
+  list-style-type: armenian;
+}
+
+.list__style-type-georgian {
+  list-style-type: georgian;
+}
+
+.list__style-type-lower-alpha {
+  list-style-type: lower-alpha;
+}
+
+.list__style-type-upper-alpha {
+  list-style-type: upper-alpha;
+}
+
+.list__style-type-none {
+  list-style-type: none;
+}
+
+.align__left {
+  text-align: left;
+}
+
+.align__right {
+  text-align: right;
+}
+
+.align__center {
+  text-align: center;
+}
+
+.align__justify {
+  text-align: justify;
+}
+
+.align__start {
+  text-align: start;
+}
+
+.align__end {
+  text-align: end;
+}
+
+.align__match-parent {
+  text-align: match-parent;
+}
+
+.decoration__none {
+  text-decoration: none;
+}
+
+.decoration__underline {
+  text-decoration: underline;
+}
+
+.decoration__overline {
+  text-decoration: overline;
+}
+
+.decoration__line-through {
+  text-decoration: line-through;
+}
+
+.decoration__blink {
+  text-decoration: blink;
+}
+
+.decoration__none {
+  text-decoration: none;
+}
+
+.decoration__underline {
+  text-decoration: underline;
+}
+
+.decoration__overline {
+  text-decoration: overline;
+}
+
+.decoration__line-through {
+  text-decoration: line-through;
+}
+
+.decoration__blink {
+  text-decoration: blink;
+}
+
+.thickness__auto {
+  text-decoration-thickness: auto;
+}
+
+.thickness__from-font {
+  text-decoration-thickness: from-font;
+}
+
+.thickness__0 {
+  text-decoration-thickness: 0;
+}
+
+.thickness__1px {
+  text-decoration-thickness: 1px;
+}
+
+.thickness__2px {
+  text-decoration-thickness: 2px;
+}
+
+.thickness__3px {
+  text-decoration-thickness: 3px;
+}
+
+.thickness__4px {
+  text-decoration-thickness: 4px;
+}
+
+.thickness__5px {
+  text-decoration-thickness: 5px;
+}
+
+.style__solid {
+  text-decoration-style: solid;
+}
+
+.style__double {
+  text-decoration-style: double;
+}
+
+.style__dotted {
+  text-decoration-style: dotted;
+}
+
+.style__dashed {
+  text-decoration-style: dashed;
+}
+
+.style__wavy {
+  text-decoration-style: wavy;
+}
+
+.offset__auto {
+  text-underline-offset: auto;
+}
+
+.offset__from-font {
+  text-underline-offset: from-font;
+}
+
+.offset__0 {
+  text-underline-offset: 0;
+}
+
+.offset__1px {
+  text-underline-offset: 1px;
+}
+
+.offset__2px {
+  text-underline-offset: 2px;
+}
+
+.offset__3px {
+  text-underline-offset: 3px;
+}
+
+.offset__4px {
+  text-underline-offset: 4px;
+}
+
+.offset__5px {
+  text-underline-offset: 5px;
+}
+
+.transform__none {
+  text-transform: none;
+}
+
+.transform__capitalize {
+  text-transform: capitalize;
+}
+
+.transform__uppercase {
+  text-transform: uppercase;
+}
+
+.transform__lowercase {
+  text-transform: lowercase;
+}
+
+.overflow__clip {
+  text-overflow: clip;
+}
+
+.overflow__ellipsis {
+  text-overflow: ellipsis;
+}
+
 /*# sourceMappingURL=styles.css.map */
