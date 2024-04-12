@@ -14,15 +14,15 @@ $root__size: 16px;
 $box__sizing: border-box;
 
 /* DEFAULT TEXT STYLES */
-$scale__typography: 1.333; //set the scale for typography
+$scale__typography: 1.425; //set the scale for typography
 
-$text__body-default: 'Noto Sans', sans-serif;
+$text__body-default: 'System UI', sans-serif;
 $text__body-fontSize: 16px; //set the base font size
 $text__body-lineHeight: 1.5; //set the base line height
 $text__body-letterSpacing: normal; //set the base letter spacing
 $text__body-textIndent: 0; //set the base text indent
 
-$text__heading-default: 'Playfair Display', serif; //set the default font for headings
+$text__heading-default: 'System Ui', sans-serif; //set the default font for headings
 $text__heading-weight: 700; //set the base font weight for headings
 $text__heading-lineHeight:1.0; //set the base line height for headings
 $text__heading-letterSpacing: normal; //set the base letter spacing
@@ -46,13 +46,13 @@ $scale__sizing: 2; //set the scale for spacing
 //COLORS: Maverick Uses very minimalist color scrience. You can add your own colors here.
 
 $list__colorTheme-light: (
-	'color__background': #a98863,
-	'color__text': #05100a,
+	'color__background': #ff69b4,
+	'color__text': #042c2a,
 );
 
 $list__colorTheme-dark: (
-	'color__background': #05100a,
-	'color__text': #a98863,
+	'color__background': #042c2a,
+	'color__text': #ff69b4,
 );
 
 

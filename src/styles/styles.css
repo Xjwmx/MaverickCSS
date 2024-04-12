@@ -13,7 +13,7 @@ a,
 li,
 span,
 div {
-  font-family: "Noto Sans", sans-serif;
+  font-family: "System UI", sans-serif;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: normal;
@@ -21,80 +21,80 @@ div {
 }
 
 h5 {
-  font-size: 21.328px;
-  font-family: "Playfair Display", serif;
+  font-size: 22.8px;
+  font-family: "System Ui", sans-serif;
   font-weight: 700;
   line-height: 1;
   letter-spacing: normal;
 }
 
 h4 {
-  font-size: 28.430224px;
-  font-family: "Playfair Display", serif;
+  font-size: 32.49px;
+  font-family: "System Ui", sans-serif;
   font-weight: 700;
   line-height: 1;
   letter-spacing: normal;
 }
 
 h3 {
-  font-size: 37.897488592px;
-  font-family: "Playfair Display", serif;
+  font-size: 46.29825px;
+  font-family: "System Ui", sans-serif;
   font-weight: 700;
   line-height: 1;
   letter-spacing: normal;
 }
 
 h2 {
-  font-size: 50.5173522931px;
-  font-family: "Playfair Display", serif;
+  font-size: 65.97500625px;
+  font-family: "System Ui", sans-serif;
   font-weight: 700;
   line-height: 1;
   letter-spacing: normal;
 }
 
 h1 {
-  font-size: 67.3396306068px;
-  font-family: "Playfair Display", serif;
+  font-size: 94.0143839063px;
+  font-family: "System Ui", sans-serif;
   font-weight: 700;
   line-height: 1;
   letter-spacing: normal;
 }
 
 .h5 {
-  font-size: 21.328px;
-  font-family: "Playfair Display", serif;
+  font-size: 22.8px;
+  font-family: "System Ui", sans-serif;
   font-weight: 700;
   line-height: 1;
   letter-spacing: normal;
 }
 
 .h4 {
-  font-size: 28.430224px;
-  font-family: "Playfair Display", serif;
+  font-size: 32.49px;
+  font-family: "System Ui", sans-serif;
   font-weight: 700;
   line-height: 1;
   letter-spacing: normal;
 }
 
 .h3 {
-  font-size: 37.897488592px;
-  font-family: "Playfair Display", serif;
+  font-size: 46.29825px;
+  font-family: "System Ui", sans-serif;
   font-weight: 700;
   line-height: 1;
   letter-spacing: normal;
 }
 
 .h2 {
-  font-size: 50.5173522931px;
-  font-family: "Playfair Display", serif;
+  font-size: 65.97500625px;
+  font-family: "System Ui", sans-serif;
   font-weight: 700;
   line-height: 1;
   letter-spacing: normal;
 }
 
 .h1 {
-  font-size: 67.3396306068px;
-  font-family: "Playfair Display", serif;
+  font-size: 94.0143839063px;
+  font-family: "System Ui", sans-serif;
   font-weight: 700;
   line-height: 1;
   letter-spacing: normal;
@@ -6313,18 +6313,19 @@ h1 {
 }
 
 :root {
-  --color__background: #a98863;
-  --color__text: #05100a;
+  --color__background: #ff69b4;
+  --color__text: #042c2a;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color__background: #05100a;
-    --color__text: #a98863;
+    --color__background: #042c2a;
+    --color__text: #ff69b4;
   }
 }
 body {
   background-color: var(--color__background);
+  color: var(--color__text);
 }
 
 /*# sourceMappingURL=styles.css.map */
