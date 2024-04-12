@@ -303,14 +303,16 @@ $list__grid-auto-rows: (auto, 1fr, 2fr, 3fr, 4fr, 5fr, 6fr, 7fr, 8fr, 9fr, 10fr,
 	.grid__auto-row-#{$row} {
 		grid-auto-rows: repeat(auto-fill, minmax($row, 1fr));
 	}
-}
-
-// Grid Rows
 
 	.grid__auto-row-#{$row} {
 		grid-auto-rows: repeat(auto-fill, minmax($row, 1fr));
 	}
 }
+
+// Grid Rows
+
+	
+
 
 
 //grid rows
