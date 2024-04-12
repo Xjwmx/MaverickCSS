@@ -6013,14 +6013,14 @@ h1 {
 }
 
 :root {
-  --color__background: #ff69b4;
-  --color__text: #042c2a;
+  --color__background: #fafafa;
+  --color__text: #34374b;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color__background: #042c2a;
-    --color__text: #ff69b4;
+    --color__background: #34374b;
+    --color__text: #fafafa;
   }
 }
 body {
