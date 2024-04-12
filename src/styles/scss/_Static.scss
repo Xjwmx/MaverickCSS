@@ -7,12 +7,12 @@
 // Aspect Ratio
 
 $list__aspectRatio: (
-	'square': '1/1',
-	'portrait': '3/4',
-	'landscape': '4/3',
-	'widescreen': '16/9',
-	'vertical': '9/16',
-	'ultrawide': '21/9',
+	'square': '1 / 1',
+	'portrait': '3 / 4',
+	'landscape': '4 / 3',
+	'widescreen': '16 / 9',
+	'vertical': '9 / 16',
+	'ultrawide': '21 / 9',
 );
 
 @each $key, $value in $list__aspectRatio {
@@ -38,9 +38,6 @@ $list__breaks-in-out: (auto, avoid, all, avoid-page, page, left, right, recto, v
 @each $break in $list__breaks-in-out {
 	.break__inside-#{$break} {
 		break-inside: $break;
-	}
-	.break__outside-#{$break} {
-		break-outside: $break;
 	}
 }
 
@@ -345,31 +342,9 @@ $list__justify-items: (start, end, center, stretch);
 	}
 }
 
-//justify self
-
- 
-
-
 /* STATIC CLASSES */
 
 // LAYOUT
-
-// Aspect Ratio
-
-$list__aspectRatio: (
-	'square': 1/1,
-	'portrait': 3/4,
-	'landscape': 4/3,
-	'widescreen': 16/9,
-	'vertical': 9/16,
-	'ultrawide': 21/9,
-);
-
-@each $key, $value in $list__aspectRatio {
-	.aspect__#{$key} {
-		aspect-ratio: $value;
-	}
-}
 
 // Columns
 
@@ -985,11 +960,11 @@ $list__background-clip: (border-box, padding-box, content-box, text);
 
 //background color
 
-$list__background-color: (transparent, currentColor);
+$list__background-color: ("transparent", currentColor);
 
-@each $color in $list__background-color {
-	.color__#{$color} {
-		background-color: $color;
+@each $type in $list__background-color {
+	.color__#{$type} {
+		background-color: $type;
 	}
 }
 
@@ -1074,7 +1049,7 @@ $list__border-props: (0, 1px, 2px, 3px, 4px, 5px, 6px, 7px, 8px, 9px, 10px, 11px
 
 //border color
 
-$list__border-color: (transparent, currentColor);
+$list__border-color: ("transparent", currentColor);
 
 @each $color in $list__border-color {
 	.color__#{$color} {
@@ -1082,44 +1057,7 @@ $list__border-color: (transparent, currentColor);
 	}
 }
 
-//divide
 
-$list__divide: (x, y);
-
-@each $divide in $list__divide {
-	.divide__#{$divide} {
-		divide: $divide;
-	}
-}
-
-//divide color
-
-$list__divide-color: (transparent, currentColor);
-
-@each $color in $list__divide-color {
-	.color__#{$color} {
-		divide-color: $color;
-	}
-}
-
-//divide style
-
-$list__divide-style: (solid, dashed, dotted, double, none);
-
-@each $style in $list__divide-style {
-	.style__#{$style} {
-		divide-style: $style;
-	}
-}
-
-//divide width
-
-
-@each $prop in $list__border-props {
-	.width__#{$prop} {
-		divide-width: $prop;
-	}
-}
 
 //filters
 
