@@ -39,8 +39,8 @@ $breakpoint__default: (
 
 //Sizing and Spacing Engine
 
-$scale__sizing: 2; //set the scale for spacing
-
+$sizing__default: 1rem; //set the base size for spacing
+$scale__sizing: 1.5; //set the scale for spacing
 
 
 //COLORS: Maverick Uses very minimalist color scrience. You can add your own colors here.
@@ -56,4 +56,21 @@ $list__colorTheme-dark: (
 );
 
 
+//common borders
+
+$border__radius: 10px;
+$border__width: 1px;
+$border__style: solid;
+
+
+//common shadows
+
+$shadow__default: 0 0 10px rgba(0,0,0,0.1);
+$shadow__hover: 0 0 20px rgba(0,0,0,0.2);
+
+//common transitions
+
+$transition__default: 0.3s ease-in-out;
+$transition__hover: 0.2s ease-in-out;
+$transition__interactive: 0.1s ease-in-out;
 

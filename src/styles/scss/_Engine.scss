@@ -52,6 +52,8 @@ div {
   }
 }
 
+
+
 // Sizing and Spacing Engine
 
 $list__sizing: (
@@ -68,6 +70,10 @@ $list__sizing: (
   "xxxxxlarge": calc(1rem * pow($scale__sizing, 7)),
 );
 
+
+$directions: ("top", "right", "bottom", "left", "all");
+
+
 @mixin generateSpaceClasses($property, $direction, $key, $value) {
   .#{$property}__#{$direction}-#{$key} {
     @if $direction == "all" {
@@ -78,7 +84,8 @@ $list__sizing: (
   }
 }
 
-$directions: ("top", "right", "bottom", "left", "all");
+
+
 
 @each $key, $value in $list__sizing {
   @each $direction in $directions {

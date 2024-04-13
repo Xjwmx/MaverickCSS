@@ -1,0 +1,33 @@
+@use './Maverick' as *;
+
+/* mixins */
+
+@mixin border($width: $border__width, $style: $border__style, $color: $color__primary) {
+    border: $width $style $color;
+}
+
+@mixin border-radius($radius: $border__radius) {
+	border-radius: $radius;
+}
+
+@mixin shadow($shadow: $shadow__default) {
+	@if $type =='hover' {
+		&:hover {
+			box-shadow: $shadow__hover;
+		}
+	} @else {
+		box-shadow: $shadow__default;
+	}
+}
+
+@mixin transition ($type: 'default') {
+	@if $type == 'hover' {
+		transition: $transition__hover;
+	} @else if $type == 'default' {
+		transition: $transition__default;
+	} @else if $type == 'interactive' {
+		transition: $transition__interactive;
+} 
+
+
+
