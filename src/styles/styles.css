@@ -2381,72 +2381,36 @@ h1 {
   break-inside: auto;
 }
 
-.break__outside-auto {
-  break-outside: auto;
-}
-
 .break__inside-avoid {
   break-inside: avoid;
-}
-
-.break__outside-avoid {
-  break-outside: avoid;
 }
 
 .break__inside-all {
   break-inside: all;
 }
 
-.break__outside-all {
-  break-outside: all;
-}
-
 .break__inside-avoid-page {
   break-inside: avoid-page;
-}
-
-.break__outside-avoid-page {
-  break-outside: avoid-page;
 }
 
 .break__inside-page {
   break-inside: page;
 }
 
-.break__outside-page {
-  break-outside: page;
-}
-
 .break__inside-left {
   break-inside: left;
-}
-
-.break__outside-left {
-  break-outside: left;
 }
 
 .break__inside-right {
   break-inside: right;
 }
 
-.break__outside-right {
-  break-outside: right;
-}
-
 .break__inside-recto {
   break-inside: recto;
 }
 
-.break__outside-recto {
-  break-outside: recto;
-}
-
 .break__inside-verso {
   break-inside: verso;
-}
-
-.break__outside-verso {
-  break-outside: verso;
 }
 
 .break__inside-auto {
