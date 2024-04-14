@@ -23,3 +23,23 @@ body {
     background-color: var(--color__background);
     color: var(--color__text)
 }
+
+a {
+    color: var(--color__text);
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+    &:visited {
+        color: var(--color__text);
+    }
+
+    &:active {
+        color: var(--color__text);
+    }
+
+
+
+}

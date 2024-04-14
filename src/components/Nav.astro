@@ -1,47 +1,23 @@
-<nav>
-  <h1 class="text-h3 padding-none">Maverick CSS</h1>
-  <ul>
-    <li><a href="#">Docs</a></li>
-    <li><a href="#">Contact</a></li>
-    <li><a href="#">Git</a></li>
-  </ul>
-</nav>
+---
+import Astro from "astro";
+---
 
-<style>
-  nav {
-    display: flex; /* 1 */
-    justify-content: space-between; /* 2 */
-    padding: 1rem 2rem;
-  }
+<div class="container__nav-global">
+  <div class="nav_logo">
+    <h1 class="nav__logo-text">Maverick.css</h1>
+  </div>
 
-  nav ul {
-    display: flex; /* 5 */
-    list-style: none; /* 6 */
-    align-items: center;
-  }
-
-  nav li {
-    padding-left: 1rem; /* 7! */
-  }
-
-  nav a {
-    text-decoration: none;
-  }
-
-  /* 
-  Extra small devices (phones, 600px and down) 
-*/
-  @media only screen and (max-width: 600px) {
-    nav {
-      flex-direction: column;
-      align-items: center;
-    }
-    nav ul {
-      flex-direction: row;
-      padding-top: 0.5rem;
-    }
-    nav li {
-      padding: 0.5rem 0.75rem;
-    }
-  }
-</style>
+  <div class="nav__menu">
+    <ul class="nav__menu-list">
+      <li class="nav__menu-item">
+        <a class="nav__menu-item" href="#">Home</a>
+      </li>
+      <li class="nav__menu-item">
+        <a class="nav__menu-item" href="#">Home</a>
+      </li>
+      <li class="nav__menu-item">
+        <a class="nav__menu-item" href="#">Home</a>
+      </li>
+    </ul>
+  </div>
+</div>

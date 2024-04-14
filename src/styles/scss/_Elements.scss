@@ -1,7 +1,55 @@
+@use './Maverick' as m;
+@use './Colors' as c;
+
+//Nav Styles
+.container__nav-global {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem;
+}
 
 
+.nav__logo-text {
+	font-size: 1.5rem;
+	font-weight: 700;
+	text-decoration: none;
+}
 
+.nav__menu {
+	&-list {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
 
+	&-item {
+		margin: 0 .5rem 0 .5rem;
+		text-align: center;
+	}
 
+}
 
+@media screen and (max-width: 768px) {
+	.container__nav-global {
+		flex-direction: column;
+		justify-content: center;
+	}
+	.nav__logo-text {
+		text-align: center;
+		justify-content: center;
+		margin-bottom: 1rem;
+	}
+	
+	.nav__menu {
+		&-list {
 
+		}
+	}
+	
+}

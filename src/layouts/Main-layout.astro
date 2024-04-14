@@ -3,7 +3,6 @@ const title = "Maverick CSS";
 import Nav from "../components/Nav.astro";
 import Footer from "../components/Footer.astro";
 import "../styles/styles.css";
-import "../components/ThemeSwitcher.astro";
 ---
 
 <html lang="en">
@@ -12,16 +11,13 @@ import "../components/ThemeSwitcher.astro";
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title}</title>
     <link rel="stylesheet" href="../styles/styles.css" />
-    <link rel="script" href="../components/theme-switcher.js" ;" />
   </head>
 
-  <body class="theme-01">
-    <div class="page-wrapper">
-      <Nav />
-      <div class="main-wrapper">
-        <slot />
-      </div>
-      <Footer />
-    </div>
+  <body>
+    <Nav />
+    <main>
+      <slot />
+    </main>
+    <Footer />
   </body>
 </html>
