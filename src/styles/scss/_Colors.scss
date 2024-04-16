@@ -24,15 +24,3 @@ body {
     color: var(--color__text)
 }
 
-a {
-    color: var(--color__text);
-    text-decoration: none;
-
-    &:hover {
-        text-decoration: underline;
-    }
-
-    &:visited {
-        color: darken(, 20%);
-    }
-}

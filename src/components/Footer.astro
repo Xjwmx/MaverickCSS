@@ -20,12 +20,6 @@ const currentYear = new Date().getFullYear();
     </ul>
   </div>
 
-  <div class="footer__section-description">
-    <p class="footer__description">
-      {description}
-    </p>
-  </div>
-
   <div class="footer__section-notes">
     <p class="footer__notes">
       © {currentYear}
@@ -35,6 +29,11 @@ const currentYear = new Date().getFullYear();
 </div>
 
 <style>
+  .footer__section-global {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .footer__section-links ul {
   }
 

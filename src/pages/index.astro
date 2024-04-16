@@ -1,9 +1,21 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
+import Button from "../components/Button.astro";
+
+const title = "Maverick CSS";
 ---
 
 <MainLayout
   title="Maverick CSS"
   description="Maverick CSS is a utility-first CSS framework that is designed to be easy to use and customize."
   author="Justin Milner"
-/>
+>
+  <div class="section__container-hero">
+    <h1 class="h1">{title}</h1>
+    <p class="p">
+      Maverick CSS is a utility-first CSS framework that is designed to be easy
+      to use and customize.
+    </p>
+    <Button buttonName="Learn More" buttonRoute="#" />
+  </div>
+</MainLayout>
