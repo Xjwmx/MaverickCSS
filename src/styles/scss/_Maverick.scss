@@ -56,88 +56,12 @@ $list__colorTheme-dark: (
 );
 
 
-//common borders
-
-$border__radius: 10px;
-$border__width: 1px;
-$border__style: solid;
-
-@mixin commonBorder {
-	border: $border__width $border__style $color__primary;
-	border-radius: $border__radius;
+//common classess
+.style__button {
+	display: inline-block;
+	padding: .4rem;
+	border: 1px solid var(--color__text);
+	border-radius: 4px;
+	background-color: var(--color__text);
+	color: var(--color__background);
 }
-
-
-//common shadows
-
-$shadow__default: 0 0 10px rgba(0,0,0,0.1);
-$shadow__hover: 0 0 20px rgba(0,0,0,0.2);
-
-@mixin commonShadow {
-	box-shadow: $shadow__default;
-	transition: $transition__default;
-}
-
-//common transitions
-
-$transition__default: 0.3s ease-in-out;
-$transition__hover: 0.2s ease-in-out;
-$transition__interactive: 0.1s ease-in-out;
-
-@mixin commonTransition {
-	transition: $transition__default;
-}
-
-
-//card styles
-
-$card__padding: 1rem;
-$card__margin: 1rem;
-$card__border: 1px solid #e0e0e0;
-$card__borderRadius: 10px;
-$card__shadow: 0 0 10px rgba(0,0,0,0.1);
-$card__transition: 0.3s ease-in-out;
-
-@mixin commonCard {
-	padding: $card__padding;
-	margin: $card__margin;
-	border: $card__border;
-	border-radius: $card__borderRadius;
-	box-shadow: $card__shadow;
-	transition: $card__transition;
-}
-
-
-//button styles
-
-$button__padding: 0.5rem 1rem;
-$button__margin: 0.5rem;
-$button__border: 1px solid #e0e0e0;
-$button__borderRadius: 10px;
-$button__shadow: 0 0 10px rgba(0,0,0,0.1);
-$button__transition: 0.3s ease-in-out;
-
-@mixin commonButton {
-	padding: $button__padding;
-	margin: $button__margin;
-	border: $button__border;
-	border-radius: $button__borderRadius;
-	box-shadow: $button__shadow;
-	transition: $button__transition;
-
-	&:hover {
-		box-shadow: $shadow__hover;
-	}
-
-	&:active {
-		box-shadow: none;
-	}
-
-	&__alt {
-		background-color: $color__secondary;
-		color: $color__text;
-	}
-}
-
-
-

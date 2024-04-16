@@ -33,13 +33,6 @@ a {
     }
 
     &:visited {
-        color: var(--color__text);
+        color: darken(, 20%);
     }
-
-    &:active {
-        color: var(--color__text);
-    }
-
-
-
 }

@@ -1,0 +1,31 @@
+---
+//Import Various Components
+import "../styles/styles.css";
+
+import Nav from "../components/Nav.astro";
+
+import Footer from "../components/Footer.astro";
+
+//Passing in props to the components
+const {
+  title = "Maverick CSS",
+  description = "A collection of CSS utilities to help you build your next project.",
+  author = "Maverick Palacio",
+} = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>${title}</title>
+    <meta name="description" content="${description}" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <Nav {title} />
+    <slot>Default Text</slot>
+    <Footer {title} {description} {author} />
+  </body>
+</html>

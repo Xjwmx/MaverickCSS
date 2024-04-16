@@ -1,21 +1,9 @@
 ---
-import Nav from "../components/Nav.astro";
-import Footer from "../components/Footer.astro";
+import MainLayout from "../layouts/MainLayout.astro";
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="/src/styles/styles.css" />
-  </head>
-  <body>
-    <Nav />
-    <main>
-      <h1>404</h1>
-      <p>Page not found</p>
-    </main>
-    <Footer />
-  </body>
-</html>
+<MainLayout
+  title="Maverick CSS"
+  description="Maverick CSS is a utility-first CSS framework that is designed to be easy to use and customize."
+  author="Justin Milner"
+/>

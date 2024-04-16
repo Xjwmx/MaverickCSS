@@ -1,0 +1,52 @@
+---
+import "../styles/styles.css";
+const { title, description, author } = Astro.props;
+const currentYear = new Date().getFullYear();
+---
+
+<div class="footer__container-global">
+  <div class="footer__section-1">
+    <div class="footer__logo">
+      <p class="h4">{title}</p>
+    </div>
+  </div>
+
+  <div class="footer__section-links">
+    <ul>
+      <li><a class="style__button" href="#">Share</a></li>
+      <li class="link__common"><a href="#">Privacy</a></li>
+      <li class="link__common"><a href="#">Terms</a></li>
+      <li class="link__common"><a href="#">Support</a></li>
+    </ul>
+  </div>
+
+  <div class="footer__section-description">
+    <p class="footer__description">
+      {description}
+    </p>
+  </div>
+
+  <div class="footer__section-notes">
+    <p class="footer__notes">
+      © {currentYear}
+      {author}. All rights reserved.
+    </p>
+  </div>
+</div>
+
+<style>
+  .footer__section-links ul {
+  }
+
+  .footer__section-links ul {
+    padding: 0;
+    color: var(--color-text-secondary);
+    list-style: none;
+  }
+
+  .footer__section-links ul li {
+    color: var(--color-text-secondary);
+    list-style: none;
+    display: inline;
+  }
+</style>

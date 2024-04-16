@@ -52,6 +52,25 @@ div {
   }
 }
 
+$map__textSize: (
+  "xxxs": calc($text__body-fontSize / pow($scale__typography, 4)),
+  "xxs": calc($text__body-fontSize / pow($scale__typography, 3)),
+  "xs": calc($text__body-fontSize / pow($scale__typography, 2)),
+  "s": $text__body-fontSize,
+  "m": calc($text__body-fontSize * $scale__typography),
+  "l": calc($text__body-fontSize * pow($scale__typography, 2)),
+  "xl": calc($text__body-fontSize * pow($scale__typography, 3)),
+  "xxl": calc($text__body-fontSize * pow($scale__typography, 4)),
+  "xxxl": calc($text__body-fontSize * pow($scale__typography, 5)),
+  "xxxxl": calc($text__body-fontSize * pow($scale__typography, 6)),
+  "xxxxxl": calc($text__body-fontSize * pow($scale__typography, 7)),
+);
+
+@each $key, $value in $map__textSize {
+  .text__size-#{$key} {
+    font-size: $value;
+  }
+}
 
 
 // Sizing and Spacing Engine
